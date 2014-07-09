@@ -3,7 +3,5 @@
 AToMPM/arkm3_compile/
 AToMPM/arkm3_python/
 AToMPM/bin/
-AToMPM/node_modules/scion/
-AToMPM/node_modules/socket.io-client/
-AToMPM/node_modules/socket.io/
+AToMPM/node_modules/
 AToMPM/users/*
