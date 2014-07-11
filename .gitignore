@@ -58,6 +58,7 @@
 # Make
 *.make
 *.d
+*.temp
 
 # makeidx
 *.idx
