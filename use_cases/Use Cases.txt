@@ -119,64 +119,58 @@ YAWL
   -Create two different elements and link them
 
 USE CASES
-Open File
-  1)  Indicate that you want to open a file
-  2)  Indicate which file you want to open
-  3)  Open the file
 
-Create Element at specific position
-  1)  Indicate that you want to create an element
-  2)  Indicate which element you want to create
-  3)  Designate the position at which you want to create the element
-  4)  Create the element
+% Use Case 1 - Open File
+%   1)  Indicate that you want to open a file
+%   2)  Indicate which file you want to open
+%   3)  Open the file
 
-Create two different elements and link them
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+%   2)  Indicate which element you want to create
+%   3)  Designate the position at which you want to create the element
+%   4)  Create the element
 
-  1-4) Create Element at specific position
-  5-8) Create Element at specific position
-  9)  Designate the first element to be linked
-  10) Designate the second element to be linked
-  11) Create the link
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+%   2)  Indicate which element you want to create
+%   3)  Designate the position at which you want to create the element
+%   4)  Create the element
+%   5)  Indicate that you want to create another element
+%   6)  Indicate which element you want to create
+%   7)  Designate the position at which you want to create the element
+%   8)  Create the element
+%   9)  Indicate that you want to begin linking elements
+%   10)  Designate the first element to be linked
+%   11) Designate the second element to be linked
+%   12) Create the link
 
-  1)  Indicate that you want to create an element
-  2)  Indicate which element you want to create
-  3)  Designate the position at which you want to create the element
-  4)  Create the element
-  5)  Indicate that you want to create another element
-  6)  Indicate which element you want to create
-  7)  Designate the position at which you want to create the element
-  8)  Create the element
-  9)  Indicate that you want to begin linking elements
-  10) Designate the first element to be linked
-  11) Designate the second element to be linked
-  12) Create the link
+% Use Case 4 - Print an integer
+%   1)  Indicate which color will be the starting color
+%   2)  Create the color block of size x
+%   3)  Determine which color represents "push"
+%   4)  Indicate that you will begin to use that color
+%   5)  Create its color block
+%   6)  Determine which color represents "out(integer)"
+%   7)  Indicate that you will begin to use that color
+%   8)  Create its color block
+%   9)  Determine where any black codels will need to be
+%   10) Select the color black
+%   11) Create the black codels
+%   12) Execute the program
 
-Print an integer
-  1)  Indicate which color will be the starting color
-  2)  Create the color block of size x
-  3)  Determine which color represents "push"
-  4)  Indicate that you will begin to use that color
-  5)  Create its color block
-  6)  Determine which color represents "out(integer)"
-  7)  Indicate that you will begin to use that color
-  8)  Create its color block
-  9)  Determine where any black codels will need to be
-  10) Select the color black
-  11) Create the black codels
-  12) Execute the program
-
-Create Element at specific position and transform vertex
-
-  1)  Indicate that you want to create an element
-  2)  Indicate which element you want to create
-  3)  Designate the position at which you want to create the element
-  4)  Create the element
-  5)  Indicate that you want to edit the element
-  6)  Indicate that you want to transform a vertex
-  7)  Select a vertex to transform
-  8)  Indicate the type of transformation to perform
-  9)  Perform transformation
-  10) Commit changes to element
+% Use Case 5 - Create Element at specific position and transform vertex
+% * 1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+% * 5)  Indicate that you want to edit the element
+% * 6)  Indicate that you want to transform a vertex
+% * 7)  Select a vertex to transform
+% * 8)  Indicate the type of transformation to perform
+% * 9)  Perform transformation
+% * 10) Commit changes to element
 
 Print "Hello, world"
+%   1)
 
