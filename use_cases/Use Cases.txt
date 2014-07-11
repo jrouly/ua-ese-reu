@@ -167,5 +167,14 @@ Print an integer
 
 Create Element at specific position and transform vertex
 
+  1)  Indicate that you want to create an element
+  2)  Indicate which element you want to create
+  3)  Designate the position at which you want to create the element
+  4)  Create the element
+  5)  Indicate that you want to edit the element
+  6)  Select a vertex to transform
+  7)  Perform transformation
+  8)  Save changes to element
+
 Print "Hello, world"
 
