@@ -141,9 +141,10 @@ USE CASES
 %   7)  Designate the position at which you want to create the element
 %   8)  Create the element
 %   9)  Indicate that you want to begin linking elements
-%   10) Designate the first element to be linked
-%   11) Designate the second element to be linked
-%   12) Create the link
+%   10) Indicate type of connection to create.
+%   11) Designate the first element to be linked
+%   12) Designate the second element to be linked
+%   13) Create the link
 
 % Use Case 4 - Print an integer
 %   1)  Indicate which color will be the starting color
