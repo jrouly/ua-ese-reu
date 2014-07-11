@@ -146,9 +146,10 @@ Create two different elements and link them
   6)  Indicate which element you want to create
   7)  Designate the position at which you want to create the element
   8)  Create the element
-  9)  Designate the first element to be linked
-  10) Designate the second element to be linked
-  11) Create the link
+  9)  Indicate that you want to begin linking elements
+  10)  Designate the first element to be linked
+  11) Designate the second element to be linked
+  12) Create the link
 
 Print an integer
   1)  Indicate which color will be the starting color
