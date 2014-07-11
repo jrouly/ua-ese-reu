@@ -54,18 +54,28 @@ Use Case 3                          & 9 & 9
 % Use Case 1 - Open File
 % * 1)  Indicate that you want to open a file **
 % * 2)  Indicate which file you want to open **
-% * 3)  Open the file
+% * 3)  Open the file **
 
 % Use Case 2 - Create Element at specific position
 % * 1)  Indicate that you want to create an element
-% * 2)  Indicate which element you want to create **
-% * 3)  Designate the position at which you want to create the element **
-% * 4)  Create the element **
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create Element at specific position and transform vertex
+% * 1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+% * 5)  Indicate that you want to edit the element
+% * 6)  Select a vertex to transform
+% * 7)  Perform transformation
+% * 8)  Save changes to element
 
 \begin{tabularx}{\textwidth}{Xcc}
 \textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
 \hline
-Open File (\ref{app:euc_open}) & 0 & 0 \\
+Open File (\ref{app:euc_open}) & 4 & 3 \\
 Use Case 2                     & 0 & 0 \\
 Use Case 3                     & 0 & 0
 \end{tabularx}
