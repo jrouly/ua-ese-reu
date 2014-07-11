@@ -147,7 +147,7 @@ Create two different elements and link them
   7)  Designate the position at which you want to create the element
   8)  Create the element
   9)  Indicate that you want to begin linking elements
-  10)  Designate the first element to be linked
+  10) Designate the first element to be linked
   11) Designate the second element to be linked
   12) Create the link
 
@@ -172,9 +172,11 @@ Create Element at specific position and transform vertex
   3)  Designate the position at which you want to create the element
   4)  Create the element
   5)  Indicate that you want to edit the element
-  6)  Select a vertex to transform
-  7)  Perform transformation
-  8)  Save changes to element
+  6)  Indicate that you want to transform a vertex
+  7)  Select a vertex to transform
+  8)  Indicate the type of transformation to perform
+  9)  Perform transformation
+  10) Commit changes to element
 
 Print "Hello, world"
 
