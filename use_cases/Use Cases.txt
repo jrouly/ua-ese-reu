@@ -161,17 +161,24 @@ USE CASES
 %   12) Execute the program
 
 % Use Case 5 - Create Element at specific position and transform vertex
-% * 1)  Indicate that you want to create an element
-% * 2)  Indicate which element you want to create
-% * 3)  Designate the position at which you want to create the element
-% * 4)  Create the element
-% * 5)  Indicate that you want to edit the element
-% * 6)  Indicate that you want to transform a vertex
-% * 7)  Select a vertex to transform
-% * 8)  Indicate the type of transformation to perform
-% * 9)  Perform transformation
-% * 10) Commit changes to element
+%   1)  Indicate that you want to create an element
+%   2)  Indicate which element you want to create
+%   3)  Designate the position at which you want to create the element
+%   4)  Create the element
+%   5)  Indicate that you want to edit the element
+%   6)  Indicate that you want to transform a vertex
+%   7)  Select a vertex to transform
+%   8)  Indicate the type of transformation to perform
+%   9)  Perform transformation
+%   10) Commit changes to element
 
-Print "Hello, world"
-%   1)
-
+% Use Case 6 - Print a Character
+%   1)  Designate the position at which you want to create an element
+%   2)  Indicate that you want to create a character
+%   3)  Designate the character that you want to create
+%   4)  Create the character
+%   5)  Designate the position at which you want to place "`post to wall"'
+%   6)  Indicate that you want to create a new command
+%   7)  Indicate that you want to create "`post to wall"'
+%   8)  Create the command
+%   9)  Run the program
