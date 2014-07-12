@@ -114,12 +114,38 @@ Create Element and Transform (\ref{app:euc_create_transform}) & 12 & 10
 %{{{ Cameleon
 \subsection*{Cameleon}
 
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+% * 9)  Indicate that you want to begin linking elements
+%   10) Indicate type of connection to create.
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+% * 13) Create the link
+
 \begin{tabularx}{\textwidth}{Xcc}
 \textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
 \hline
-Open File (\ref{app:euc_open}) & {\color{red}0} & {\color{red}0} \\
-Use Case 2                     & {\color{red}0} & {\color{red}0} \\
-Use Case 3                     & {\color{red}0} & {\color{red}0}
+Open File (\ref{app:euc_open})                       & 4 & 3 \\
+Create Element (\ref{app:euc_create})                & 3 & 3 \\
+Create and Link Elements (\ref{app:euc_create_link}) & 9 & 10
 \end{tabularx}
 %}}}
 
