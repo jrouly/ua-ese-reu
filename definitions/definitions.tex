@@ -301,7 +301,7 @@ either mechanically (\textit{eg.} through physical devices and media) or
 mentally (\textit{eg.} the mental load required of the user to operate the
 \ac{ide}).
 
-%{{{ Subsubsection: Degree of Automation [incomplete]
+%{{{ Subsubsection: Degree of Automation
 \subsubsection{Degree of Automation}
 \label{subsec:automation}
 
@@ -312,33 +312,47 @@ mentally (\textit{eg.} the mental load required of the user to operate the
 
   \item[Description] The \textbf{Degree of Automation} of an \ac{ide}
   measures the level to which the system automates tasks for the user. It
-  is calculated as the ratio of the number of tasks the user needs to
-  perform manually (representing operator mental load) to the number of
-  tasks that compose an essential use case.
+  is calculated as the ratio of the number of steps in a concrete use case
+  to the number of steps in the representative essential use case (see
+  Appendix~\ref{app:euc}). This measure is sometimes referred to as
+  \textit{Essential Efficiency}. \cite{constantine1996}
 %
   \begin{align*}
-    \frac{\text{One thing}}{\text{Other thing}}
+    1 - \frac{\text{Number of steps in concrete use case}}
+             {\text{Number of steps in essential use case}}
   \end{align*}
+%
+  Unlike the metrics for automation put forth in \cite{Wei1998}, this
+  measure does not require user experience reports, and can be measured
+  through simple use case analysis.
 
 \end{AlignedDesc}
 %}}}
 
-%{{{ Subsubsection: Essential Efficiency [incomplete]
+%{{{ Subsubsection: Essential Efficiency
 \subsubsection{Essential Efficiency}
 \label{subsec:efficiency}
 
 \begin{AlignedDesc}
   \item[Abbreviation] \texttt{Efficiency}
 
-  \item[Variable Type]
+  \item[Variable Type] Continuous
 
-  \item[Description]
-
-  \item[Accepted Values]
-
-  \begin{AlignedDesc}
-    \item[\textellipsis]
-  \end{AlignedDesc}
+  \item[Description] The \textbf{Essential Efficiency} of an \ac{ide} is a
+  concept related to the productivity of an interface. It measures the
+  number of physical actions (including keystrokes, mouse clicks, and fine
+  mouse movements) required of the operator to complete a task compared
+  against the number of abstract steps in the representative essential use
+  case:
+%
+  \begin{align*}
+    \frac{\text{Number of physical actions to complete use case}}
+         {\text{Number of steps in essential use case}}
+  \end{align*}
+%
+  This metric is different from the \textit{Essential Efficiency} proposed
+  in \cite{constantine1996} because it studies physical user actions
+  instead of concrete task requirements.
 
 \end{AlignedDesc}
 %}}}
