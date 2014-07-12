@@ -3,12 +3,38 @@
 %{{{ Alice3
 \subsection*{Alice3}
 
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+%   9)  Indicate that you want to begin linking elements
+%   10) Indicate type of connection to create.
+%   11) Designate the first element to be linked
+%   12) Designate the second element to be linked
+% * 13) Create the link
+
 \begin{tabularx}{\textwidth}{Xcc}
 \textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
 \hline
-Open File (\ref{app:euc_open}) & 0 & 0 \\
-Use Case 2                     & 0 & 0 \\
-Use Case 3                     & 0 & 0
+Open File (\ref{app:euc_open})                       & 7  & 3 \\
+Create Element (\ref{app:euc_create})                & 6  & 3 \\
+Create and Link Elements (\ref{app:euc_create_link}) & 12 & 7
 \end{tabularx}
 %}}}
 
@@ -36,16 +62,17 @@ Use Case 3                     & 0 & 0
 % * 7)  Designate the position at which you want to create the element
 % * 8)  Create the element
 %   9)  Indicate that you want to begin linking elements
-% * 10)  Designate the first element to be linked
-% * 11) Designate the second element to be linked
-% * 12) Create the link
+%   10) Indicate type of connection to create
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+% * 13) Create the link
 
 \begin{tabularx}{\textwidth}{Xcc}
 \textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
 \hline
-Use Case 1                          & 3 & 3 \\
-Use Case 2                          & 3 & 3 \\
-Use Case 3                          & 9 & 9
+Open File (\ref{app:euc_open})                       & 3 & 3 \\
+Create Element (\ref{app:euc_create})                & 3 & 3 \\
+Create and Link Elements (\ref{app:euc_create_link}) & 9 & 9
 \end{tabularx}
 %}}}
 
@@ -58,39 +85,67 @@ Use Case 3                          & 9 & 9
 % * 3)  Open the file
 
 % Use Case 2 - Create Element at specific position
-%   1)  Indicate that you want to create an element
-%   2)  Indicate which element you want to create
-%   3)  Designate the position at which you want to create the element
-%   4)  Create the element
+% * 1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
 
-% Use Case 3 - Create Element at specific position and transform vertex
-%   1)  Indicate that you want to create an element
-%   2)  Indicate which element you want to create
-%   3)  Designate the position at which you want to create the element
-%   4)  Create the element
-%   5)  Indicate that you want to edit the element
-%   6)  Select a vertex to transform
-%   7)  Perform transformation
-%   8)  Save changes to element
+% Use Case 5 - Create Element at specific position and transform vertex
+% * 1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+% * 5)  Indicate that you want to edit the element
+% * 6)  Indicate that you want to transform a vertex
+% * 7)  Select a vertex to transform
+% * 8)  Indicate the type of transformation to perform
+% * 9)  Perform transformation
+% * 10) Commit changes to element
 
 \begin{tabularx}{\textwidth}{Xcc}
 \textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
 \hline
-Open File (\ref{app:euc_open}) & 4 & 3 \\
-Use Case 2                     & 0 & 0 \\
-Use Case 3                     & 0 & 0
+Open File (\ref{app:euc_open})        & 4 & 3 \\
+Create Element (\ref{app:euc_create}) & 6 & 4 \\
+Create Element and Transform (\ref{app:euc_create_transform}) & 12 & 10
 \end{tabularx}
 %}}}
 
 %{{{ Cameleon
 \subsection*{Cameleon}
 
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+% * 9)  Indicate that you want to begin linking elements
+%   10) Indicate type of connection to create.
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+% * 13) Create the link
+
 \begin{tabularx}{\textwidth}{Xcc}
 \textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
 \hline
-Open File (\ref{app:euc_open}) & 0 & 0 \\
-Use Case 2                     & 0 & 0 \\
-Use Case 3                     & 0 & 0
+Open File (\ref{app:euc_open})                       & 4 & 3 \\
+Create Element (\ref{app:euc_create})                & 3 & 3 \\
+Create and Link Elements (\ref{app:euc_create_link}) & 9 & 10
 \end{tabularx}
 %}}}
 
@@ -100,21 +155,47 @@ Use Case 3                     & 0 & 0
 \begin{tabularx}{\textwidth}{Xcc}
 \textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
 \hline
-Open File (\ref{app:euc_open}) & 0 & 0 \\
-Use Case 2                     & 0 & 0 \\
-Use Case 3                     & 0 & 0
+Open File (\ref{app:euc_open}) & {\color{red}0} & {\color{red}0} \\
+Use Case 2                     & {\color{red}0} & {\color{red}0} \\
+Use Case 3                     & {\color{red}0} & {\color{red}0}
 \end{tabularx}
 %}}}
 
 %{{{ GNU Radio Companion
 \subsection*{GNU Radio Companion}
 
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+%   9)  Indicate that you want to begin linking elements
+%   10) Indicate type of connection to create.
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+%   13) Create the link
+
 \begin{tabularx}{\textwidth}{Xcc}
 \textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
 \hline
-Open File (\ref{app:euc_open}) & 0 & 0 \\
-Use Case 2                     & 0 & 0 \\
-Use Case 3                     & 0 & 0
+Open File (\ref{app:euc_open})                       & 3 & 3 \\
+Create Element (\ref{app:euc_create})                & 3 & 3 \\
+Create and Link Elements (\ref{app:euc_create_link}) & 5 & 8
 \end{tabularx}
 %}}}
 
@@ -142,9 +223,10 @@ Use Case 3                     & 0 & 0
 % * 7)  Designate the position at which you want to create the element
 % * 8)  Create the element
 %   9)  Indicate that you want to begin linking elements
-% * 10)  Designate the first element to be linked
-% * 11) Designate the second element to be linked
-% * 12) Create the link
+%   10) Indicate type of connection to create
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+% * 13) Create the link
 
 \begin{tabularx}{\textwidth}{Xcc}
 \textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
@@ -161,9 +243,9 @@ Use Case 3                          & 9 & 9
 \begin{tabularx}{\textwidth}{Xcc}
 \textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
 \hline
-Open File (\ref{app:euc_open}) & 0 & 0 \\
-Use Case 2                     & 0 & 0 \\
-Use Case 3                     & 0 & 0
+Open File (\ref{app:euc_open}) & {\color{red}0} & {\color{red}0} \\
+Use Case 2                     & {\color{red}0} & {\color{red}0} \\
+Use Case 3                     & {\color{red}0} & {\color{red}0}
 \end{tabularx}
 %}}}
 
@@ -191,9 +273,10 @@ Use Case 3                     & 0 & 0
 % * 7)  Designate the position at which you want to create the element
 % * 8)  Create the element
 %   9)  Indicate that you want to begin linking elements
-% * 10)  Designate the first element to be linked
-% * 11) Designate the second element to be linked
-% * 12) Create the link
+%   10) Indicate type of connection to create
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+% * 13) Create the link
 
 \begin{tabularx}{\textwidth}{Xcc}
 \textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
@@ -207,12 +290,38 @@ Use Case 3                          & 2n + 4 & 9
 %{{{ MIT AppInventor
 \subsection*{MIT AppInventor}
 
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+%   9)  Indicate that you want to begin linking elements
+%   10) Indicate type of connection to create
+%   11) Designate the first element to be linked
+%   12) Designate the second element to be linked
+% * 13) Create the link
+
 \begin{tabularx}{\textwidth}{Xcc}
 \textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
 \hline
-Open File (\ref{app:euc_open}) & 0 & 0 \\
-Use Case 2                     & 0 & 0 \\
-Use Case 3                     & 0 & 0
+Open File (\ref{app:euc_open})                       & 3 & 3 \\
+Create Element (\ref{app:euc_create})                & 3 & 3 \\
+Create and Link Elements (\ref{app:euc_create_link}) & 6 & 7
 \end{tabularx}
 %}}}
 
@@ -240,9 +349,10 @@ Use Case 3                     & 0 & 0
 % * 7)  Designate the position at which you want to create the element
 % * 8)  Create the element
 %   9)  Indicate that you want to begin linking elements
-% * 10)  Designate the first element to be linked
-% * 11) Designate the second element to be linked
-%   12) Create the link
+%   10) Indicate type of connection to create
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+%   13) Create the link
 
 \begin{tabularx}{\textwidth}{Xcc}
 \textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
@@ -293,12 +403,38 @@ Use Case 3                          & 16 & 10
 %{{{ Scratch
 \subsection*{Scratch}
 
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+%   9)  Indicate that you want to begin linking elements
+%   10) Indicate type of connection to create
+%   11) Designate the first element to be linked
+%   12) Designate the second element to be linked
+% * 13) Create the link
+
 \begin{tabularx}{\textwidth}{Xcc}
 \textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
 \hline
-Open File (\ref{app:euc_open}) & 0 & 0 \\
-Use Case 2                     & 0 & 0 \\
-Use Case 3                     & 0 & 0
+Open File (\ref{app:euc_open})                       & 5 & 3 \\
+Create Element (\ref{app:euc_create})                & 3 & 3 \\
+Create and Link Elements (\ref{app:euc_create_link}) & 6 & 7
 \end{tabularx}
 %}}}
 
@@ -326,16 +462,17 @@ Use Case 3                     & 0 & 0
 %   7)  Designate the position at which you want to create the element
 %   8)  Create the element
 %   9)  Indicate that you want to begin linking elements
-%   10)  Designate the first element to be linked 
-%   11) Designate the second element to be linked 
-%   12) Create the link 
+%   10) Indicate type of connection to create
+%   11) Designate the first element to be linked
+%   12) Designate the second element to be linked
+%   13) Create the link
 
 \begin{tabularx}{\textwidth}{Xcc}
 \textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
 \hline
-Use Case 1                          & 0 & 0 \\
-Use Case 2                          & 0 & 0 \\
-Use Case 3                          & 0 & 0
+Use Case 1                          & {\color{red}0} & {\color{red}0} \\
+Use Case 2                          & {\color{red}0} & {\color{red}0} \\
+Use Case 3                          & {\color{red}0} & {\color{red}0}
 \end{tabularx}
 %}}}
 
@@ -363,9 +500,10 @@ Use Case 3                          & 0 & 0
 % * 7)  Designate the position at which you want to create the element
 % * 8)  Create the element
 %   9)  Indicate that you want to begin linking elements
-%   10)  Designate the first element to be linked 
-%   11) Designate the second element to be linked 
-% * 12) Create the link
+%   10) Indicate type of connection to create
+%   11) Designate the first element to be linked
+%   12) Designate the second element to be linked
+% * 13) Create the link
 
 \begin{tabularx}{\textwidth}{Xcc}
 \textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
@@ -400,9 +538,10 @@ Use Case 3                          & 6 & 7
 % * 7)  Designate the position at which you want to create the element
 % * 8)  Create the element
 % * 9)  Indicate that you want to begin linking elements
-% * 10)  Designate the first element to be linked
-% * 11) Designate the second element to be linked
-%   12) Create the link 
+%   10) Indicate type of connection to create
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+%   13) Create the link
 
 \begin{tabularx}{\textwidth}{Xcc}
 \textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
@@ -432,21 +571,85 @@ Use Case 3                          & 11 & 9
 \begin{tabularx}{\textwidth}{Xcc}
 \textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
 \hline
-Use Case 1                          & 0 & 0 \\
-Use Case 2                          & 0 & 0 \\
-Use Case 3                          & 0 & 0
+Use Case 1                          & {\color{red}0} & {\color{red}0} \\
+Use Case 2                          & {\color{red}0} & {\color{red}0} \\
+Use Case 3                          & {\color{red}0} & {\color{red}0}
 \end{tabularx}
 %}}}
 
 %{{{ UMLet
 \subsection*{UMLet}
 
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+%   9)  Indicate that you want to begin linking elements
+%   10) Indicate type of connection to create
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+% * 13) Create the link
+
 \begin{tabularx}{\textwidth}{Xcc}
 \textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
 \hline
-Open File (\ref{app:euc_open}) & 0 & 0 \\
-Use Case 2                     & 0 & 0 \\
-Use Case 3                     & 0 & 0
+Open File (\ref{app:euc_open})                       & 4  & 3 \\
+Create Element (\ref{app:euc_create})                & 3  & 3 \\
+Create and Link Elements (\ref{app:euc_create_link}) & 15 & 9
+\end{tabularx}
+%}}}
+
+%{{{ VioletUML
+\subsection*{VioletUML}
+
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+% * 9)  Indicate that you want to begin linking elements
+% * 10) Indicate type of connection to create.
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+% * 13) Create the link
+
+\begin{tabularx}{\textwidth}{Xcc}
+\textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
+\hline
+Open File (\ref{app:euc_open})                       & 4  & 3 \\
+Create Element (\ref{app:euc_create})                & 3  & 3 \\
+Create and Link Elements (\ref{app:euc_create_link}) & 11 & 11
 \end{tabularx}
 %}}}
 
@@ -456,9 +659,9 @@ Use Case 3                     & 0 & 0
 \begin{tabularx}{\textwidth}{Xcc}
 \textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
 \hline
-Open File (\ref{app:euc_open}) & 0 & 0 \\
-Use Case 2                     & 0 & 0 \\
-Use Case 3                     & 0 & 0
+Open File (\ref{app:euc_open}) & {\color{red}0} & {\color{red}0} \\
+Use Case 2                     & {\color{red}0} & {\color{red}0} \\
+Use Case 3                     & {\color{red}0} & {\color{red}0}
 \end{tabularx}
 %}}}
 
@@ -486,9 +689,10 @@ Use Case 3                     & 0 & 0
 % * 7)  Designate the position at which you want to create the element
 % * 8)  Create the element
 % * 9)  Indicate that you want to begin linking elements
-% * 10)  Designate the first element to be linked
-% * 11) Designate the second element to be linked
-%   12) Create the link 
+%   10) Indicate type of connection to create
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+%   13) Create the link
 
 \begin{tabularx}{\textwidth}{Xcc}
 \textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
@@ -518,14 +722,15 @@ Use Case 3                          & 10 & 9
 % * 2)  Indicate which element you want to create
 % * 3)  Designate the position at which you want to create the element
 % * 4)  Create the element
-%   5)  Indicate that you want to create another element 
+%   5)  Indicate that you want to create another element
 % * 6)  Indicate which element you want to create
 % * 7)  Designate the position at which you want to create the element
 % * 8)  Create the element
 %   9)  Indicate that you want to begin linking elements
-%   10)  Designate the first element to be linked 
-%   11) Designate the second element to be linked 
-%   12) Create the link 
+%   10) Indicate type of connection to create
+%   11) Designate the first element to be linked
+%   12) Designate the second element to be linked
+%   13) Create the link
 
 \begin{tabularx}{\textwidth}{Xcc}
 \textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
@@ -560,9 +765,10 @@ Use Case 3                          & 8 & 6
 % * 7)  Designate the position at which you want to create the element
 % * 8)  Create the element
 % * 9)  Indicate that you want to begin linking elements
-% * 10)  Designate the first element to be linked 
-% * 11) Designate the second element to be linked 
-%   12) Create the link 
+%   10) Indicate type of connection to create
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+%   13) Create the link
 
 \begin{tabularx}{\textwidth}{Xcc}
 \textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
@@ -576,11 +782,37 @@ Use Case 3                          & 10 & 9
 %{{{ YAWL
 \subsection*{YAWL}
 
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+% * 9)  Indicate that you want to begin linking elements
+%   10) Indicate type of connection to create.
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+%   13) Create the link
+
 \begin{tabularx}{\textwidth}{Xcc}
 \textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
 \hline
-Open File (\ref{app:euc_open}) & 0 & 0 \\
-Use Case 2                     & 0 & 0 \\
-Use Case 3                     & 0 & 0
+Open File (\ref{app:euc_open})                       & 3 & 3 \\
+Create Element (\ref{app:euc_create})                & 3 & 3 \\
+Create and Link Elements (\ref{app:euc_create_link}) & 9 & 9
 \end{tabularx}
 %}}}
