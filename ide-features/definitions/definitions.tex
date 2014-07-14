@@ -345,13 +345,16 @@ mentally (\textit{eg.} the mental load required of the user to operate the
   case:
 %
   \begin{align*}
-    \frac{\text{Number of physical actions to complete use case}}
-         {\text{Number of steps in essential use case}}
+    1 - \frac{\text{Number of physical actions to complete use case}}
+             {\text{Number of steps in essential use case}}
   \end{align*}
 %
   This metric is different from the \textit{Essential Efficiency} proposed
   in \cite{constantine1996} because it studies physical user actions
-  instead of concrete task steps.
+  instead of concrete task steps. Also note that this variable can take
+  negative values, indicating that the number of physical actions required
+  to complete an essential use case exceeds the number of abstract steps in
+  the use case.
 
 \end{AlignedDesc}
 %}}}
