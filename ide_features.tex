@@ -1,0 +1,63 @@
+\documentclass[letterpaper,10pt]{article}
+
+%{{{ Package includes
+
+\usepackage{acro}     % for defining acronyms
+\usepackage{enumitem} % for custom, richer list environments
+\usepackage{fullpage} % use 1in margins
+\usepackage[numbers]{natbib} % for useful bibliography tools
+\usepackage{amsmath}  % better mathematical formatting
+\usepackage{tabularx} % tables with column stretching
+
+%}}}
+
+%{{{ Acronym Definitions
+
+\DeclareAcronym{ide}{
+  short        = IDE ,
+  long         = Integrated Development Environment ,
+  class        = abbrev
+}
+
+%}}}
+
+%{{{ Feature description list definitions
+
+\newlist{AlignedDesc}{description}{2}
+\setlist[AlignedDesc]{leftmargin=10em,style=nextline}
+
+%}}}
+
+%{{{ Title and frontmatter
+
+\title{\textbf{IDE Features and Comparison}}
+\author{Jean Michel Rouly \and Jonathan Orbeck}
+\date{\today}
+
+%}}}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\clearpage
+
+Foobar.
+
+\appendix
+
+\clearpage
+\input{definitions/definitions}
+
+\clearpage
+\input{use_cases/ide_use_cases}
+
+\clearpage
+\input{use_cases/essential_use_cases}
+
+\clearpage
+\bibliography{bibliography}
+\bibliographystyle{plainnat}
+
+\end{document}

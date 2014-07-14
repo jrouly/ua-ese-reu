@@ -1,0 +1,124 @@
+\section{Essential Use Cases}
+\label{app:euc}
+
+An \textbf{Essential Use Case} is a simple, brief, technology-independent
+description of the steps necessary to a system use case.
+\cite{constantine1996} Below, several example use cases are enumerated. The
+first group of use cases (\ref{app:simple_euc}) are considered simple use
+cases, and are common to every \ac{ide}. The remaining use cases
+(\ref{app:complex_euc}) are more complex or specialized, and may not be
+suitable for more than a few \acp{ide}.
+
+\subsection{Simple}
+\label{app:simple_euc}
+
+%{{{ Open File EUC C.1
+\subsubsection{Open File}
+\label{app:euc_open}
+
+Opening a file is a simple, fundamental Essential Use Case for any
+\ac{ide}, visual or otherwise. It refers to fetching a single file from
+storage and loading it into the active editing workspace.
+
+\begin{enumerate}
+  \item Indicate that you want to open a file.
+  \item Indicate which file you want to open.
+  \item Open the file.
+\end{enumerate}
+%}}}
+
+%{{{ Create Element EUC C.2
+\subsubsection{Create Element}
+\label{app:euc_create}
+
+Visual languages are primarily composed of networks of linked elements.
+Therefore, creating one such element is a fundamental Essential Use Case.
+This Use Case requires that the element must be created and placed at a
+specific, user defined location.
+
+\begin{enumerate}
+  \item Indicate that you want to create an element.
+  \item Indicate which element you want to create.
+  \item Designate the position at which you want to create the element.
+  \item Create the element.
+\end{enumerate}
+%}}}
+
+\subsection{Complex}
+\label{app:complex_euc}
+
+%{{{ Create and Link Elements EUC C.3
+\subsubsection{Create and Link Elements}
+\label{app:euc_create_link}
+
+Visual Languages also allow elements to share links to one another. This
+Use Case requires two unique elements to be created and placed by the user,
+and then linked together in a meaningful fashion.
+
+\begin{enumerate}
+  \item Indicate that you want to create an element.
+  \item Indicate which element you want to create.
+  \item Designate the position at which you want to create the element.
+  \item Create the element.
+  \item Indicate that you want to create another element.
+  \item Indicate which element you want to create.
+  \item Designate the position at which you want to create the element.
+  \item Create the element.
+  \item Designate the first element to be linked.
+  \item Designate the second element to be linked.
+  \item Create the link.
+\end{enumerate}
+%}}}
+
+%{{{ Print an Integer EUC C.4
+\subsubsection{Print an Integer}
+\label{app:euc_print_integer}
+
+\begin{enumerate}
+  \item Indicate which color will be the starting color.
+  \item Create the color block of size x.
+  \item Determine which color represents ``push''.
+  \item Indicate that you will begin to use that color.
+  \item Create its color block.
+  \item Determine which color represents ``out (integer)''.
+  \item Indicate that you will begin to use that color.
+  \item Create its color block.
+  \item Determine where any black codels will need to be.
+  \item Select the color black.
+  \item Create the black codels.
+  \item Execute the program.
+\end{enumerate}
+%}}}
+
+%{{{ Create Element and Transform EUC C.5
+\subsubsection{Create Element and Transform}
+\label{app:euc_create_transform}
+
+\begin{enumerate}
+  \item Indicate that you want to create an element.
+  \item Indicate which element you want to create.
+  \item Designate the position at which you want to create the element.
+  \item Create the element.
+  \item Indicate that you want to edit the element.
+  \item Select a vertex to transform.
+  \item Perform transformation.
+  \item Save changes to element.
+\end{enumerate}
+%}}}
+
+%{{{ Print a Character EUC C.6
+\subsubsection{Print a Character}
+\label{app:euc_print_character}
+
+\begin{enumerate}
+  \item Designate the position at which you want to create an element.
+  \item Indicate that you want to create a character.
+  \item Designate the character that you want to create.
+  \item Create the character.
+  \item Designate the position at which you want to place ``post to wall''.
+  \item Indicate that you want to create a new command.
+  \item Indicate that you want to create ``post to wall''.
+  \item Create the command.
+  \item Run the program.
+\end{enumerate}
+%}}}

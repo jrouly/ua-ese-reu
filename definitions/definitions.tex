@@ -1,0 +1,553 @@
+\section{Variable Definitions}
+
+%{{{ subsection: Audience
+\subsection{Audience}
+\label{sec:audience}
+
+The \textbf{Audience} of an \ac{ide} refers generally to the target
+populations for which the \ac{ide} is developed.
+
+%{{{ Subsubsection: Domain
+\subsubsection{Domain}
+\label{subsec:domain}
+
+\begin{AlignedDesc}
+  \item[Abbreviation] \texttt{Domain}
+
+  \item[Variable Type] Nominal
+
+  \item[Description] The \textbf{Domain} of an \ac{ide} refers to the
+  \textit{domain} or field of knowledge under which the interface falls.
+  That is, the field or fields for which the interface is primarily used,
+  if any. Example values might include \texttt{General}, \texttt{Modeling},
+  \texttt{Software}, \textit{etc}.
+
+  \item[Accepted Values]
+
+  \begin{AlignedDesc}
+    \item[General] This \ac{ide} is general purpose. It can be applied to
+    or used within any number of different fields to the same effect.
+    \item[\textellipsis] Any custom field is allowed.
+  \end{AlignedDesc}
+
+\end{AlignedDesc}
+%}}}
+
+%{{{ Subsubsection: Skill Level
+\subsubsection{Skill Level}
+\label{subsec:skill}
+
+\begin{AlignedDesc}
+  \item[Abbreviation] \texttt{Skill}
+
+  \item[Variable Type] Nominal
+
+  \item[Description] The \textbf{Skill Level} of an \ac{ide} describes what
+  skill level within the given \textbf{Domain} is expected of its users.
+
+  \item[Accepted Values]
+
+  \begin{AlignedDesc}
+    \item[Novice] The user is expected to have little to no experience in
+    the domain. The \ac{ide} is designed to be user friendly and welcoming
+    to new users with no former domain knowledge.
+    \item[Intermediate] The user is expected to have a medium level of
+    experience in the domain. The \ac{ide} may offer some advanced
+    functionality, but still be welcoming to newer users.
+    \item[Expert] The user is expected to have a high level of experience
+    in the domain. The \ac{ide} offers highly sophisticated functionality
+    that the user is expected to understand without further instruction.
+    \item[General] The \ac{ide} offers a powerful set of advanced
+    functionality while maintaining an overall level of accessibility and
+    ease of use.
+  \end{AlignedDesc}
+
+\end{AlignedDesc}
+%}}}
+
+%}}}
+
+% {{{ subsection: Chrome [incomplete]
+\subsection{Chrome}
+\label{sec:chrome}
+
+The \textbf{Chrome} of an \ac{ide} is the sum total of user interface
+components external to the workspace. This includes every tool, menu,
+button, or other user interface component not contained within the active
+workspace area.
+
+%{{{ Subsubsection: Common Features
+\subsubsection{Common Features}
+\label{subsec:features}
+
+\begin{AlignedDesc}
+  \item[Abbreviation] \texttt{Features}
+
+  \item[Variable Type] Compound
+
+  \item[Description] Many \acp{ide} provide support for a set of common
+  operations. \citeauthor{murphy2006} define a list of the top 10 most
+  frequently used \ac{ide} features, which are reproduced here as boolean
+  sub-variables. \cite{murphy2006} Each sub-variable indicates whether the
+  \ac{ide} in question supports the use of that particular feature.
+
+  \item[Components]
+
+  \begin{AlignedDesc}
+    \item[Delete] Delete a syntactic element in the workspace
+    \item[Save] Save and export a model to a storage media
+    \item[Paste] Duplicate a syntactic element in the workspace from the
+    paste buffer
+    \item[Content Assist] Provide suggestions or completion for elements
+    \item[Copy] Place syntactic element from the workspace into paste
+    buffer
+    \item[Undo] Undo the user's most recent action
+    \item[Cut] Place a syntactic element from the workspace into paste
+    buffer, and remove from workspace
+    \item[Refresh] Load contents of workspace and interface dashboard
+    elements from storage media and update display if necessary
+    \item[Show View] Open and display a new tool in the interface
+  \end{AlignedDesc}
+
+\end{AlignedDesc}
+%}}}
+
+%{{{ Subsubsection: Context Sensitive Tools
+\subsubsection{Context Sensitive Tools}
+\label{subsec:context}
+
+\begin{AlignedDesc}
+  \item[Abbreviation] \texttt{Context}
+
+  \item[Variable Type] Boolean
+
+  \item[Description] Any interface component which changes visibly or is
+  generated anew depending on the context of selected element(s) within the
+  workspace is a \textbf{Context Sensitive Tool}.
+
+  \item[Accepted Values]
+
+  \begin{AlignedDesc}
+    \item[Yes] The \ac{ide} supports context sensitive tools.
+    \item[No] The \ac{ide} does not support context sensitive tools.
+  \end{AlignedDesc}
+
+\end{AlignedDesc}
+%}}}
+
+%{{{ Subsubsection: Degree of Interface Visual Richness
+\subsubsection{Degree of Interface Visual Richness}
+\label{subsec:toolrichness}
+
+\begin{AlignedDesc}
+  \item[Abbreviation] \texttt{ToolRichness}
+
+  \item[Variable Type] Compound
+
+  \item[Description] The \textbf{Degree of Interface Visual Richness}
+  describes the extent to which an interface utilizes visual variables to
+  increase visual discriminability of available tools. The component
+  variables measured are a composite of several authors' research,
+  including elements from visual language design. Each component variable
+  is a boolean measure determining whether or not the described visual
+  variable is used in the interface to distinguish available tools.
+
+  \item[Components]
+
+  \begin{AlignedDesc}
+    \item[Icons] Images contained in a border of a standard size and shape
+    represent distinct actions or tools. \cite{costagliola2002,moody2009}
+    \item[Shape] Distinct shapes indicate different tools or classes of
+    tool. \cite{moody2009}
+    \item[Size] Different tool sizes indicate distinct tools or classes
+    of tool. \cite{moody2009}
+    \item[Color] Color is used to indicate distinct tools or classes of
+    tool. \cite{moody2009}
+    \item[Text] Text (or typographic variation) is used to identify or
+    distinguish tools or classes of tool. \cite{moody2009}
+    \item[Organizational Coherence] Components with related purpose are
+    visually grouped in the interface. \cite{constantine1996}
+    \item[Texture] Shading or shadows are used to modify tools or to
+    distinguish between distinct tools or classes of tool. \cite{moody2009}
+    \item[Brightness] The brightness of a color (ie. its perceived
+    luminosity) is used to indicate a difference between tools or classes
+    of tool. \cite{moody2009}
+  \end{AlignedDesc}
+
+\end{AlignedDesc}
+%}}}
+
+%{{{ Subsubsection: Multiplicity of Perspectives
+\subsubsection{Multiplicity of Perspectives}
+\label{subsec:perspectives}
+
+\begin{AlignedDesc}
+  \item[Abbreviation] \texttt{Perspectives}
+
+  \item[Variable Type] Ratio
+
+  \item[Description] The number of available predefined interface
+  perspectives available to the user. A perspective is defined as a visual
+  configuration of the available tools in the interface chrome and elements
+  in the workspace for the purposes of accomplishing a distinct task by
+  means of a distinct process.
+
+  \item[Range] $[1 , \infty)$
+
+\end{AlignedDesc}
+%}}}
+
+%{{{ Subsubsection: Object Properties Window
+\subsubsection{Object Properties Window}
+\label{subsec:properties}
+
+\begin{AlignedDesc}
+  \item[Abbreviation] \texttt{Properties}
+
+  \item[Variable Type] Nominal
+
+  \item[Description] The \textbf{Object Properties Window} is any interface
+  component that displays the properties of an element in the workspace.
+  This component generally allows modification of element properties as
+  well.
+
+  \item[Accepted Values]
+
+  \begin{AlignedDesc}
+    \item[Omnipresent] A single property dialog or window is always
+    present. The contents may update contextually.
+    \item[Manual] The system requires user interaction to present the
+    properties window.
+    \item[None] No properties window is ever presented for workspace
+    elements.
+  \end{AlignedDesc}
+
+\end{AlignedDesc}
+%}}}
+
+%{{{ Subsubsection: Searchable Toolspace
+\subsubsection{Searchable Toolspace}
+\label{subsec:searchable}
+
+\begin{AlignedDesc}
+  \item[Abbreviation] \texttt{Searchable}
+
+  \item[Variable Type] Boolean
+
+  \item[Description] The \textit{toolspace} is the total set of available
+  tools, components, or actions that the \ac{ide} offers to the user. If an
+  \ac{ide} employs a \textbf{Searchable Toolspace}, it allows the user to
+  search through this toolspace by name or keywords.
+
+  \item[Accepted Values]
+
+  \begin{AlignedDesc}
+    \item[Yes] The \ac{ide} supports a searchable toolspace.
+    \item[No] The \ac{ide} does not support a searchable toolspace.
+  \end{AlignedDesc}
+
+\end{AlignedDesc}
+%}}}
+
+%{{{ Subsubsection: Toolbar Styles [incomplete]
+\subsubsection{Toolbar Styles}
+\label{subsec:toolstyle}
+
+\begin{AlignedDesc}
+  \item[Abbreviation] \texttt{ToolStyle}
+
+  \item[Variable Type]
+
+  \item[Description]
+
+  \item[Accepted Values]
+
+  \begin{AlignedDesc}
+    \item[\textellipsis]
+  \end{AlignedDesc}
+
+\end{AlignedDesc}
+%}}}
+
+%{{{ Subsubsection: Visual Clutter [incomplete]
+\subsubsection{Visual Clutter}
+\label{subsec:clutter}
+
+\begin{AlignedDesc}
+  \item[Abbreviation] \texttt{Clutter}
+
+  \item[Variable Type]
+
+  \item[Description]
+
+  \item[Accepted Values]
+
+  \begin{AlignedDesc}
+    \item[\textellipsis]
+  \end{AlignedDesc}
+
+\end{AlignedDesc}
+%}}}
+
+%}}}
+
+% {{{ subsection: Human Interface [incomplete]
+\subsection{Human Interface}
+\label{sec:humaninterface}
+
+\textbf{Human Interface} components of an \ac{ide} include aspects of the
+interface that describe how a human user interfaces with the \ac{ide},
+either mechanically (\textit{eg.} through physical devices and media) or
+mentally (\textit{eg.} the mental load required of the user to operate the
+\ac{ide}).
+
+%{{{ Subsubsection: Degree of Automation
+\subsubsection{Degree of Automation}
+\label{subsec:automation}
+
+\begin{AlignedDesc}
+  \item[Abbreviation] \texttt{Automation}
+
+  \item[Variable Type] Continuous
+
+  \item[Description] The \textbf{Degree of Automation} of an \ac{ide}
+  measures the level to which the system automates tasks for the user. It
+  is calculated as the ratio of the number of steps in a concrete use case
+  to the number of steps in the representative essential use case (see
+  Appendix~\ref{app:euc}). This measure is sometimes referred to as
+  \textit{Essential Efficiency}. \cite{constantine1996}
+%
+  \begin{align*}
+    1 - \frac{\text{Number of steps in concrete use case}}
+             {\text{Number of steps in essential use case}}
+  \end{align*}
+%
+  Unlike the metrics for automation put forth in \cite{Wei1998}, this
+  measure does not require user experience reports, and can be measured
+  through simple use case analysis.
+
+\end{AlignedDesc}
+%}}}
+
+%{{{ Subsubsection: Essential Efficiency
+\subsubsection{Essential Efficiency}
+\label{subsec:efficiency}
+
+\begin{AlignedDesc}
+  \item[Abbreviation] \texttt{Efficiency}
+
+  \item[Variable Type] Continuous
+
+  \item[Description] The \textbf{Essential Efficiency} of an \ac{ide} is a
+  concept related to the productivity of an interface. It measures the
+  number of physical actions (including keystrokes, mouse clicks, and fine
+  mouse movements) required of the operator to complete a task compared
+  against the number of abstract steps in the representative essential use
+  case:
+%
+  \begin{align*}
+    \frac{\text{Number of physical actions to complete use case}}
+         {\text{Number of steps in essential use case}}
+  \end{align*}
+%
+  This metric is different from the \textit{Essential Efficiency} proposed
+  in \cite{constantine1996} because it studies physical user actions
+  instead of concrete task requirements.
+
+\end{AlignedDesc}
+%}}}
+
+%{{{ Subsubsection: Keyboard Use [incomplete]
+\subsubsection{Keyboard Use}
+\label{subsec:keyboard}
+
+\begin{AlignedDesc}
+  \item[Abbreviation] \texttt{Keyboard}
+
+  \item[Variable Type]
+
+  \item[Description]
+
+  \item[Accepted Values]
+
+  \begin{AlignedDesc}
+    \item[\textellipsis]
+  \end{AlignedDesc}
+
+\end{AlignedDesc}
+%}}}
+
+%{{{ Subsubsection: Mode of Element Creation [incomplete]
+\subsubsection{Mode of Element Creation}
+\label{subsec:mode}
+
+\begin{AlignedDesc}
+  \item[Abbreviation] \texttt{Mode}
+
+  \item[Variable Type]
+
+  \item[Description]
+
+  \item[Accepted Values]
+
+  \begin{AlignedDesc}
+    \item[\textellipsis]
+  \end{AlignedDesc}
+
+\end{AlignedDesc}
+%}}}
+
+%{{{ Subsubsection: Tertiary Interface Devices [incomplete]
+\subsubsection{Tertiary Interface Devices}
+\label{subsec:devices}
+
+\begin{AlignedDesc}
+  \item[Abbreviation] \texttt{Devices}
+
+  \item[Variable Type]
+
+  \item[Description]
+
+  \item[Accepted Values]
+
+  \begin{AlignedDesc}
+    \item[\textellipsis]
+  \end{AlignedDesc}
+
+\end{AlignedDesc}
+%}}}
+
+%}}}
+
+% {{{ subsection: Integration [incomplete]
+\subsection{Integration}
+\label{sec:integration}
+
+%{{{ Subsubsection: Allowed Relations Indicated [incomplete]
+\subsubsection{Allowed Relations Indicated}
+\label{subsec:relations}
+
+\begin{AlignedDesc}
+  \item[Abbreviation] \texttt{Relations}
+
+  \item[Variable Type]
+
+  \item[Description]
+
+  \item[Accepted Values]
+
+  \begin{AlignedDesc}
+    \item[\textellipsis]
+  \end{AlignedDesc}
+
+\end{AlignedDesc}
+%}}}
+
+%{{{ Subsubsection: Output Generation Style [incomplete]
+\subsubsection{Output Generation Style}
+\label{subsec:output}
+
+\begin{AlignedDesc}
+  \item[Abbreviation] \texttt{Output}
+
+  \item[Variable Type]
+
+  \item[Description]
+
+  \item[Accepted Values]
+
+  \begin{AlignedDesc}
+    \item[\textellipsis]
+  \end{AlignedDesc}
+
+\end{AlignedDesc}
+%}}}
+
+%{{{ Subsubsection: Syntax Enforcement [incomplete]
+\subsubsection{Syntax Enforcement}
+\label{subsec:syntax}
+
+\begin{AlignedDesc}
+  \item[Abbreviation] \texttt{Syntax}
+
+  \item[Variable Type]
+
+  \item[Description]
+
+  \item[Accepted Values]
+
+  \begin{AlignedDesc}
+    \item[\textellipsis]
+  \end{AlignedDesc}
+
+\end{AlignedDesc}
+%}}}
+
+%}}}
+
+% {{{ subsection: Language Syntax [incomplete]
+\subsection{Language Syntax}
+\label{sec:languagesyntax}
+
+%{{{ Subsubsection: Complexity Management [incomplete]
+\subsubsection{Complexity Management}
+\label{subsec:complexity}
+
+\begin{AlignedDesc}
+  \item[Abbreviation] \texttt{Complexity}
+
+  \item[Variable Type]
+
+  \item[Description]
+
+  \item[Accepted Values]
+
+  \begin{AlignedDesc}
+    \item[\textellipsis]
+  \end{AlignedDesc}
+
+\end{AlignedDesc}
+%}}}
+
+%{{{ Subsubsection: Connection Style [incomplete]
+\subsubsection{Connection Style}
+\label{subsec:connection}
+
+\begin{AlignedDesc}
+  \item[Abbreviation] \texttt{Connection}
+
+  \item[Variable Type]
+
+  \item[Description]
+
+  \item[Accepted Values]
+
+  \begin{AlignedDesc}
+    \item[\textellipsis]
+  \end{AlignedDesc}
+
+\end{AlignedDesc}
+%}}}
+
+%{{{ Subsubsection: Degree of Language Visual Richness [incomplete]
+\subsubsection{Degree of Language Visual Richness}
+\label{subsec:languagerichness}
+
+\begin{AlignedDesc}
+  \item[Abbreviation] \texttt{LanguageRichness}
+
+  \item[Variable Type]
+
+  \item[Description]
+
+  \item[Accepted Values]
+
+  \begin{AlignedDesc}
+    \item[\textellipsis]
+  \end{AlignedDesc}
+
+\end{AlignedDesc}
+%}}}
+
+%}}}
+
