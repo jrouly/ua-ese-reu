@@ -1,8 +1,0 @@
-*.swp
-*.pyc
-AToMPM/arkm3_compile/
-AToMPM/arkm3_python/
-AToMPM/bin/
-AToMPM/node_modules/
-AToMPM/users/*
-AToMPM/out/
