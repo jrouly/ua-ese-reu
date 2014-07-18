@@ -334,6 +334,17 @@ mentally (\textit{eg.} the mental load required of the user to operate the
   measure does not require user experience reports, and can be measured
   through simple use case analysis.
 
+  \item[Range] $[0, 1]$
+
+  \item[Critical Values]
+  \begin{AlignedDesc}
+    \item[$1$] There are no steps required to complete the concrete use
+    case. Not feasible in practice.
+    \item[$0$] Indicates a one-to-one relationship between the number of
+    steps to complete a concrete use case and the number of steps in the
+    essential use case.
+  \end{AlignedDesc}
+
 \end{AlignedDesc}
 %}}}
 
@@ -364,6 +375,20 @@ mentally (\textit{eg.} the mental load required of the user to operate the
   negative values, indicating that the number of physical actions required
   to complete an essential use case exceeds the number of abstract steps in
   the use case.
+
+  \item[Range] $(-\infty, 1)$
+
+  \item[Critical Values]
+  \begin{AlignedDesc}
+    \item[$1$] There are no physical actions required. Complete automation,
+    not feasible in practice.
+    \item[$0$] Indicates a one-to-one relationship between the number of
+    physical actions to complete a use case and the number of steps in the
+    essential use case.
+    \item[$<0$] Indicates a larger number of physical actions than steps in
+    the essential use case. The lower the value, the less the degree of
+    automation provided by the interface.
+  \end{AlignedDesc}
 
 \end{AlignedDesc}
 %}}}
