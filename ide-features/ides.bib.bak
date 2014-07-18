@@ -1,0 +1,206 @@
+% This file was created with JabRef 2.10.
+% Encoding: UTF-8
+
+
+@Misc{alice3,
+  Title                    = {Alice.org},
+
+  Author                   = {the alice people},
+  HowPublished             = {\url{http://alice.org}},
+
+  Owner                    = {jrouly},
+  Timestamp                = {2014.07.18}
+}
+
+@Misc{appinventor,
+  Title                    = {MIT AppInventor},
+  HowPublished             = {\url{http://appinventor.mit.edu}},
+
+  Owner                    = {jrouly},
+  Timestamp                = {2014.07.18}
+}
+
+@Misc{atompm,
+  Title                    = {AToMPM},
+  HowPublished             = {\url{http://syriani.cs.ua.edu/atompm/atompm.htm}},
+
+  Owner                    = {jrouly},
+  Timestamp                = {2014.07.18}
+}
+
+@Misc{audiomulch,
+  Title                    = {AudioMulch},
+  HowPublished             = {\url{http://audiomulch.com}},
+
+  Owner                    = {jrouly},
+  Timestamp                = {2014.07.18}
+}
+
+@Misc{blender,
+  Title                    = {Blender},
+  HowPublished             = {\url{http://blender.org}},
+
+  Owner                    = {jrouly},
+  Timestamp                = {2014.07.18}
+}
+
+@Misc{cameleon,
+  Title                    = {Cameleon},
+  HowPublished             = {\url{http://www.shinoe.org/cameleon/}},
+
+  Owner                    = {jrouly},
+  Timestamp                = {2014.07.18}
+}
+
+@Misc{emf,
+  Title                    = {Eclipse Modeling Framework Project},
+  HowPublished             = {\url{http://www.eclipse.org/modeling/emf/}},
+
+  Owner                    = {jrouly},
+  Timestamp                = {2014.07.18}
+}
+
+@Misc{grasshopper,
+  Title                    = {Grasshopper},
+  HowPublished             = {\url{http://grasshopper3d.com}},
+
+  Owner                    = {jrouly},
+  Timestamp                = {2014.07.18}
+}
+
+@Misc{grc,
+  Title                    = {GNU Radio Companion},
+  HowPublished             = {\url{http://www.joshknows.com/grc}},
+
+  Owner                    = {jrouly},
+  Timestamp                = {2014.07.18}
+}
+
+@Misc{max,
+  Title                    = {Max},
+  HowPublished             = {\url{http://cycling74.com/products/max/}},
+
+  Owner                    = {jrouly},
+  Timestamp                = {2014.07.18}
+}
+
+@Misc{mep,
+  Title                    = {MetaEdit+},
+  HowPublished             = {\url{http://www.metacase.com/mep/}},
+
+  Owner                    = {jrouly},
+  Timestamp                = {2014.07.18}
+}
+
+@Misc{mst,
+  Title                    = {MST Workshop},
+  HowPublished             = {\url{http://home.comcast.net/~tpandolfi/site/}},
+
+  Owner                    = {jrouly},
+  Timestamp                = {2014.07.18}
+}
+
+@Misc{piet,
+  Title                    = {Piet Creator},
+  HowPublished             = {\url{https://github.com/Ramblurr/PietCreator/wiki}},
+
+  Owner                    = {jrouly},
+  Timestamp                = {2014.07.18}
+}
+
+@Misc{scratch,
+  Title                    = {Scratch},
+  HowPublished             = {\url{http://scratch.mit.edu}},
+
+  Owner                    = {jrouly},
+  Timestamp                = {2014.07.18}
+}
+
+@Misc{simulink,
+  Title                    = {Simulink},
+  HowPublished             = {\url{http://www.mathworks.com/products/simulink/}},
+
+  Owner                    = {jrouly},
+  Timestamp                = {2014.07.18}
+}
+
+@Misc{stencyl,
+  Title                    = {Stencyl},
+  HowPublished             = {\url{http://stencyl.com}},
+
+  Owner                    = {jrouly},
+  Timestamp                = {2014.07.18}
+}
+
+@Misc{tersus,
+  Title                    = {Tersus},
+  HowPublished             = {\url{http://tersus.com}},
+
+  Owner                    = {jrouly},
+  Timestamp                = {2014.07.18}
+}
+
+@Misc{touchdevelop,
+  Title                    = {TouchDevelop},
+  HowPublished             = {\url{https://touchdevelop.com}},
+
+  Owner                    = {jrouly},
+  Timestamp                = {2014.07.18}
+}
+
+@Misc{umlet,
+  Title                    = {UMLet},
+  HowPublished             = {\url{http://umlet.com}},
+
+  Owner                    = {jrouly},
+  Timestamp                = {2014.07.18}
+}
+
+@Misc{violet,
+  Title                    = {Violet},
+  HowPublished             = {\url{http://alexdp.free.fr/violetumleditor}},
+
+  Owner                    = {jrouly},
+  Timestamp                = {2014.07.18}
+}
+
+@Misc{vissim,
+  Title                    = {VisSim},
+  HowPublished             = {\url{http://vissim.com}},
+
+  Owner                    = {jrouly},
+  Timestamp                = {2014.07.18}
+}
+
+@Misc{visualparadigm,
+  Title                    = {Visual Paradigm},
+  HowPublished             = {\url{http://visual-paradigm.com}},
+
+  Owner                    = {jrouly},
+  Timestamp                = {2014.07.18}
+}
+
+@Misc{visualusecase,
+  Title                    = {Visual Use Case},
+  HowPublished             = {\url{http://visualusecase.com}},
+
+  Owner                    = {jrouly},
+  Timestamp                = {2014.07.18}
+}
+
+@Misc{webratio,
+  Title                    = {WebRatio},
+  HowPublished             = {\url{http://webratio.com}},
+
+  Owner                    = {jrouly},
+  Timestamp                = {2014.07.18}
+}
+
+@Misc{yawl,
+  Title                    = {YAWL},
+  HowPublished             = {\url{http://yawlfoundation.org}},
+
+  Owner                    = {jrouly},
+  Timestamp                = {2014.07.18}
+}
+
