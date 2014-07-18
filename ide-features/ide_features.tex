@@ -4,6 +4,7 @@
 
 \usepackage{acronym}  % for defining acronyms
 \usepackage{enumitem} % for custom, richer list environments
+\usepackage{hyperref} % for hyperlinking
 \usepackage{fullpage} % use 1in margins
 \usepackage[numbers]{natbib} % for useful bibliography tools
 \usepackage{amsmath}  % better mathematical formatting
@@ -14,6 +15,8 @@
 %{{{ Acronym Definitions
 
 \acrodef{ide}[IDE]{Integrated Development Environment}
+\acrodef{emf}[EMF]{Eclipse Modeling Framework}
+\acrodef{grc}[GRC]{GNU Radio Companion}
 
 %}}}
 
@@ -56,7 +59,7 @@ Foobar.
 \input{sections/use_cases/essential_use_cases}
 
 \clearpage
-\bibliography{bibliography}
+\bibliography{bibliography,ides}
 \bibliographystyle{plainnat}
 
 \end{document}
