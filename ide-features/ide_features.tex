@@ -2,7 +2,7 @@
 
 %{{{ Package includes
 
-\usepackage[acronym]{glossaries} % for defining a glossary
+\usepackage{acronym}  % for defining acronyms
 \usepackage{enumitem} % for custom, richer list environments
 \usepackage{fullpage} % use 1in margins
 \usepackage[numbers]{natbib} % for useful bibliography tools
@@ -13,7 +13,7 @@
 
 %{{{ Acronym Definitions
 
-\newacronym{ide}{IDE}{Integrated Development Environment}
+\acrodef{ide}[IDE]{Integrated Development Environment}
 
 %}}}
 
@@ -42,6 +42,9 @@
 Foobar.
 
 \appendix
+
+\clearpage
+\input{sections/ide_list}
 
 \clearpage
 \input{sections/variable_definitions}
