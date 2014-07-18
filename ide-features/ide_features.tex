@@ -2,7 +2,7 @@
 
 %{{{ Package includes
 
-\usepackage{acro}     % for defining acronyms
+\usepackage[acronym]{glossaries} % for defining a glossary
 \usepackage{enumitem} % for custom, richer list environments
 \usepackage{fullpage} % use 1in margins
 \usepackage[numbers]{natbib} % for useful bibliography tools
@@ -13,11 +13,7 @@
 
 %{{{ Acronym Definitions
 
-\DeclareAcronym{ide}{
-  short        = IDE ,
-  long         = Integrated Development Environment ,
-  class        = abbrev
-}
+\newacronym{ide}{IDE}{Integrated Development Environment}
 
 %}}}
 
