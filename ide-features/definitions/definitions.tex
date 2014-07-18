@@ -517,14 +517,17 @@ mentally (\textit{eg.} the mental load required of the user to operate the
 \begin{AlignedDesc}
   \item[Abbreviation] \texttt{Output}
 
-  \item[Variable Type]
+  \item[Variable Type] Nominal
 
-  \item[Description]
+  \item[Description] Given an \ac{ide}'s 
 
   \item[Accepted Values]
 
   \begin{AlignedDesc}
-    \item[\textellipsis]
+    \item[Direct Live] Any modifciations directly alter the output, which is dynamically updated.
+    \item[Indirect Live] Any modifications inderectly alter the output (e.g. via a model), which is dynamically updated.
+    \item[Direct Trigger] Any modifciations directly alter the output, but a final compilation or executeion process is required to complete the output.
+    \item[Indirect Trigger] Any modifications inderectly alter the output (e.g. via a model), but a final compilation or executeion process is required to complete the output.
   \end{AlignedDesc}
 
 \end{AlignedDesc}
