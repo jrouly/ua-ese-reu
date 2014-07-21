@@ -1,156 +1,137 @@
 \section{Interface and Essential Efficiency}
 
 %{{{
-\begin{table*}[!htb]\centering
+{\centering
 \ra{1.3}
-\begin{tabularx}{\textwidth}{lXcc}\toprule
+\begin{longtable}{llcc}\toprule
  & \textbf{Use Case} & \textbf{Physical Actions} & \textbf{Concrete Steps}\\
 \midrule
-\multirow{3}{*}{\textbf{Alice3}}
-& Open File (\ref{app:euc_open})                       & 7  & 3 \\
-& Create Element (\ref{app:euc_create})                & 6  & 3 \\
-& Create and Link Elements (\ref{app:euc_create_link}) & 12 & 7 \\
+\endhead%
+\mr{3}{\textbf{Alice3}}
+& Open File (\ref{app:euc_open})                       & 7  & 3 \\*
+& Create Element (\ref{app:euc_create})                & 6  & 3 \\*
+& Create and Link Elements (\ref{app:euc_create_link}) & 12 & 7 \\*
 \midrule
-\multirow{3}{*}{\textbf{AToMPM}}
-& Open File (\ref{app:euc_open})                       & 3  & 3 \\
-& Create Element (\ref{app:euc_create})                & 3  & 3 \\
-& Create and Link Elements (\ref{app:euc_create_link}) & 11 & 10 \\
+\mr{3}{\textbf{AToMPM}}
+& Open File (\ref{app:euc_open})                       & 3  & 3 \\*
+& Create Element (\ref{app:euc_create})                & 3  & 3 \\*
+& Create and Link Elements (\ref{app:euc_create_link}) & 11 & 10 \\*
 \midrule
-\multirow{3}{*}{\textbf{AudioMulch}}
-& Open File (\ref{app:euc_open})                       & 3 & 3 \\
-& Create Element (\ref{app:euc_create})                & 3 & 3 \\
-& Create and Link Elements (\ref{app:euc_create_link}) & 9 & 9 \\
+\mr{3}{\textbf{AudioMulch}}
+& Open File (\ref{app:euc_open})                       & 3 & 3 \\*
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\*
+& Create and Link Elements (\ref{app:euc_create_link}) & 9 & 9 \\*
 \midrule
-\multirow{3}{*}{\textbf{Blender}}
-& Open File (\ref{app:euc_open})        & 4 & 3 \\
-& Create Element (\ref{app:euc_create}) & 6 & 4 \\
-& Create and Transform Elements (\ref{app:euc_create_transform}) & 12 & 10 \\
+\mr{3}{\textbf{Blender}}
+& Open File (\ref{app:euc_open})        & 4 & 3 \\*
+& Create Element (\ref{app:euc_create}) & 6 & 4 \\*
+& Create and Transform Elements (\ref{app:euc_create_transform}) & 12 & 10 \\*
 \midrule
-\multirow{3}{*}{\textbf{Cameleon}}
-& Open File (\ref{app:euc_open})                       & 4 & 3 \\
-& Create Element (\ref{app:euc_create})                & 3 & 3 \\
-& Create and Link Elements (\ref{app:euc_create_link}) & 9 & 10 \\
+\mr{3}{\textbf{Cameleon}}
+& Open File (\ref{app:euc_open})                       & 4 & 3 \\*
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\*
+& Create and Link Elements (\ref{app:euc_create_link}) & 9 & 10 \\*
 \midrule
-\multirow{3}{*}{\textbf{\ac{emf}}}
-& Open File (\ref{app:euc_open})                       & 3 & 3 \\
-& Create Element (\ref{app:euc_create})                & 3 & 3 \\
-& Create and Link Elements (\ref{app:euc_create_link}) & 5 & 10 \\
+\mr{3}{\textbf{\ac{emf}} }
+& Open File (\ref{app:euc_open})                       & 3 & 3 \\*
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\*
+& Create and Link Elements (\ref{app:euc_create_link}) & 5 & 10 \\*
 \midrule
-\multirow{3}{*}{\textbf{\ac{grc}}}
-& Open File (\ref{app:euc_open})                       & 3 & 3 \\
-& Create Element (\ref{app:euc_create})                & 3 & 3 \\
-& Create and Link Elements (\ref{app:euc_create_link}) & 5 & 8 \\
+\mr{3}{\textbf{\ac{grc}} }
+& Open File (\ref{app:euc_open})                       & 3 & 3 \\*
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\*
+& Create and Link Elements (\ref{app:euc_create_link}) & 5 & 8 \\*
 \midrule
-\multirow{3}{*}{\textbf{Grasshopper 3D}}
-& Open File (\ref{app:euc_open})                       & 4 & 3 \\
-& Create Element (\ref{app:euc_create})                & 3 & 3 \\
-& Create and Link Elements (\ref{app:euc_create_link}) & 9 & 9 \\
+\mr{3}{\textbf{Grasshopper 3D}}
+& Open File (\ref{app:euc_open})                       & 4 & 3 \\*
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\*
+& Create and Link Elements (\ref{app:euc_create_link}) & 9 & 9 \\*
 \midrule
-\multirow{3}{*}{\textbf{Max}}
-& Open File (\ref{app:euc_open})                       & 4  & 3 \\
-& Create Element (\ref{app:euc_create})                & 4  & 4 \\
-& Create and Link Elements (\ref{app:euc_create_link}) & 11 & 11 \\
+\mr{3}{\textbf{Max}}
+& Open File (\ref{app:euc_open})                       & 4  & 3 \\*
+& Create Element (\ref{app:euc_create})                & 4  & 4 \\*
+& Create and Link Elements (\ref{app:euc_create_link}) & 11 & 11 \\*
 \midrule
-\multirow{3}{*}{\textbf{MetaEdit+}}
-& Open File (\ref{app:euc_open})                       & 6 & 3 \\
-& Create Element (\ref{app:euc_create})                & 5 & 3 \\
-& Create and Link Elements (\ref{app:euc_create_link}) & 14 & 9 \\
+\mr{3}{\textbf{MetaEdit+}}
+& Open File (\ref{app:euc_open})                       & 6 & 3 \\*
+& Create Element (\ref{app:euc_create})                & 5 & 3 \\*
+& Create and Link Elements (\ref{app:euc_create_link}) & 14 & 9 \\*
+\midrule
+\mr{3}{\textbf{AppInventor}}
+& Open File (\ref{app:euc_open})                       & 3 & 3 \\*
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\*
+& Create and Link Elements (\ref{app:euc_create_link}) & 6 & 7 \\*
+\midrule
+\mr{3}{\textbf{MST Workshop}}
+& Open File (\ref{app:euc_open})                       & 4 & 3 \\*
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\*
+& Create and Link Elements (\ref{app:euc_create_link}) & 8 & 8 \\*
+\midrule
+\mr{3}{\textbf{Piet Creator}}
+& Open File (\ref{app:euc_open})                       & 3 & 3 \\*
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\*
+& Print an Integer (\ref{app:euc_print_integer})       & 16 & 10 \\*
+\midrule
+\mr{3}{\textbf{Scratch}}
+& Open File (\ref{app:euc_open})                       & 5 & 3 \\*
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\*
+& Create and Link Elements (\ref{app:euc_create_link})          & 6 & 7 \\*
+\midrule
+\mr{3}{\textbf{Simulink}}
+& Open File (\ref{app:euc_open})                       & 3  & 3 \\*
+& Create Element (\ref{app:euc_create})                & 4  & 3 \\*
+& Create and Link Elements (\ref{app:euc_create_link})          & 11 & 9 \\*
+\midrule
+\mr{3}{\textbf{Stencyl}}
+& Open File (\ref{app:euc_open})                       & 4 & 3 \\*
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\*
+& Create and Link Elements (\ref{app:euc_create_link}) & 6 & 7 \\*
+\midrule
+\mr{3}{\textbf{Tersus}}
+& Open File (\ref{app:euc_open})                       & 4 & 3 \\*
+& Create Element (\ref{app:euc_create})                & 4 & 3 \\*
+& Create and Link Elements (\ref{app:euc_create_link}) & 11 & 9 \\*
+\midrule
+\mr{3}{\textbf{TouchDevelop}}
+& Open File (\ref{app:euc_open})                       & 3 & 3 \\*
+& Create Element (\ref{app:euc_create})                & 3 & 2 \\*
+& Print a Character (\ref{app:euc_print_character})    & 6 & 5 \\*
+\midrule
+\mr{3}{\textbf{UMLet}}
+& Open File (\ref{app:euc_open})                       & 4  & 3 \\*
+& Create Element (\ref{app:euc_create})                & 3  & 3 \\*
+& Create and Link Elements (\ref{app:euc_create_link}) & 15 & 9 \\*
+\midrule
+\mr{3}{\textbf{Violet}}
+& Open File (\ref{app:euc_open})                       & 4  & 3 \\*
+& Create Element (\ref{app:euc_create})                & 3  & 3 \\*
+& Create and Link Elements (\ref{app:euc_create_link}) & 11 & 11 \\*
+\midrule
+\mr{3}{\textbf{VisSim}}
+& Open File (\ref{app:euc_open})                       & 3 & 3 \\*
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\*
+& Create and Link Elements (\ref{app:euc_create_link}) & 9 & 9 \\*
+\midrule
+\mr{3}{\textbf{VisualParadigm}}
+& Open File (\ref{app:euc_open})                       & 4 & 3 \\*
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\*
+& Create and Link Elements (\ref{app:euc_create_link}) & 10 & 10 \\*
+\midrule
+\mr{3}{\textbf{Visual Use Case}}
+& Open File (\ref{app:euc_open})                       & 4 & 3 \\*
+& Create Element (\ref{app:euc_create})                & 4 & 3 \\*
+& Create and Link Elements (\ref{app:euc_create_link}) & 8 & 6 \\*
+\midrule
+\mr{3}{\textbf{WebRatio}}
+& Open File (\ref{app:euc_open})                       & 4 & 3 \\*
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\*
+& Create and Link Elements (\ref{app:euc_create_link}) & 10 & 10 \\*
+\midrule
+\mr{3}{\textbf{YAWL}}
+& Open File (\ref{app:euc_open})                       & 3 & 3 \\*
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\*
+& Create and Link Elements (\ref{app:euc_create_link}) & 9 & 9 \\*
 \bottomrule
-\end{tabularx}
-\end{table*}
-%}}}
-
-%{{{
-\begin{table*}[!htb]\centering
-\ra{1.3}
-\begin{tabularx}{\textwidth}{lXcc}\toprule
- & \textbf{Use Case} & \textbf{Physical Actions} & \textbf{Concrete Steps}\\
-\midrule
-\multirow{3}{*}{\textbf{AppInventor}}
-& Open File (\ref{app:euc_open})                       & 3 & 3 \\
-& Create Element (\ref{app:euc_create})                & 3 & 3 \\
-& Create and Link Elements (\ref{app:euc_create_link}) & 6 & 7 \\
-\midrule
-\multirow{3}{*}{\textbf{MST Workshop}}
-& Open File (\ref{app:euc_open})                       & 4 & 3 \\
-& Create Element (\ref{app:euc_create})                & 3 & 3 \\
-& Create and Link Elements (\ref{app:euc_create_link}) & 8 & 8 \\
-\midrule
-\multirow{3}{*}{\textbf{Piet Creator}}
-& Open File (\ref{app:euc_open})                       & 3 & 3 \\
-& Create Element (\ref{app:euc_create})                & 3 & 3 \\
-& Print an Integer (\ref{app:euc_print_integer})       & 16 & 10 \\
-\midrule
-\multirow{3}{*}{\textbf{Scratch}}
-& Open File (\ref{app:euc_open})                       & 5 & 3 \\
-& Create Element (\ref{app:euc_create})                & 3 & 3 \\
-& Create and Link Elements (\ref{app:euc_create_link})          & 6 & 7 \\
-\midrule
-\multirow{3}{*}{\textbf{Simulink}}
-& Open File (\ref{app:euc_open})                       & 3  & 3 \\
-& Create Element (\ref{app:euc_create})                & 4  & 3 \\
-& Create and Link Elements (\ref{app:euc_create_link})          & 11 & 9 \\
-\midrule
-\multirow{3}{*}{\textbf{Stencyl}}
-& Open File (\ref{app:euc_open})                       & 4 & 3 \\
-& Create Element (\ref{app:euc_create})                & 3 & 3 \\
-& Create and Link Elements (\ref{app:euc_create_link}) & 6 & 7 \\
-\midrule
-\multirow{3}{*}{\textbf{Tersus}}
-& Open File (\ref{app:euc_open})                       & 4 & 3 \\
-& Create Element (\ref{app:euc_create})                & 4 & 3 \\
-& Create and Link Elements (\ref{app:euc_create_link}) & 11 & 9 \\
-\midrule
-\multirow{3}{*}{\textbf{TouchDevelop}}
-& Open File (\ref{app:euc_open})                       & 3 & 3 \\
-& Create Element (\ref{app:euc_create})                & 3 & 2 \\
-& Print a Character (\ref{app:euc_print_character})    & 6 & 5 \\
-\midrule
-\multirow{3}{*}{\textbf{UMLet}}
-& Open File (\ref{app:euc_open})                       & 4  & 3 \\
-& Create Element (\ref{app:euc_create})                & 3  & 3 \\
-& Create and Link Elements (\ref{app:euc_create_link}) & 15 & 9 \\
-\midrule
-\multirow{3}{*}{\textbf{Violet}}
-& Open File (\ref{app:euc_open})                       & 4  & 3 \\
-& Create Element (\ref{app:euc_create})                & 3  & 3 \\
-& Create and Link Elements (\ref{app:euc_create_link}) & 11 & 11 \\
-\midrule
-\multirow{3}{*}{\textbf{VisSim}}
-& Open File (\ref{app:euc_open})                       & 3 & 3 \\
-& Create Element (\ref{app:euc_create})                & 3 & 3 \\
-& Create and Link Elements (\ref{app:euc_create_link}) & 9 & 9 \\
-\bottomrule
-\end{tabularx}
-\end{table*}
-%}}}
-
-%{{{
-\begin{table*}[!htb]\centering
-\ra{1.3}
-\begin{tabularx}{\textwidth}{lXcc}\toprule
- & \textbf{Use Case} & \textbf{Physical Actions} & \textbf{Concrete Steps}\\
-\midrule
-\multirow{3}{*}{\textbf{VisualParadigm}}
-& Open File (\ref{app:euc_open})                       & 4 & 3 \\
-& Create Element (\ref{app:euc_create})                & 3 & 3 \\
-& Create and Link Elements (\ref{app:euc_create_link}) & 10 & 10 \\
-\midrule
-\multirow{3}{*}{\textbf{Visual Use Case}}
-& Open File (\ref{app:euc_open})                       & 4 & 3 \\
-& Create Element (\ref{app:euc_create})                & 4 & 3 \\
-& Create and Link Elements (\ref{app:euc_create_link}) & 8 & 6 \\
-\midrule
-\multirow{3}{*}{\textbf{WebRatio}}
-& Open File (\ref{app:euc_open})                       & 4 & 3 \\
-& Create Element (\ref{app:euc_create})                & 3 & 3 \\
-& Create and Link Elements (\ref{app:euc_create_link}) & 10 & 10 \\
-\midrule
-\multirow{3}{*}{\textbf{YAWL}}
-& Open File (\ref{app:euc_open})                       & 3 & 3 \\
-& Create Element (\ref{app:euc_create})                & 3 & 3 \\
-& Create and Link Elements (\ref{app:euc_create_link}) & 9 & 9 \\
-\bottomrule
-\end{tabularx}
-\end{table*}
+\end{longtable}
+}
 %}}}
