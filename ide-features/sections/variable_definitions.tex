@@ -87,10 +87,10 @@ workspace area.
   \item[Variable Type] Compound
 
   \item[Description] Many \acp{ide} provide support for a set of common
-  operations. \citeauthor{murphy2006} define a list of the top 10 most
+  operations.~\cite{murphy2006} defines a list of the top 10 most
   frequently used \ac{ide} features, which are reproduced here as boolean
-  sub-variables. \cite{murphy2006} Each sub-variable indicates whether the
-  \ac{ide} in question supports the use of that particular feature.
+  sub-variables. Each sub-variable indicates whether the \ac{ide} in
+  question supports the use of that particular feature.
 
   \item[Components]
 
@@ -123,7 +123,7 @@ workspace area.
   \item[Variable Type] Boolean
 
   \item[Description] Any interface component which changes visibly or is
-  generated anew depending on the context of selected element(s) within the
+  generated anew depending on the context of selected elements within the
   workspace is a \textbf{Context Sensitive Tool}.
 
   \item[Accepted Values]
@@ -157,22 +157,22 @@ workspace area.
 
   \begin{AlignedDesc}
     \item[Icons] Images contained in a border of a standard size and shape
-    represent distinct actions or tools. \cite{costagliola2002,moody2009}
+    represent distinct actions or tools.~\cite{costagliola2002,moody2009}
     \item[Shape] Distinct shapes indicate different tools or classes of
-    tool. \cite{moody2009}
+    tool.~\cite{moody2009}
     \item[Size] Different tool sizes indicate distinct tools or classes
-    of tool. \cite{moody2009}
+    of tool.~\cite{moody2009}
     \item[Color] Color is used to indicate distinct tools or classes of
-    tool. \cite{moody2009}
+    tool.~\cite{moody2009}
     \item[Text] Text (or typographic variation) is used to identify or
-    distinguish tools or classes of tool. \cite{moody2009}
+    distinguish tools or classes of tool.~\cite{moody2009}
     \item[Organizational Coherence] Components with related purpose are
-    visually grouped in the interface. \cite{constantine1996}
+    visually grouped in the interface.~\cite{constantine1996}
     \item[Texture] Shading or shadows are used to modify tools or to
-    distinguish between distinct tools or classes of tool. \cite{moody2009}
-    \item[Brightness] The brightness of a color (ie. its perceived
+    distinguish between distinct tools or classes of tool.~\cite{moody2009}
+    \item[Brightness] The brightness of a color (\ie{} its perceived
     luminosity) is used to indicate a difference between tools or classes
-    of tool. \cite{moody2009}
+    of tool.~\cite{moody2009}
   \end{AlignedDesc}
 
 \end{AlignedDesc}
@@ -291,9 +291,9 @@ workspace area.
     \item[Low] There is a minimal and cohesive amount of tools present on
       the screen.
     \item[Medium] There is a somewhat organized and manageable amount of
-    tools available on the screen
+    tools available on the screen.
     \item[High] There is an unorganized or overwhelming amount of tools
-    taking up space on the screen
+    taking up space on the screen.
   \end{AlignedDesc}
 
 \end{AlignedDesc}
@@ -306,9 +306,9 @@ workspace area.
 \label{subsec:humaninterface}
 
 \textbf{Human Interface} components of an \ac{ide} include aspects of the
-interface that describe how a human user interfaces with the \ac{ide},
-either mechanically (\textit{eg.} through physical devices and media) or
-mentally (\textit{eg.} the mental load required of the user to operate the
+software interface that affect how the human user interacts with the \ac{ide},
+either mechanically (\eg{} through physical devices and media) or
+mentally (\eg{} the mental load required of the user to operate the
 \ac{ide}).
 
 %{{{ Subsubsection: Essential Efficiency
@@ -324,14 +324,14 @@ mentally (\textit{eg.} the mental load required of the user to operate the
   measures the level to which the system automates tasks for the user. It
   is calculated as the ratio of the number of steps in a concrete use case
   to the number of steps in the representative essential use case (see
-  Appendix~\ref{app:euc}). \cite{constantine1996}
+  Appendix~\ref{app:euc}).~\cite{constantine1996}
 %
   \begin{align*}
     1 - \frac{\text{Number of steps in concrete use case}}
              {\text{Number of steps in essential use case}}
   \end{align*}
 %
-  Unlike the metrics for automation put forth in \cite{Wei1998}, this
+  Unlike the metrics for automation put forth in~\cite{Wei1998}, this
   measure does not require user experience reports, and can be measured
   through simple use case analysis.
 
@@ -371,7 +371,7 @@ mentally (\textit{eg.} the mental load required of the user to operate the
   \end{align*}
 %
   This metric is different from the \textit{Essential Efficiency} proposed
-  in \cite{constantine1996} because it studies physical user actions
+  in~\cite{constantine1996} because it studies physical user actions
   instead of concrete task steps. Also note that this variable can take
   negative values, indicating that the number of physical actions required
   to complete an essential use case exceeds the number of abstract steps in
@@ -403,8 +403,8 @@ mentally (\textit{eg.} the mental load required of the user to operate the
 
   \item[Variable Type] Ordinal
 
-  \item[Description] \textbf{Keyboard use} refers to the extent to which an
-  \ac{ide} utilizes the use of a keyboard.  This can range from a complete
+  \item[Description] \textbf{Keyboard Use} refers to the extent to which an
+  \ac{ide} utilizes the use of a keyboard. This can range from a complete
   absence of any keyboard actions to providing certain actions which only a
   keyboard can perform.
 
@@ -433,11 +433,11 @@ mentally (\textit{eg.} the mental load required of the user to operate the
   \item[Variable Type] Nominal
 
   \item[Description] The process by which the user creates elements in the
-  given \ac{ide}.  The \textit{Drag n Drop} process refers to a single
+  given \ac{ide}. The \textit{Drag n Drop} process refers to a single
   mouse press event followed by a dragging motion of the mouse and
-  completed when the mouse button is released.  The \textit{Point n Click}
+  completed when the mouse button is released. The \textit{Point n Click}
   process utilizes a single mouse click to indicate a selection and
-    followed with subsequent mouse clicks elsewhere to define placement.
+  followed with subsequent mouse clicks elsewhere to define placement.
 
   \item[Accepted Values]
 
@@ -464,9 +464,9 @@ mentally (\textit{eg.} the mental load required of the user to operate the
 
   \item[Variable Type] Nominal
 
-  \item[Description] \textbf{Tertiary interface devices} refers to any
+  \item[Description] \textbf{Tertiary Interface Devices} refers to any
   third-party human interface devices which can be used to interact with
-  the interface.  This could include music alteration devices such as
+  the interface. This could include music alteration devices such as
   microphones and MIDI keyboards as well as the integration of mobile
   devices.
 
@@ -483,11 +483,16 @@ mentally (\textit{eg.} the mental load required of the user to operate the
 
 %}}}
 
-% {{{ subsection: Integration [incomplete]
+% {{{ subsection: Integration
 \subsection{Integration}
 \label{subsec:integration}
 
-%{{{ Subsubsection: Allowed Relations Indicated [incomplete]
+\textbf{Integration} is the manner with which the \ac{ide} integrates with
+the visual language it supports. This includes any visual representation of
+language syntax or semantics, as well as any tools to assist the user with
+understanding the supported language.
+
+%{{{ Subsubsection: Allowed Relations Indicated
 \subsubsection{Allowed Relations Indicated}
 \label{subsubsec:relations}
 
@@ -511,7 +516,7 @@ mentally (\textit{eg.} the mental load required of the user to operate the
 \end{AlignedDesc}
 %}}}
 
-%{{{ Subsubsection: Output Generation Style [incomplete]
+%{{{ Subsubsection: Output Generation Style
 \subsubsection{Output Generation Style}
 \label{subsubsec:output}
 
@@ -520,7 +525,14 @@ mentally (\textit{eg.} the mental load required of the user to operate the
 
   \item[Variable Type] Nominal
 
-  \item[Description] 
+  \item[Description] \textbf{Output Generation Style} describes the mode
+  with which the \ac{ide} renders and displays output to the user. It is a
+  dual axis variable, measuring whether output is \textit{direct} or
+  \textit{indirect} as well as \textit{live} or caused by a
+  \textit{trigger}. \textit{Direct/indirect} describes whether the user directly
+  modifies output or acts via a layer of abstraction (\eg{} a
+  model). \textit{Live/trigger} describes whether output is generated and
+  displayed live or after some event triggered by the user.
 
   \item[Accepted Values]
 
@@ -528,19 +540,19 @@ mentally (\textit{eg.} the mental load required of the user to operate the
     \item[Direct Live] Any modifications directly alter the output, which
     is dynamically updated.
     \item[Indirect Live] Any modifications indirectly alter the output
-    (e.g.\ via a model), which is dynamically updated.
+    (\eg{} via a model), which is dynamically updated.
     \item[Direct Trigger] Any modifications directly alter the output, but
     a final compilation or execution process is required to complete the
     output.
     \item[Indirect Trigger] Any modifications indirectly alter the output
-    (e.g.\ via a model), but a final compilation or execution process is
+    (\eg{} via a model), but a final compilation or execution process is
     required to complete the output.
   \end{AlignedDesc}
 
 \end{AlignedDesc}
 %}}}
 
-%{{{ Subsubsection: Syntax Enforcement [incomplete]
+%{{{ Subsubsection: Syntax Enforcement
 \subsubsection{Syntax Enforcement}
 \label{subsubsec:syntax}
 
@@ -549,14 +561,18 @@ mentally (\textit{eg.} the mental load required of the user to operate the
 
   \item[Variable Type] Nominal
 
-  \item[Description]
+  \item[Description] \textbf{Syntax Enforcement} measures the mode with
+  which the \ac{ide} enforces language syntax requirements.
 
   \item[Accepted Values]
 
   \begin{AlignedDesc}
-    \item[Explicit] The \ac{ide} displays a message when a visual syntax error is created in the design process.
-    \item[Implicit] The \ac{ide} incorportates features that prevent any visual syntax errors to be created.
-    \item[None] The \ac{ide} does not enofrce visual syntax, or it is only enforced when checked (e.g. compiled, exectuted, etc.).
+    \item[Explicit] The \ac{ide} displays a message when the user creates a
+    visual syntax error.
+    \item[Implicit] The \ac{ide} incorporates features that prevent the
+    user from creating visual syntax errors.
+    \item[None] The \ac{ide} does not enforce visual syntax, or it is only
+    enforced when explicitly checked (\eg{} compiled, executed, \etc).
   \end{AlignedDesc}
 
 \end{AlignedDesc}
@@ -564,11 +580,16 @@ mentally (\textit{eg.} the mental load required of the user to operate the
 
 %}}}
 
-% {{{ subsection: Language Syntax [incomplete]
+% {{{ subsection: Language Syntax
 \subsection{Language Syntax}
 \label{subsec:languagesyntax}
 
-%{{{ Subsubsection: Complexity Management [incomplete]
+The \textbf{Language Syntax} variables describe properties of the supported
+visual language syntax. While not strictly components of the \ac{ide}, they
+are intimately tied to the overall style of the \ac{ide} and thus
+included in this document.
+
+%{{{ Subsubsection: Complexity Management
 \subsubsection{Complexity Management}
 \label{subsubsec:complexity}
 
@@ -577,20 +598,26 @@ mentally (\textit{eg.} the mental load required of the user to operate the
 
   \item[Variable Type] Nominal
 
-  \item[Description]
+  \item[Description] Any characteristics or features of the visual language
+  that serve to reduce the complexity of that language. Reducing complexity
+  refers specifically to decreasing the level of ``diagrammatic
+  complexity'' while maintaining information transfer to the
+  user.~\cite{moody2009}
 
   \item[Accepted Values]
 
   \begin{AlignedDesc}
-    \item[Modularization] Larger systems within the \ac{ide} are divided into smaller subtasks.
-    \item[Hierarchy] Different systems within the \ac{ide} are represented at different levels of detail.
-    \item[None] The \ac{ide} makes no effort to seperate tasks.
+    \item[Modularization] Larger systems within the language are divided
+    into smaller subtasks.~\cite{moody2009}
+    \item[Hierarchy] Different systems within the language are represented
+    at different levels of detail.~\cite{moody2009}
+    \item[None] The language makes no effort to separate components.
   \end{AlignedDesc}
 
 \end{AlignedDesc}
 %}}}
 
-%{{{ Subsubsection: Connection Style [incomplete]
+%{{{ Subsubsection: Connection Style
 \subsubsection{Connection Style}
 \label{subsubsec:connection}
 
@@ -599,22 +626,33 @@ mentally (\textit{eg.} the mental load required of the user to operate the
 
   \item[Variable Type] Nominal
 
-  \item[Description]
+  \item[Description] A language's \textbf{Connection Style} refers to the
+  manner that element connections are displayed. This dual axis variable
+  measures connections as \textit{overlapping/linked} as well as
+  connection sources as \textit{point/region} based. The former axis
+  describes the visual representation of connections, while the latter
+  describes how links are connected. If the supported language does not
+  register on these axes, it is not ``Connection-based''~\cite{costagliola2002}
+  and must be \textit{geometric}.
 
   \item[Accepted Values]
 
   \begin{AlignedDesc}
-    \item[Overlapping Points] The elements are connected by positioning specific points to overlap.
-    \item[Overlapping Regions] The elements are connected by positioning specific regions to overlap.
-    \item[Linked Points] The elemtns are connected by linking together distinct points on each element.
-    \item[Linked Regions] The elements are connected by linking together distinct regions on each element.
-    \item[Geometric] The elements are connected via geometric placement.
+    \item[Overlapping Points] The elements are connected by positioning
+    specific points to overlap.~\cite{costagliola2002}
+    \item[Overlapping Regions] The elements are connected by positioning
+    specific regions to overlap.~\cite{costagliola2002}
+    \item[Linked Points] The elements are connected by linking together
+    distinct points on each element.~\cite{costagliola2002}
+    \item[Linked Regions] The elements are connected by linking together
+    distinct regions on each element.~\cite{costagliola2002}
+    \item[Geometric] The elements are connected via geometric placement.~\cite{costagliola2002}
   \end{AlignedDesc}
 
 \end{AlignedDesc}
 %}}}
 
-%{{{ Subsubsection: Degree of Language Visual Richness [incomplete]
+%{{{ Subsubsection: Degree of Language Visual Richness
 \subsubsection{Degree of Language Visual Richness}
 \label{subsubsec:languagerichness}
 
@@ -628,16 +666,28 @@ mentally (\textit{eg.} the mental load required of the user to operate the
   \item[Accepted Values]
 
   \begin{AlignedDesc}
-    \item[Icons] Images contained in the elements are used to represent different elements. \cite{costagliola2002,moody2009}
-    \item[Shape] Distinct shapes indicate different elements or classes of element. \cite{moody2009}
-    \item[Size] Different element sizes indicate distinct elements or classes of element. \cite{moody2009}
-    \item[Color] Color is used to indicate distinct elements or classes of element. \cite{moody2009}
-    \item[Text] Text (or typographic variation) is used to identify or distinguish elements or classes of element. \cite{moody2009}
-    \item[Texture] Shading or shadows are used to modify elements or to distinguish between distinct elements or classes of element. \cite{moody2009}
-    \item[Brightness] The brightness of a color (ie. its perceived luminosity) is used to indicate a difference between elements or classesof element. \cite{moody2009}
-    \item[Orientation]
-    \item[Horizontal Position]
-    \item[Vertical Position]
+    \item[Icons] Images contained in the elements are used to represent
+    different elements.~\cite{costagliola2002,moody2009}
+    \item[Shape] Distinct shapes indicate different elements or classes of
+    element.~\cite{moody2009}
+    \item[Size] Different element sizes indicate distinct elements or
+    classes of element.~\cite{moody2009}
+    \item[Color] Color is used to indicate distinct elements or classes of
+    element.~\cite{moody2009}
+    \item[Text] Text (or typographic variation) is used to identify or
+    distinguish elements or classes of element.~\cite{moody2009}
+    \item[Texture] Shading or shadows are used to modify elements or to
+    distinguish between distinct elements or classes of
+    element.~\cite{moody2009}
+    \item[Brightness] The brightness of a color (\ie{} its perceived
+    luminosity) is used to indicate a difference between elements or
+    classes of element.~\cite{moody2009}
+    \item[Orientation] Rotation of an element indicates differences between
+    distinct elements or classes of element.~\cite{moody2009}
+    \item[Horizontal Position] The horizontal location of an element
+    indicates differences between elements.~\cite{moody2009}
+    \item[Vertical Position] The vertical location of an element
+    indicates differences between elements.~\cite{moody2009}
   \end{AlignedDesc}
 
 \end{AlignedDesc}
