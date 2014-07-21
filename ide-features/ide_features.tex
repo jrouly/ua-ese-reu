@@ -3,12 +3,20 @@
 %{{{ Package includes
 
 \usepackage{acronym}  % for defining acronyms
+\usepackage{booktabs} % for fancier tables
 \usepackage{enumitem} % for custom, richer list environments
 \usepackage{hyperref} % for hyperlinking
 \usepackage{fullpage} % use 1in margins
 \usepackage[numbers]{natbib} % for useful bibliography tools
 \usepackage{amsmath}  % better mathematical formatting
 \usepackage{tabularx} % tables with column stretching
+
+%}}}
+
+%{{{ Custom environments / commands
+
+% Fix table spacing to look nicer
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
 
 %}}}
 
@@ -45,6 +53,9 @@
 Foobar.
 
 \appendix
+
+\clearpage
+\input{sections/results}
 
 \clearpage
 \input{sections/ide_list}
