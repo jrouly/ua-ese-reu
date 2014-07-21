@@ -4,8 +4,6 @@
 
 @Misc{alice3,
   Title                    = {Alice.org},
-
-  Author                   = {the alice people},
   HowPublished             = {\url{http://alice.org}},
 
   Owner                    = {jrouly},
