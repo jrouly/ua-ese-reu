@@ -2,15 +2,21 @@
 
 %{{{ Package includes
 
-\usepackage{acronym}  % for defining acronyms
-\usepackage{booktabs} % for fancier tables
+% Table packages
 \usepackage{multirow} % for multirow tables
-\usepackage{enumitem} % for custom, richer list environments
-\usepackage{hyperref} % for hyperlinking
-\usepackage{fullpage} % use 1in margins
-\usepackage[numbers]{natbib} % for useful bibliography tools
-\usepackage{amsmath}  % better mathematical formatting
 \usepackage{tabularx} % tables with column stretching
+\usepackage{longtable}% long tables
+\usepackage{booktabs} % for fancier tables
+
+% Text formatting packages
+\usepackage{enumitem} % for custom, richer list environments
+\usepackage{fullpage} % use 1in margins
+\usepackage{amsmath}  % better mathematical formatting
+
+% Misc packages
+\usepackage{acronym}  % for defining acronyms
+\usepackage[numbers]{natbib} % for useful bibliography tools
+\usepackage{hyperref} % for hyperlinking
 
 %}}}
 
@@ -18,6 +24,9 @@
 
 % Fix table spacing to look nicer
 \newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+
+% Shorten the multirow command
+\newcommand{\mr}[2]{\multirow{#1}{*}{#2}}
 
 %}}}
 
