@@ -1,0 +1,741 @@
+%{{{ Alice3
+
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+%   9)  Indicate that you want to begin linking elements
+%   10) Indicate type of connection to create.
+%   11) Designate the first element to be linked
+%   12) Designate the second element to be linked
+% * 13) Create the link
+
+%}}}
+
+%{{{ AToMPM
+
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+%   9)  Indicate that you want to begin linking elements
+% * 10) Indicate type of connection to create.
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+% * 13) Create the link
+
+%}}}
+
+%{{{ AudioMulch
+
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+%   9)  Indicate that you want to begin linking elements
+%   10) Indicate type of connection to create
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+% * 13) Create the link
+
+%}}}
+
+%{{{ Blender
+
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+% * 1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 5 - Create Element at specific position and transform vertex
+% * 1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+% * 5)  Indicate that you want to edit the element
+% * 6)  Indicate that you want to transform a vertex
+% * 7)  Select a vertex to transform
+% * 8)  Indicate the type of transformation to perform
+% * 9)  Perform transformation
+% * 10) Commit changes to element
+
+%}}}
+
+%{{{ Cameleon
+
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+% * 9)  Indicate that you want to begin linking elements
+%   10) Indicate type of connection to create.
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+% * 13) Create the link
+
+%}}}
+
+%{{{ Eclipse Modeling Framework
+
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+%   9)  Indicate that you want to begin linking elements
+% * 10) Indicate type of connection to create.
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+% * 13) Create the link
+
+%}}}
+
+%{{{ GNU Radio Companion
+
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+%   9)  Indicate that you want to begin linking elements
+%   10) Indicate type of connection to create.
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+%   13) Create the link
+
+%}}}
+
+%{{{ Grasshopper 3D
+
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+%   9)  Indicate that you want to begin linking elements
+%   10) Indicate type of connection to create
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+% * 13) Create the link
+
+%}}}
+
+%{{{ Max
+
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+% * 1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+% * 1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+% * 5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+%   9)  Indicate that you want to begin linking elements
+%   10) Indicate type of connection to create.
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+% * 13) Create the link
+
+%}}}
+
+%{{{ MetaEdit+
+
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position (Assuming one attribute)
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+%   9)  Indicate that you want to begin linking elements
+%   10) Indicate type of connection to create
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+% * 13) Create the link
+
+%}}}
+
+%{{{ MIT AppInventor
+
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+%   9)  Indicate that you want to begin linking elements
+%   10) Indicate type of connection to create
+%   11) Designate the first element to be linked
+%   12) Designate the second element to be linked
+% * 13) Create the link
+
+%}}}
+
+%{{{ MST Workshop
+
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+%   9)  Indicate that you want to begin linking elements
+%   10) Indicate type of connection to create
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+%   13) Create the link
+
+%}}}
+
+%{{{ Piet Creator
+
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 4 - Print an integer
+% * 1)  Indicate which color will be the starting color
+% * 2)  Create the color block of size x
+%   3)  Determine which color represents ``push''
+% * 4)  Indicate that you will begin to use that color
+% * 5)  Create its color block
+%   6)  Determine which color represents ``out(integer)''
+% * 7)  Indicate that you will begin to use that color
+% * 8)  Create its color block
+% * 9)  Determine where any black codels will need to be
+% * 10) Select the color black
+% * 11) Create the black codels
+% * 12) Execute the program
+
+%}}}
+
+%{{{ Scratch
+
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+%   9)  Indicate that you want to begin linking elements
+%   10) Indicate type of connection to create
+%   11) Designate the first element to be linked
+%   12) Designate the second element to be linked
+% * 13) Create the link
+
+%}}}
+
+%{{{ Simulink
+
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+%   9)  Indicate that you want to begin linking elements
+%   10) Indicate type of connection to create
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+% * 13) Create the link
+
+%}}}
+
+%{{{ Stencyl
+
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+%   9)  Indicate that you want to begin linking elements
+%   10) Indicate type of connection to create
+%   11) Designate the first element to be linked
+%   12) Designate the second element to be linked
+% * 13) Create the link
+
+%}}}
+
+%{{{ Tersus
+
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+% * 9)  Indicate that you want to begin linking elements
+%   10) Indicate type of connection to create
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+%   13) Create the link
+
+%}}}
+
+%{{{ TouchDevelop
+
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+%   4)  Create the element
+
+% Use Case 6 - Print a character
+% * 1)  Designate the position at which you want to create an element
+% * 2)  Indicate that you want to create a character
+% * 3)  Designate the character that you want to create
+%   4)  Create the character
+%   5)  Designate the position at which you want to place ``post to wall''
+%   6)  Indicate that you want to create a new command
+% * 7)  Indicate that you want to create ``post to wall''
+%   8)  Create the command
+% * 9)  Run the program
+
+%}}}
+
+%{{{ UMLet
+
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+%   9)  Indicate that you want to begin linking elements
+%   10) Indicate type of connection to create
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+% * 13) Create the link
+
+%}}}
+
+%{{{ VioletUML
+
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+% * 9)  Indicate that you want to begin linking elements
+% * 10) Indicate type of connection to create.
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+% * 13) Create the link
+
+%}}}
+
+%{{{ VisSim
+
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+%   9)  Indicate that you want to begin linking elements
+%   10) Indicate type of connection to create.
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+% * 13) Create the link
+
+%}}}
+
+%{{{ Visual Paradigm
+
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+% * 9)  Indicate that you want to begin linking elements
+% * 10) Indicate type of connection to create
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+%   13) Create the link
+
+%}}}
+
+%{{{ Visual Use Case
+
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+%   9)  Indicate that you want to begin linking elements
+%   10) Indicate type of connection to create
+%   11) Designate the first element to be linked
+%   12) Designate the second element to be linked
+%   13) Create the link
+
+%}}}
+
+%{{{ WebRatio
+
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+% * 9)  Indicate that you want to begin linking elements
+% * 10) Indicate type of connection to create
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+%   13) Create the link
+
+%}}}
+
+%{{{ YAWL
+
+% Use Case 1 - Open File
+% * 1)  Indicate that you want to open a file
+% * 2)  Indicate which file you want to open
+% * 3)  Open the file
+
+% Use Case 2 - Create Element at specific position
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+
+% Use Case 3 - Create two different elements and link them
+%   1)  Indicate that you want to create an element
+% * 2)  Indicate which element you want to create
+% * 3)  Designate the position at which you want to create the element
+% * 4)  Create the element
+%   5)  Indicate that you want to create another element
+% * 6)  Indicate which element you want to create
+% * 7)  Designate the position at which you want to create the element
+% * 8)  Create the element
+% * 9)  Indicate that you want to begin linking elements
+%   10) Indicate type of connection to create.
+% * 11) Designate the first element to be linked
+% * 12) Designate the second element to be linked
+%   13) Create the link
+
+%}}}
