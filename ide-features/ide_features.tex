@@ -11,6 +11,7 @@
 \usepackage[numbers]{natbib} % for useful bibliography tools
 \usepackage{amsmath}  % better mathematical formatting
 \usepackage{tabularx} % tables with column stretching
+\usepackage{longtable} % long tables
 
 %}}}
 
@@ -18,6 +19,9 @@
 
 % Fix table spacing to look nicer
 \newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+
+% Shorten the multirow command
+\newcommand{\mr}[2]{\multirow{#1}{*}{#2}}
 
 %}}}
 
