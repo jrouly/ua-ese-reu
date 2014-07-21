@@ -1,306 +1,156 @@
 \section{Interface and Essential Efficiency}
 
-%{{{ Alice3
-\subsection*{Alice3}
-
-\begin{table*}\centering
+%{{{
+\begin{table*}[!htb]\centering
 \ra{1.3}
-\begin{tabularx}{\textwidth}{Xcc}\toprule
-\textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
+\begin{tabularx}{\textwidth}{lXcc}\toprule
+ & \textbf{Use Case} & \textbf{Physical Actions} & \textbf{Concrete Steps}\\
 \midrule
-Open File (\ref{app:euc_open})                       & 7  & 3 \\
-Create Element (\ref{app:euc_create})                & 6  & 3 \\
-Create and Link Elements (\ref{app:euc_create_link}) & 12 & 7 \\
+\multirow{3}{*}{\textbf{Alice3}}
+& Open File (\ref{app:euc_open})                       & 7  & 3 \\
+& Create Element (\ref{app:euc_create})                & 6  & 3 \\
+& Create and Link Elements (\ref{app:euc_create_link}) & 12 & 7 \\
+\midrule
+\multirow{3}{*}{\textbf{AToMPM}}
+& Open File (\ref{app:euc_open})                       & 3  & 3 \\
+& Create Element (\ref{app:euc_create})                & 3  & 3 \\
+& Create and Link Elements (\ref{app:euc_create_link}) & 11 & 10 \\
+\midrule
+\multirow{3}{*}{\textbf{AudioMulch}}
+& Open File (\ref{app:euc_open})                       & 3 & 3 \\
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\
+& Create and Link Elements (\ref{app:euc_create_link}) & 9 & 9 \\
+\midrule
+\multirow{3}{*}{\textbf{Blender}}
+& Open File (\ref{app:euc_open})        & 4 & 3 \\
+& Create Element (\ref{app:euc_create}) & 6 & 4 \\
+& Create and Transform Elements (\ref{app:euc_create_transform}) & 12 & 10 \\
+\midrule
+\multirow{3}{*}{\textbf{Cameleon}}
+& Open File (\ref{app:euc_open})                       & 4 & 3 \\
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\
+& Create and Link Elements (\ref{app:euc_create_link}) & 9 & 10 \\
+\midrule
+\multirow{3}{*}{\textbf{\ac{emf}}}
+& Open File (\ref{app:euc_open})                       & 3 & 3 \\
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\
+& Create and Link Elements (\ref{app:euc_create_link}) & 5 & 10 \\
+\midrule
+\multirow{3}{*}{\textbf{\ac{grc}}}
+& Open File (\ref{app:euc_open})                       & 3 & 3 \\
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\
+& Create and Link Elements (\ref{app:euc_create_link}) & 5 & 8 \\
+\midrule
+\multirow{3}{*}{\textbf{Grasshopper 3D}}
+& Open File (\ref{app:euc_open})                       & 4 & 3 \\
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\
+& Create and Link Elements (\ref{app:euc_create_link}) & 9 & 9 \\
+\midrule
+\multirow{3}{*}{\textbf{Max}}
+& Open File (\ref{app:euc_open})                       & 4  & 3 \\
+& Create Element (\ref{app:euc_create})                & 4  & 4 \\
+& Create and Link Elements (\ref{app:euc_create_link}) & 11 & 11 \\
+\midrule
+\multirow{3}{*}{\textbf{MetaEdit+}}
+& Open File (\ref{app:euc_open})                       & 6 & 3 \\
+& Create Element (\ref{app:euc_create})                & 5 & 3 \\
+& Create and Link Elements (\ref{app:euc_create_link}) & 14 & 9 \\
 \bottomrule
 \end{tabularx}
-\caption{Alice3}
 \end{table*}
 %}}}
 
-%{{{ AToMPM
-\subsection*{AToMPM}
-
-\begin{tabularx}{\textwidth}{Xcc}
-\textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
-\hline
-Open File (\ref{app:euc_open})                       & 3  & 3 \\
-Create Element (\ref{app:euc_create})                & 3  & 3 \\
-Create and Link Elements (\ref{app:euc_create_link}) & 11 & 10
+%{{{
+\begin{table*}[!htb]\centering
+\ra{1.3}
+\begin{tabularx}{\textwidth}{lXcc}\toprule
+ & \textbf{Use Case} & \textbf{Physical Actions} & \textbf{Concrete Steps}\\
+\midrule
+\multirow{3}{*}{\textbf{AppInventor}}
+& Open File (\ref{app:euc_open})                       & 3 & 3 \\
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\
+& Create and Link Elements (\ref{app:euc_create_link}) & 6 & 7 \\
+\midrule
+\multirow{3}{*}{\textbf{MST Workshop}}
+& Open File (\ref{app:euc_open})                       & 4 & 3 \\
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\
+& Create and Link Elements (\ref{app:euc_create_link}) & 8 & 8 \\
+\midrule
+\multirow{3}{*}{\textbf{Piet Creator}}
+& Open File (\ref{app:euc_open})                       & 3 & 3 \\
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\
+& Print an Integer (\ref{app:euc_print_integer})       & 16 & 10 \\
+\midrule
+\multirow{3}{*}{\textbf{Scratch}}
+& Open File (\ref{app:euc_open})                       & 5 & 3 \\
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\
+& Create and Link Elements (\ref{app:euc_create_link})          & 6 & 7 \\
+\midrule
+\multirow{3}{*}{\textbf{Simulink}}
+& Open File (\ref{app:euc_open})                       & 3  & 3 \\
+& Create Element (\ref{app:euc_create})                & 4  & 3 \\
+& Create and Link Elements (\ref{app:euc_create_link})          & 11 & 9 \\
+\midrule
+\multirow{3}{*}{\textbf{Stencyl}}
+& Open File (\ref{app:euc_open})                       & 4 & 3 \\
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\
+& Create and Link Elements (\ref{app:euc_create_link}) & 6 & 7 \\
+\midrule
+\multirow{3}{*}{\textbf{Tersus}}
+& Open File (\ref{app:euc_open})                       & 4 & 3 \\
+& Create Element (\ref{app:euc_create})                & 4 & 3 \\
+& Create and Link Elements (\ref{app:euc_create_link}) & 11 & 9 \\
+\midrule
+\multirow{3}{*}{\textbf{TouchDevelop}}
+& Open File (\ref{app:euc_open})                       & 3 & 3 \\
+& Create Element (\ref{app:euc_create})                & 3 & 2 \\
+& Print a Character (\ref{app:euc_print_character})    & 6 & 5 \\
+\midrule
+\multirow{3}{*}{\textbf{UMLet}}
+& Open File (\ref{app:euc_open})                       & 4  & 3 \\
+& Create Element (\ref{app:euc_create})                & 3  & 3 \\
+& Create and Link Elements (\ref{app:euc_create_link}) & 15 & 9 \\
+\midrule
+\multirow{3}{*}{\textbf{Violet}}
+& Open File (\ref{app:euc_open})                       & 4  & 3 \\
+& Create Element (\ref{app:euc_create})                & 3  & 3 \\
+& Create and Link Elements (\ref{app:euc_create_link}) & 11 & 11 \\
+\midrule
+\multirow{3}{*}{\textbf{VisSim}}
+& Open File (\ref{app:euc_open})                       & 3 & 3 \\
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\
+& Create and Link Elements (\ref{app:euc_create_link}) & 9 & 9 \\
+\bottomrule
 \end{tabularx}
+\end{table*}
 %}}}
 
-%{{{ AudioMulch
-\subsection*{AudioMulch}
-
-\begin{tabularx}{\textwidth}{Xcc}
-\textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
-\hline
-Open File (\ref{app:euc_open})                       & 3 & 3 \\
-Create Element (\ref{app:euc_create})                & 3 & 3 \\
-Create and Link Elements (\ref{app:euc_create_link}) & 9 & 9
+%{{{
+\begin{table*}[!htb]\centering
+\ra{1.3}
+\begin{tabularx}{\textwidth}{lXcc}\toprule
+ & \textbf{Use Case} & \textbf{Physical Actions} & \textbf{Concrete Steps}\\
+\midrule
+\multirow{3}{*}{\textbf{VisualParadigm}}
+& Open File (\ref{app:euc_open})                       & 4 & 3 \\
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\
+& Create and Link Elements (\ref{app:euc_create_link}) & 10 & 10 \\
+\midrule
+\multirow{3}{*}{\textbf{Visual Use Case}}
+& Open File (\ref{app:euc_open})                       & 4 & 3 \\
+& Create Element (\ref{app:euc_create})                & 4 & 3 \\
+& Create and Link Elements (\ref{app:euc_create_link}) & 8 & 6 \\
+\midrule
+\multirow{3}{*}{\textbf{WebRatio}}
+& Open File (\ref{app:euc_open})                       & 4 & 3 \\
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\
+& Create and Link Elements (\ref{app:euc_create_link}) & 10 & 10 \\
+\midrule
+\multirow{3}{*}{\textbf{YAWL}}
+& Open File (\ref{app:euc_open})                       & 3 & 3 \\
+& Create Element (\ref{app:euc_create})                & 3 & 3 \\
+& Create and Link Elements (\ref{app:euc_create_link}) & 9 & 9 \\
+\bottomrule
 \end{tabularx}
-%}}}
-
-%{{{ Blender
-\subsection*{Blender}
-
-\begin{tabularx}{\textwidth}{Xcc}
-\textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
-\hline
-Open File (\ref{app:euc_open})        & 4 & 3 \\
-Create Element (\ref{app:euc_create}) & 6 & 4 \\
-Create Element and Transform (\ref{app:euc_create_transform}) & 12 & 10
-\end{tabularx}
-%}}}
-
-%{{{ Cameleon
-\subsection*{Cameleon}
-
-\begin{tabularx}{\textwidth}{Xcc}
-\textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
-\hline
-Open File (\ref{app:euc_open})                       & 4 & 3 \\
-Create Element (\ref{app:euc_create})                & 3 & 3 \\
-Create and Link Elements (\ref{app:euc_create_link}) & 9 & 10
-\end{tabularx}
-%}}}
-
-%{{{ Eclipse Modeling Framework
-\subsection*{Eclipse Modeling Framework}
-
-\begin{tabularx}{\textwidth}{Xcc}
-\textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
-\hline
-Open File (\ref{app:euc_open})                       & 3 & 3 \\
-Create Element (\ref{app:euc_create})                & 3 & 3 \\
-Create and Link Elements (\ref{app:euc_create_link}) & 5 & 10
-\end{tabularx}
-%}}}
-
-%{{{ GNU Radio Companion
-\subsection*{GNU Radio Companion}
-
-\begin{tabularx}{\textwidth}{Xcc}
-\textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
-\hline
-Open File (\ref{app:euc_open})                       & 3 & 3 \\
-Create Element (\ref{app:euc_create})                & 3 & 3 \\
-Create and Link Elements (\ref{app:euc_create_link}) & 5 & 8
-\end{tabularx}
-%}}}
-
-%{{{ Grasshopper 3D
-\subsection*{Grasshopper 3D}
-
-\begin{tabularx}{\textwidth}{Xcc}
-\textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
-\hline
-Open File (\ref{app:euc_open})                       & 4 & 3 \\
-Create Element (\ref{app:euc_create})                & 3 & 3 \\
-Create and Link Elements (\ref{app:euc_create_link}) & 9 & 9
-\end{tabularx}
-%}}}
-
-%{{{ Max
-\subsection*{Max}
-
-\begin{tabularx}{\textwidth}{Xcc}
-\textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
-\hline
-Open File (\ref{app:euc_open})                       & 4  & 3 \\
-Create Element (\ref{app:euc_create})                & 4  & 4 \\
-Create and Link Elements (\ref{app:euc_create_link}) & 11 & 11
-\end{tabularx}
-%}}}
-
-%{{{ MetaEdit+
-\subsection*{MetaEdit+}
-
-\begin{tabularx}{\textwidth}{Xcc}
-\textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
-\hline
-Open File (\ref{app:euc_open})                       & 6 & 3 \\
-Create Element (\ref{app:euc_create})                & 5 & 3 \\
-Create and Link Elements (\ref{app:euc_create_link}) & 14 & 9
-\end{tabularx}
-%}}}
-
-%{{{ MIT AppInventor
-\subsection*{MIT AppInventor}
-
-\begin{tabularx}{\textwidth}{Xcc}
-\textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
-\hline
-Open File (\ref{app:euc_open})                       & 3 & 3 \\
-Create Element (\ref{app:euc_create})                & 3 & 3 \\
-Create and Link Elements (\ref{app:euc_create_link}) & 6 & 7
-\end{tabularx}
-%}}}
-
-%{{{ MST Workshop
-\subsection*{MST Workshop}
-
-\begin{tabularx}{\textwidth}{Xcc}
-\textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
-\hline
-Open File (\ref{app:euc_open})                       & 4 & 3 \\
-Create Element (\ref{app:euc_create})                & 3 & 3 \\
-Create and Link Elements (\ref{app:euc_create_link}) & 8 & 8
-\end{tabularx}
-%}}}
-
-%{{{ Piet Creator
-\subsection*{Piet Creator}
-
-\begin{tabularx}{\textwidth}{Xcc}
-\textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
-\hline
-Open File (\ref{app:euc_open})                       & 3 & 3 \\
-Create Element (\ref{app:euc_create})                & 3 & 3 \\
-Print an Integer (\ref{app:euc_print_integer})       & 16 & 10
-\end{tabularx}
-%}}}
-
-%{{{ Scratch
-\subsection*{Scratch}
-
-\begin{tabularx}{\textwidth}{Xcc}
-\textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
-\hline
-Open File (\ref{app:euc_open})                       & 5 & 3 \\
-Create Element (\ref{app:euc_create})                & 3 & 3 \\
-Create and Link Elements (\ref{app:euc_create_link}) & 6 & 7
-\end{tabularx}
-%}}}
-
-%{{{ Simulink
-\subsection*{Simulink}
-
-\begin{tabularx}{\textwidth}{Xcc}
-\textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
-\hline
-Open File (\ref{app:euc_open})                       & 3  & 3 \\
-Create Element (\ref{app:euc_create})                & 4  & 3 \\
-Create and Link Elements (\ref{app:euc_create_link}) & 11 & 9
-\end{tabularx}
-%}}}
-
-%{{{ Stencyl
-\subsection*{Stencyl}
-
-\begin{tabularx}{\textwidth}{Xcc}
-\textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
-\hline
-Open File (\ref{app:euc_open})                       & 4 & 3 \\
-Create Element (\ref{app:euc_create})                & 3 & 3 \\
-Create and Link Elements (\ref{app:euc_create_link}) & 6 & 7
-\end{tabularx}
-%}}}
-
-%{{{ Tersus
-\subsection*{Tersus}
-
-\begin{tabularx}{\textwidth}{Xcc}
-\textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
-\hline
-Open File (\ref{app:euc_open})                       & 4 & 3 \\
-Create Element (\ref{app:euc_create})                & 4 & 3 \\
-Create and Link Elements (\ref{app:euc_create_link}) & 11 & 9
-\end{tabularx}
-%}}}
-
-%{{{ TouchDevelop
-\subsection*{TouchDevelop}
-
-\begin{tabularx}{\textwidth}{Xcc}
-\textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
-\hline
-Open File (\ref{app:euc_open})                       & 3 & 3 \\
-Create Element (\ref{app:euc_create})                & 3 & 2 \\
-Print a Character (\ref{app:euc_print_character})    & 6 & 5
-\end{tabularx}
-%}}}
-
-%{{{ UMLet
-\subsection*{UMLet}
-
-\begin{tabularx}{\textwidth}{Xcc}
-\textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
-\hline
-Open File (\ref{app:euc_open})                       & 4  & 3 \\
-Create Element (\ref{app:euc_create})                & 3  & 3 \\
-Create and Link Elements (\ref{app:euc_create_link}) & 15 & 9
-\end{tabularx}
-%}}}
-
-%{{{ VioletUML
-\subsection*{VioletUML}
-
-\begin{tabularx}{\textwidth}{Xcc}
-\textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
-\hline
-Open File (\ref{app:euc_open})                       & 4  & 3 \\
-Create Element (\ref{app:euc_create})                & 3  & 3 \\
-Create and Link Elements (\ref{app:euc_create_link}) & 11 & 11
-\end{tabularx}
-%}}}
-
-%{{{ VisSim
-\subsection*{VisSim}
-
-\begin{tabularx}{\textwidth}{Xcc}
-\textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
-\hline
-Open File (\ref{app:euc_open})                       & 3 & 3 \\
-Create Element (\ref{app:euc_create})                & 3 & 3 \\
-Create and Link Elements (\ref{app:euc_create_link}) & 9 & 9
-\end{tabularx}
-%}}}
-
-%{{{ Visual Paradigm
-\subsection*{Visual Paradigm}
-
-\begin{tabularx}{\textwidth}{Xcc}
-\textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
-\hline
-Open File (\ref{app:euc_open})                       & 4 & 3 \\
-Create Element (\ref{app:euc_create})                & 3 & 3 \\
-Create and Link Elements (\ref{app:euc_create_link}) & 10 & 10
-\end{tabularx}
-%}}}
-
-%{{{ Visual Use Case
-\subsection*{Visual Use Case}
-
-\begin{tabularx}{\textwidth}{Xcc}
-\textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
-\hline
-Open File (\ref{app:euc_open})                       & 4 & 3 \\
-Create Element (\ref{app:euc_create})                & 4 & 3 \\
-Create and Link Elements (\ref{app:euc_create_link}) & 8 & 6
-\end{tabularx}
-%}}}
-
-%{{{ WebRatio
-\subsection*{WebRatio}
-
-\begin{tabularx}{\textwidth}{Xcc}
-\textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
-\hline
-Open File (\ref{app:euc_open})                       & 4 & 3 \\
-Create Element (\ref{app:euc_create})                & 3 & 3 \\
-Create and Link Elements (\ref{app:euc_create_link}) & 10 & 10
-\end{tabularx}
-%}}}
-
-%{{{ YAWL
-\subsection*{YAWL}
-
-\begin{tabularx}{\textwidth}{Xcc}
-\textbf{Use Case} & \textbf{Required User Actions} & \textbf{User Mental Load}\\
-\hline
-Open File (\ref{app:euc_open})                       & 3 & 3 \\
-Create Element (\ref{app:euc_create})                & 3 & 3 \\
-Create and Link Elements (\ref{app:euc_create_link}) & 9 & 9
-\end{tabularx}
+\end{table*}
 %}}}
