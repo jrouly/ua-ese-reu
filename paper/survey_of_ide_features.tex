@@ -1,0 +1,74 @@
+\documentclass[letterpaper,10pt]{article}
+
+%{{{ Package includes
+
+% Table packages
+\usepackage{multirow} % for multirow tables
+\usepackage{tabularx} % tables with column stretching
+\usepackage{longtable}% long tables
+\usepackage{booktabs} % for fancier tables
+
+% Text formatting packages
+\usepackage{enumitem} % for custom, richer list environments
+\usepackage{fullpage} % use 1in margins
+\usepackage{amsmath}  % better mathematical formatting
+
+% Misc packages
+\usepackage{acronym}  % for defining acronyms
+\usepackage[numbers]{natbib} % for useful bibliography tools
+\usepackage{hyperref} % for hyperlinking
+
+%}}}
+
+%{{{ Custom environments / commands
+
+% Fix table spacing to look nicer
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+
+% Shorten the multirow command
+\newcommand{\mr}[2]{\multirow{#1}{*}{#2}}
+
+% Italicize Latin abbreviations
+\newcommand{\etc}{\textit{etc.}}
+\newcommand{\Etc}{\textit{Etc.}}
+\newcommand{\eg}{\textit{e.g.}}
+\newcommand{\Eg}{\textit{E.g.}}
+\newcommand{\ie}{\textit{i.e.}}
+\newcommand{\Ie}{\textit{I.e.}}
+
+%}}}
+
+%{{{ Acronym Definitions
+
+\acrodef{ide}[IDE]{Integrated Development Environment}
+\acrodef{emf}[EMF]{Eclipse Modeling Framework}
+\acrodef{grc}[GRC]{GNU Radio Companion}
+
+%}}}
+
+%{{{ Feature description list definitions
+
+\newlist{AlignedDesc}{description}{2}
+\setlist[AlignedDesc]{leftmargin=10em,style=nextline}
+
+%}}}
+
+%{{{ Title and frontmatter
+
+\title{\textbf{A Survey of Features in Visual IDEs for Non-Programmers from a Usability and ``Fit For Purpose'' Point of View}}
+\author{Jean Michel Rouly \and Jonathan Orbeck}
+\date{\today}
+
+%}}}
+
+\begin{document}
+
+\maketitle
+
+Foobar.
+
+\clearpage
+\bibliography{bibliography,ides}
+\bibliographystyle{plainnat}
+
+\end{document}
