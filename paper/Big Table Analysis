@@ -33,18 +33,22 @@ Chrome:
 
   + ToolRichness
     - This feature is POSITIVE.  The more methods the IDE uses to
-      differentiate the tools, the easier it is for the user to discern the 
+      differentiate the tools, the easier it is for the user to discern the
       different tools.
 
   + Perspectives
-    - This feature is POSITIVE. A larger amount of Perspectives is better than 
-      a smaller amount.  Different perspectives can allow different 
-      visualizations of the same thing, well-adhering to various working 
-      styles that a wide range of users would have.  They also support 
+    - This feature is POSITIVE. A larger amount of Perspectives is better
+      than a smaller amount.  Different perspectives can allow different
+      visualizations of the same thing, well-adhering to various working
+      styles that a wide range of users would have.  They also support
       modularization, making the IDE more manageable.
 
   + Properties
-    -This feature is POSITIVE.  Whether it is omnipresent or manual is situational, however.  An omnipresent properties window takes up screen real estate, but it is definitely more convienient.  The amount of the screen already consumed should be taken into account when deciding between omnipresent and manual.
+    - This feature is POSITIVE.  Whether it is omnipresent or manual is
+      situational, however.  An omnipresent properties window takes up screen
+      real estate, but it is definitely more convenient.  The amount of the
+      screen already consumed should be taken into account when deciding
+      between omnipresent and manual.
 
   + Searchable
     -This feature is POSITIVE.
