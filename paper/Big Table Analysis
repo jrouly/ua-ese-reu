@@ -44,7 +44,12 @@ Chrome:
       more manageable.
 
   + Properties
-    -It is generally a pretty good idea to keep a properties window within the IDE.  Whether it is omnipresent or manual is situational, however.  An omnipresent properties window takes up screen real estate, but it is definitely more convienient.  The amount of the screen already consumed should be taken into account when deciding between omnipresent and manual.
+    - It is generally a pretty good idea to keep a properties window within
+      the IDE.  Whether it is omnipresent or manual is situational,
+      however.  An omnipresent properties window takes up screen real
+      estate, but it is definitely more convienient.  The amount of the
+      screen already consumed should be taken into account when deciding
+      between omnipresent and manual.
 
   + Searchable
     -
@@ -65,7 +70,12 @@ Human Interface:
     -
 
   + Keyboard
-    -
+    - This feature is POSITIVE. Any presence of keyboard use (simple,
+      optional, or required) gives the user more ability to interact with
+      the IDE, especially given that keyboard user and hotkeys are far more
+      productive in general than mouse use alone. The exception to this
+      rule is IDEs in a touch-only environment - this is as productive as
+      can be expected.
 
   + Mode
     - This feature can have a bidirectional effect on the goal. The most
