@@ -71,13 +71,24 @@ Human Interface:
 Integration:
 
   + Relations
-    -
+    - This feature is POSITIVE. While not having this feature is not
+      necessarily a bad thing, having it aids the user by quickly
+      indicating what actions are allowed to them.
 
   + Output
-    -
+    - This feature is neutral and can't really have an effect toward the
+      goal. Direct / Indirect isn't a good/bad mapping. Live/Trigger can
+      also both be good or bad.
 
   + Syntax
-    -
+    - This feature is POSITIVE. Implicit syntax enforcement is the best,
+      followed by explicit, followed by no syntax enforcement at all.
+      Implicit syntax reduces the amount of load placed on the user by
+      reducing the number of available actions to a small set of legal
+      actions.  Explicit enforcement requires the user to go back and make
+      changes if he/she creates an error. Having no syntax enforcement at all
+      is simply dangerous and does not help the user. It's neutral, though,
+      because syntax enforcement can't really be entirely expected.
 
 
 Language Syntax:
