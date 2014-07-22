@@ -68,7 +68,12 @@ Human Interface:
     -
 
   + Mode
-    - This feature can have a POSITIVE effect on the goal.
+    - This feature can have a bidirectional effect on the goal. The most
+      common mode, "Drag n Drop (1:1)", is standard and A-OK. The mode
+      "Point n Click (1:1)" is slightly less common than this, but just as
+      productive overall. A slightly more productive mode, "Point n Click
+      (1:n)", is less common but probably better good given that it allows
+      for faster creation of elements.
 
   + Devices
     - This feature is NEUTRAL. While being able to interface with multiple
