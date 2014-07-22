@@ -1,15 +1,28 @@
-Motivation: 
-  The need for a framework that can specify (and generate) domain-specific visual IDEs.  We are looking for 1) what features should and should not be present and 2) what is the best way of presenting that feature.
+Motivation:
+  The need for a framework that can specify (and generate) domain-specific
+  visual IDEs.  We are looking for 1) what features should and should not
+  be present and 2) what is the best way of presenting that feature.
 
 Audience:
   + Domain
-    - This feature is neutral.  Domain is determined by the developer and is completely based on the purpose of the IDE.
+    - This feature is neutral.  Domain is determined by the developer and
+      is completely based on the purpose of the IDE.
+
   + Skill
-    - Because we are focusing on accessibility, aiming towards a general skill level would be ideal.  Novice users wouldn't be confused or intimidated by the design, and expert users wouldn't feel limited or held back.  However, in terms of accessibility, Novice is better than intermediate, which is better than expert.
+    - Because we are focusing on accessibility, aiming towards a general
+      skill level would be ideal.  Novice users wouldn't be confused or
+      intimidated by the design, and expert users wouldn't feel limited or
+      held back.  However, in terms of accessibility, Novice is better than
+      intermediate, which is better than expert.
+
 
 Chrome:
   + Features
-    - This is relatively neutral, in that necessary features are often determined by the visual language.  In general when dealing with visual languages though, Save, Delete, Copy, Cut, Paste, and Undo are somewhat important.
+    - This is relatively neutral, in that necessary features are often
+      determined by the visual language.  In general when dealing with
+      visual languages though, Save, Delete, Copy, Cut, Paste, and Undo are
+      somewhat important.
+
   + Context
   + ToolRichness
   + Perspectives
@@ -32,5 +45,7 @@ Integration:
 
 Language Syntax:
   + Complexity
+    - This feature is POSITIVE. Complexity is bad, managing it is good.
+      Tools for complexity management help reduce user mental load.
   + Connection
   + LanguageRichness
