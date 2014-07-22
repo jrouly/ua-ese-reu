@@ -1,21 +1,21 @@
 Motivation:
 
   The need for a framework that can specify (and generate) domain-specific
-  visual IDEs.  We are looking for 1) what features should and should not
+  visual IDEs. We are looking for 1) what features should and should not
   be present and 2) what is the best way of presenting that feature.
 
 
 Audience:
 
   + Domain
-    - This feature is NEUTRAL.  Domain is determined by the developer and
+    - This feature is NEUTRAL. Domain is determined by the developer and
       is completely based on the purpose of the IDE.
 
   + Skill
     - Because we are focusing on accessibility, aiming towards a general
-      skill level would be ideal.  Novice users wouldn't be confused or
+      skill level would be ideal. Novice users wouldn't be confused or
       intimidated by the design, and expert users wouldn't feel limited or
-      held back.  However, in terms of accessibility, Novice is better than
+      held back. However, in terms of accessibility, Novice is better than
       intermediate, which is better than expert.
 
 
@@ -23,38 +23,42 @@ Chrome:
 
   + Features
     - This is relatively NEUTRAL, in that necessary features are often
-      determined by the visual language.  In general when dealing with
+      determined by the visual language. In general when dealing with
       visual languages though, Save, Delete, Copy, Cut, Paste, and Undo are
       somewhat important.
 
   + Context
-    - This feature is POSITIVE.  They would be expected by
+    - This feature is POSITIVE. They would be expected by
       non-programmers and further focus the intuitiveness of the IDE.
 
   + ToolRichness
-    - This feature is POSITIVE.  The more methods the IDE uses to
+    - This feature is POSITIVE. The more methods the IDE uses to
       differentiate the tools, the easier it is for the user to discern the
       different tools.
 
   + Perspectives
     - This feature is POSITIVE. A larger amount of Perspectives is better
-      than a smaller amount.  Different perspectives can allow different
+      than a smaller amount. Different perspectives can allow different
       visualizations of the same thing, well-adhering to various working
-      styles that a wide range of users would have.  They also support
+      styles that a wide range of users would have. They also support
       modularization, making the IDE more manageable.
 
   + Properties
-    - This feature is POSITIVE.  Whether it is omnipresent or manual is
-      situational, however.  An omnipresent properties window takes up screen
-      real estate, but it is definitely more convenient.  The amount of the
+    - This feature is POSITIVE. Whether it is omnipresent or manual is
+      situational, however. An omnipresent properties window takes up screen
+      real estate, but it is definitely more convenient. The amount of the
       screen already consumed should be taken into account when deciding
       between omnipresent and manual.
 
   + Searchable
-    - This feature is POSITIVE.  Including the ability to search for tools that the user knows exists reduces time spent looking through the toolbars for the specific tool.  
+    - This feature is POSITIVE. Including the ability to search for tools
+      that the user knows exists reduces time spent looking through the
+      toolbars for the specific tool.
 
   + ToolStyle
-    - This feature is NEUTRAL.  The usefullness of each toolbar style is dependent on the function of the IDE and the purpose of each individual toolbar.
+    - This feature is NEUTRAL. The usefulness of each toolbar style is
+      dependent on the function of the IDE and the purpose of each
+      individual toolbar.
 
   + Clutter
     - Visual clutter is a NEGATIVE feature of an interface. Having too much
@@ -117,7 +121,7 @@ Integration:
       followed by explicit, followed by no syntax enforcement at all.
       Implicit syntax reduces the amount of load placed on the user by
       reducing the number of available actions to a small set of legal
-      actions.  Explicit enforcement requires the user to go back and make
+      actions. Explicit enforcement requires the user to go back and make
       changes if he/she creates an error. Having no syntax enforcement at all
       is simply dangerous and does not help the user. It's neutral, though,
       because syntax enforcement can't really be entirely expected.
