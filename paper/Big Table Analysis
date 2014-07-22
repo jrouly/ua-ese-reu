@@ -65,7 +65,10 @@ Human Interface:
     -
 
   + Devices
-    -
+    - This feature is NEUTRAL. While being able to interface with multiple
+      devices might be beneficial at times, depending on the domain it
+      might not even be feasible. Cannot be expected as a feature of an
+      IDE.
 
 
 Integration:
