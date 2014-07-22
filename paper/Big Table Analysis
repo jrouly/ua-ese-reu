@@ -1,9 +1,11 @@
 Motivation:
+
   The need for a framework that can specify (and generate) domain-specific
   visual IDEs.  We are looking for 1) what features should and should not
   be present and 2) what is the best way of presenting that feature.
 
 Audience:
+
   + Domain
     - This feature is neutral.  Domain is determined by the developer and
       is completely based on the purpose of the IDE.
@@ -17,6 +19,7 @@ Audience:
 
 
 Chrome:
+
   + Features
     - This is relatively neutral, in that necessary features are often
       determined by the visual language.  In general when dealing with
@@ -28,6 +31,7 @@ Chrome:
       non-programmers and further focus the intuitiveness of the IDE.
 
   + ToolRichness
+    jfjfjfjfjffjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj fjf jf jf jf jf jf jf jf 
   + Perspectives
   + Properties
   + Searchable
@@ -35,6 +39,7 @@ Chrome:
   + Clutter
 
 Human Interface:
+
   + EEfficiency
   + IEfficiency
   + Keyboard
@@ -42,11 +47,13 @@ Human Interface:
   + Devices
 
 Integration:
+
   + Relations
   + Output
   + Syntax
 
 Language Syntax:
+
   + Complexity
     - This feature is POSITIVE. Complexity is bad, managing it is good.
       Tools for complexity management help reduce user mental load.
