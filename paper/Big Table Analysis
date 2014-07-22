@@ -32,10 +32,16 @@ Chrome:
       non-programmers and further focus the intuitiveness of the IDE.
 
   + ToolRichness
-    - A high degree of interface visual richness is definitely a good thing.  The more methods the IDE uses to differentiate the tools, the easier it is for the user to discern the different tools.
+    - A high degree of interface visual richness is definitely a good
+      thing.  The more methods the IDE uses to differentiate the tools, the
+      easier it is for the user to discern the different tools.
 
   + Perspectives
-    - A larger amount of Perspectives is better than a smaller amount.  Different perspectives can allow different visualizations of the same thing, well-adhering to various working styles that a wide range of users would have.  They also support modularization, making the IDE more manageable.
+    - A larger amount of Perspectives is better than a smaller amount.
+      Different perspectives can allow different visualizations of the same
+      thing, well-adhering to various working styles that a wide range of
+      users would have.  They also support modularization, making the IDE
+      more manageable.
 
   + Properties
     -
@@ -62,7 +68,7 @@ Human Interface:
     -
 
   + Mode
-    -
+    - This feature can have a POSITIVE effect on the goal.
 
   + Devices
     - This feature is NEUTRAL. While being able to interface with multiple
