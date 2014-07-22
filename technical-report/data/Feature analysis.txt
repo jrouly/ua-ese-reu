@@ -13,18 +13,22 @@ This variable is neutral. Domain is determined simply by the purpose of the
 
 + Skill
 This variable can score positively or negatively. The value
-\texttt{General} is ideal because it indicates a high level of
-accessibility balanced with a similar level of utility. Any other value
-indicates specialization and, while perhaps increasing utility, decreases
-usability overall.
+\texttt{General} is ideal and scores positively because it indicates a high
+level of accessibility balanced with a similar level of utility. Any other
+value indicates specialization and, while perhaps increasing utility,
+decreases usability overall, thus scoring negatively.
 
 
 Chrome:
 
 + Features
-This is relatively NEUTRAL, in that necessary features are often determined
-by the visual language. In general when dealing with visual languages
-though, Save, Delete, Copy, Cut, Paste, and Undo are somewhat important.
+This variable scores positively with a larger total count of present
+subvariables. With more popular features present, an \ac{ide} gains
+accessibility through conformity with common user expectations.
+
+% This is relatively NEUTRAL, in that necessary features are often determined
+% by the visual language. In general when dealing with visual languages
+% though, Save, Delete, Copy, Cut, Paste, and Undo are somewhat important.
 
 + Context
 This feature is POSITIVE. They would be expected by non-programmers and
