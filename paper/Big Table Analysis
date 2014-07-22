@@ -3,14 +3,15 @@ Motivation:
 
 Audiance:
   + Domain
-  	- This feature is neutral.  Domain is determined by the developer and is completely based on the purpose of the IDE.
+    - This feature is neutral.  Domain is determined by the developer and is completely based on the purpose of the IDE.
   + Skill
-  	- Because we are focusing on accessability, aiming towards a general skill level would be ideal.  Novice users wouldn't be confused or intimidated by the design, and expert users wouldn't feel limited or held back.  However, in terms of accessiblilty, Novice is better than intermediate, which is better than expert.
+    - Because we are focusing on accessability, aiming towards a general skill level would be ideal.  Novice users wouldn't be confused or intimidated by the design, and expert users wouldn't feel limited or held back.  However, in terms of accessiblilty, Novice is better than intermediate, which is better than expert.
 
 Chrome:
   + Features
-  	- This is relatively neutral, in that necessary features are often determined by the visual language.  In general when dealing with visual languages though, Save, Delete, Copy, Cut, Paste, and Undo are somewhat important.
+    - This is relatively neutral, in that necessary features are often determined by the visual language.  In general when dealing with visual languages though, Save, Delete, Copy, Cut, Paste, and Undo are somewhat important.
   + Context
+    - Context sensitive tools are good.  They would be expected by non-programmers and further focus the intuitiveness of the IDE.
   + ToolRichness
   + Perspectives
   + Properties
