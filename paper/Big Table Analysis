@@ -87,7 +87,11 @@ Language Syntax:
       Tools for complexity management help reduce user mental load.
 
   + Connection
-    -
+    - This feature is NEUTRAL and has no real effect toward the goal. It
+      simply provides a classification scheme for the language types.
 
   + LanguageRichness
-    -
+    - Like ToolRichness, having a higher amount of variables acting toward
+      LanguageRichness is a good thing. A higher amount of visual
+      discriminability results in an easier time for the user to
+      differentiate elements on the screen.
