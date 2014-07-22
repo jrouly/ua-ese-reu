@@ -1,6 +1,24 @@
 \section{Variable Definitions}
 \label{sec:definitions}
 
+The variable definition list will contain at minimum five common features
+for each variable. These will include:
+
+\begin{description}
+  \item[name] the full, unique name of the variable
+  \item[abbreviation] a shortened, unique identifier
+  \item[type] variable data type, one of \textit{boolean},
+  \textit{nominal}, \textit{ordinal}, \textit{ratio}, or \textit{compound}
+  \item[description] a detailed description of the variable and any
+  references
+  \item[scoring] a description of how the variable affects the overall
+  performance and usability of the \ac{ide}
+\end{description}
+
+\noindent
+Variable definitions may also include \textbf{accepted values} or,
+occasionally, \textbf{component variables}.
+
 %{{{ subsection: Audience
 \subsection{Audience}
 \label{subsec:audience}
@@ -321,7 +339,7 @@ mentally (\eg{} the mental load required of the user to operate the
 \begin{AlignedDesc}
   \item[Abbreviation] \texttt{EEfficiency}
 
-  \item[Variable Type] Continuous
+  \item[Variable Type] Ratio
 
   \item[Description] The \textbf{Essential Efficiency} of an \ac{ide}
   measures the level to which the system automates tasks for the user. It
@@ -359,7 +377,7 @@ mentally (\eg{} the mental load required of the user to operate the
 \begin{AlignedDesc}
   \item[Abbreviation] \texttt{IEfficiency}
 
-  \item[Variable Type] Continuous
+  \item[Variable Type] Ratio
 
   \item[Description] The \textbf{Interface Efficiency} of an \ac{ide} is a
   concept related to the productivity of an interface. It measures the
