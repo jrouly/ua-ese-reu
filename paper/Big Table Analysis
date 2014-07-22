@@ -51,13 +51,13 @@ Chrome:
       between omnipresent and manual.
 
   + Searchable
-    -This feature is POSITIVE.
+    - This feature is POSITIVE.  Including the ability to search for tools that the user knows exists reduces time spent looking through the toolbars for the specific tool.  
 
   + ToolStyle
-    -
+    - This feature is NEUTRAL.  The usefullness of each toolbar style is dependent on the function of the IDE and the purpose of each individual toolbar.
 
   + Clutter
-    -
+    - This feature is NEGATIVE.  A high amount of visual clutter can confuse and overwhelm the user, detracting from the accessibility of the IDE.  The lowest amount of clutter possible is definitely ideal. 
 
 
 Human Interface:
