@@ -33,28 +33,62 @@ Chrome:
 
   + ToolRichness
     - A high degree of interface visual richness is definitely a good thing.  The more methods the IDE uses to differentiate the tools, the easier it is for the user to discern the different tools.
+
   + Perspectives
     - A larger amount of Perspectives is better than a smaller amount.  Different perspectives can allow different visualizations of the same thing, well-adhering to various working styles that a wide range of users would have.  They also support modularization, making the IDE more manageable.
+
   + Properties
+    -
+
   + Searchable
+    -
+
   + ToolStyle
+    -
+
   + Clutter
+    -
 
 
 Human Interface:
 
   + EEfficiency
+    -
+
   + IEfficiency
+    -
+
   + Keyboard
+    -
+
   + Mode
+    -
+
   + Devices
+    -
 
 
 Integration:
 
   + Relations
+    - This feature is POSITIVE. While not having this feature is not
+      necessarily a bad thing, having it aids the user by quickly
+      indicating what actions are allowed to them.
+
   + Output
+    - This feature is neutral and can't really have an effect toward the
+      goal. Direct / Indirect isn't a good/bad mapping. Live/Trigger can
+      also both be good or bad.
+
   + Syntax
+    - This feature is POSITIVE. Implicit syntax enforcement is the best,
+      followed by explicit, followed by no syntax enforcement at all.
+      Implicit syntax reduces the amount of load placed on the user by
+      reducing the number of available actions to a small set of legal
+      actions.  Explicit enforcement requires the user to go back and make
+      changes if he/she creates an error. Having no syntax enforcement at all
+      is simply dangerous and does not help the user. It's neutral, though,
+      because syntax enforcement can't really be entirely expected.
 
 
 Language Syntax:
@@ -64,5 +98,11 @@ Language Syntax:
       Tools for complexity management help reduce user mental load.
 
   + Connection
-    - 
+    - This feature is NEUTRAL and has no real effect toward the goal. It
+      simply provides a classification scheme for the language types.
+
   + LanguageRichness
+    - Like ToolRichness, having a higher amount of variables acting toward
+      LanguageRichness is a good thing. A higher amount of visual
+      discriminability results in an easier time for the user to
+      differentiate elements on the screen.
