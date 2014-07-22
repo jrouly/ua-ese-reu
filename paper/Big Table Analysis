@@ -8,7 +8,7 @@ Motivation:
 Audience:
 
   + Domain
-    - This feature is neutral.  Domain is determined by the developer and
+    - This feature is NEUTRAL.  Domain is determined by the developer and
       is completely based on the purpose of the IDE.
 
   + Skill
@@ -22,29 +22,29 @@ Audience:
 Chrome:
 
   + Features
-    - This is relatively neutral, in that necessary features are often
+    - This is relatively NEUTRAL, in that necessary features are often
       determined by the visual language.  In general when dealing with
       visual languages though, Save, Delete, Copy, Cut, Paste, and Undo are
       somewhat important.
 
   + Context
-    - Context sensitive tools are good.  They would be expected by
+    - This feature is POSITIVE.  They would be expected by
       non-programmers and further focus the intuitiveness of the IDE.
 
   + ToolRichness
-    - A high degree of interface visual richness is definitely a good
-      thing.  The more methods the IDE uses to differentiate the tools, the
-      easier it is for the user to discern the different tools.
+    - This feature is POSITIVE.  The more methods the IDE uses to
+      differentiate the tools, the easier it is for the user to discern the 
+      different tools.
 
   + Perspectives
-    - A larger amount of Perspectives is better than a smaller amount.
-      Different perspectives can allow different visualizations of the same
-      thing, well-adhering to various working styles that a wide range of
-      users would have.  They also support modularization, making the IDE
-      more manageable.
+    - This feature is POSITIVE. A larger amount of Perspectives is better than 
+      a smaller amount.  Different perspectives can allow different 
+      visualizations of the same thing, well-adhering to various working 
+      styles that a wide range of users would have.  They also support 
+      modularization, making the IDE more manageable.
 
   + Properties
-    -It is generally a pretty good idea to keep a properties window within the IDE.  Whether it is omnipresent or manual is situational, however.  An omnipresent properties window takes up screen real estate, but it is definitely more convienient.  The amount of the screen already consumed should be taken into account when deciding between omnipresent and manual.
+    -This feature is POSITIVE.  Whether it is omnipresent or manual is situational, however.  An omnipresent properties window takes up screen real estate, but it is definitely more convienient.  The amount of the screen already consumed should be taken into account when deciding between omnipresent and manual.
 
   + Searchable
     -
