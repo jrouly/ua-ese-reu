@@ -1,0 +1,82 @@
+Motivation:
+
+  The need for a framework that can specify (and generate) domain-specific
+  visual IDEs. We are looking for 1) what features should and should not
+  be present and 2) what is the best way of presenting that feature.
+
+
+Alice3:
+  +
+
+AToMPM:
+  +
+
+AudioMulch:
+  +
+
+Blender:
+  +
+
+Cameleon:
+  +
+
+Eclipse Modeling Framework:
+  +
+
+GNU Radio Companion:
+  +
+
+Grasshopper 3D:
+  +
+
+Max:
+  +
+
+MetaEdit+:
+  +
+
+MIT AppInventor:
+  +
+
+MST Workshop:
+  +
+
+Piet Creator:
+  +
+
+Scratch:
+  +
+
+Simulink:
+  +
+
+Stencyl:
+  +
+
+Tersus:
+  +
+
+TouchDevelop:
+  +
+
+UMLet:
+  +
+
+Violet:
+  +
+
+VisSim:
+  +
+
+Visual Paradigm:
+  +
+
+Visual Use Case:
+  +
+
+WebRatio:
+  +
+
+YAWL:
+  +
+
