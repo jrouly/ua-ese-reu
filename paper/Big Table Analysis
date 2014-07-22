@@ -59,13 +59,22 @@ Chrome:
 Human Interface:
 
   + EEfficiency
-    -
+    - This feature has a simple relationship with the goal: the more
+      EEfficient an interface, the less mental work the user needs to
+      perform.
 
   + IEfficiency
-    -
+    - This feature has a simple relationship with the goal: the more
+      IEfficient an interface, the less physical work the user needs to
+      perform.
 
   + Keyboard
-    -
+    - This feature is POSITIVE. Any presence of keyboard use (simple,
+      optional, or required) gives the user more ability to interact with
+      the IDE, especially given that keyboard user and hotkeys are far more
+      productive in general than mouse use alone. The exception to this
+      rule is IDEs in a touch-only environment - this is as productive as
+      can be expected.
 
   + Mode
     - This feature can have a bidirectional effect on the goal. The most
