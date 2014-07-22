@@ -4,6 +4,7 @@ Motivation:
   visual IDEs.  We are looking for 1) what features should and should not
   be present and 2) what is the best way of presenting that feature.
 
+
 Audience:
 
   + Domain
@@ -37,6 +38,7 @@ Chrome:
   + ToolStyle
   + Clutter
 
+
 Human Interface:
 
   + EEfficiency
@@ -45,16 +47,20 @@ Human Interface:
   + Mode
   + Devices
 
+
 Integration:
 
   + Relations
   + Output
   + Syntax
 
+
 Language Syntax:
 
   + Complexity
     - This feature is POSITIVE. Complexity is bad, managing it is good.
       Tools for complexity management help reduce user mental load.
+
   + Connection
+    - 
   + LanguageRichness
