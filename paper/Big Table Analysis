@@ -57,7 +57,12 @@ Chrome:
     -
 
   + Clutter
-    -
+    - Visual clutter is a NEGATIVE feature of an interface. Having too much
+      clutter results in interfaces that are difficult to navigate and
+      place too much load on the user to simply keep straight in their
+      minds. IDEs should definitely be expected to employ means of reducing
+      clutter and maintaining a level of organization & neat tool
+      placement.
 
 
 Human Interface:
