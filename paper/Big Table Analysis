@@ -44,7 +44,7 @@ Chrome:
       more manageable.
 
   + Properties
-    -
+    -It is generally a pretty good idea to keep a properties window within the IDE.  Whether it is omnipresent or manual is situational, however.  An omnipresent properties window takes up screen real estate, but it is definitely more convienient.  The amount of the screen already consumed should be taken into account when deciding between omnipresent and manual.
 
   + Searchable
     -
