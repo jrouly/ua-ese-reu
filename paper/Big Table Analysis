@@ -64,10 +64,14 @@ Chrome:
 Human Interface:
 
   + EEfficiency
-    -
+    - This feature has a simple relationship with the goal: the more
+      EEfficient an interface, the less mental work the user needs to
+      perform.
 
   + IEfficiency
-    -
+    - This feature has a simple relationship with the goal: the more
+      IEfficient an interface, the less physical work the user needs to
+      perform.
 
   + Keyboard
     - This feature is POSITIVE. Any presence of keyboard use (simple,
