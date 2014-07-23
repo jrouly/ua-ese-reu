@@ -41,101 +41,92 @@ component variables. A higher level of visual discriminability simplifies
 the task of differentiating elements on the screen for the user.
 
 + Perspectives
-This feature is POSITIVE. A larger amount of Perspectives is better than a
-smaller amount. Different perspectives can allow different visualizations
-of the same thing, well-adhering to various working styles that a wide
-range of users would have. They also support modularization, making the IDE
-more manageable.
+This variable scores positively with a direct correlation to the number of 
+\textbf{perspectives} supported. Different \textbf{perspectives} are able to 
+modularize complex systems and reflect data in various visual manners, 
+simplifying use of the \ac{ide} and adhereing to the preferences of a wide 
+range of users.
 
 + Properties
-This feature is POSITIVE. Whether it is omnipresent or manual is
-situational, however. An omnipresent properties window takes up screen real
-estate, but it is definitely more convenient. The amount of the screen
-already consumed should be taken into account when deciding between
-omnipresent and manual.
+This variable is neutral as long as it is present, whereas a lack of a 
+properties dialog would be scored negatively. Properties dialogs offer the 
+user a means to alter in-depth information about an element or a group of 
+elements and the absence of one eliminates this level of customizability.
 
 + Searchable
-This feature is POSITIVE. Including the ability to search for tools that
-the user knows exists reduces time spent looking through the toolbars for
-the specific tool.
+This variable is scored positively if present. The ability to search for a 
+tool by name, especially one whose location is unknown by the user, 
+drastically reduces the time and mouse clicks required to manually search 
+through menus to find the desired tool.
 
 + ToolStyle
-This feature is NEUTRAL. The usefulness of each toolbar style is dependent
-on the function of the IDE and the purpose of each individual toolbar.
+This variable is neutral. The usefulness of each \textbf{toolbar style} is 
+dependent on the function of the \ac{ide} and the purpose of each individual 
+toolbar.
 
 + Clutter
-Visual clutter is a NEGATIVE feature of an interface. Having too much
-clutter results in interfaces that are difficult to navigate and place too
-much load on the user to simply keep straight in their minds. IDEs should
-definitely be expected to employ means of reducing clutter and maintaining
-a level of organization & neat tool placement.
+This variable is scored negatively with an increasing amount of \textbf{visual
+clutter}. A large amount of clutter results in an interface that is difficult 
+to navigate, places unnecessary strain on the user's mind, and decreases the 
+overall intuitiveness of the \ac{ide}. 
 
 
 Human Interface:
 
 + EEfficiency
-This feature has a simple relationship with the goal: the more EEfficient
-an interface, the less mental work the user needs to perform.
+This variable is scored positively based on its value. The more \textbf{Essential Efficiency} an interface possesses, the less mental work the user needs to perform.
 
 + IEfficiency
-This feature has a simple relationship with the goal: the more IEfficient
-an interface, the less physical work the user needs to perform.
+This variable is scored positively based on its value. The more \textbf{Interface Efficiency} an interface possesses, the less physical work the user needs to perform.
 
 + Keyboard
-This feature is POSITIVE. Any presence of keyboard use (simple, optional,
-or required) gives the user more ability to interact with the IDE,
-especially given that keyboard user and hotkeys are far more productive in
-general than mouse use alone. The exception to this rule is IDEs in a
-touch-only environment - this is as productive as can be expected.
+Each value for this variable is scored differently. \texttt{Simple} is 
+neutral, \texttt{optional} is positive, and \texttt{required} is negative. An 
+optional keyboard use gives the user more ability to interact with the IDE, 
+allowing the user to determine thier optimal mouse-and-keyboard combination. 
+Required keyboard use, on the other hand, locks the user into a possibly 
+uncomfortable or unintuitive method of using the \ac{ide}.
 
 + Mode
-This feature can have a bidirectional effect on the goal. The most common
-mode, "Drag n Drop (1:1)", is standard and A-OK. The mode "Point n Click
-(1:1)" is slightly less common than this, but just as productive overall. A
-slightly more productive mode, "Point n Click (1:n)", is less common but
-probably better good given that it allows for faster creation of elements.
+This variable is neutral. Though \texttt{Point n Click (1:n)} is slightly more productive than the other two possible values, the difference between all three is miniscule enough to be deemed insignificant.
 
 + Devices
-This feature is NEUTRAL. While being able to interface with multiple
+This variable is neutral. Though being able to interface with multiple
 devices might be beneficial at times, depending on the domain it might not
-even be feasible. Cannot be expected as a feature of an IDE.
+even be feasible.
 
 
 Integration:
 
 + Relations
-This feature is POSITIVE. While not having this feature is not necessarily
-a bad thing, having it aids the user by quickly indicating what actions are
-allowed to them.
+This variable is scored positively if present. While not having this feature 
+is not necessarily a bad thing, its presence can reduce mental load on the 
+user by quickly indicating what actions are allowed to them.
 
 + Output
-This feature is neutral and can't really have an effect toward the goal.
-Direct / Indirect isn't a good/bad mapping. Live/Trigger can also both be
-good or bad.
+This variable is neutral and is more indicative of an \ac{ide}'s purpose than 
+its quality.  No combinations of the inherant variables (direct, indirect, 
+dynamic, and trigger) can be labeled as better than others, and is therefore 
+not adherant to the scoring metric.
 
 + Syntax
-This feature is POSITIVE. Implicit syntax enforcement is the best, followed
-by explicit, followed by no syntax enforcement at all.  Implicit syntax
-reduces the amount of load placed on the user by reducing the number of
-available actions to a small set of legal actions. Explicit enforcement
-requires the user to go back and make changes if he/she creates an error.
-Having no syntax enforcement at all is simply dangerous and does not help
-the user. It's neutral, though, because syntax enforcement can't really be
-entirely expected.
+This variable is scored positively on a scale. Implicit syntax enforcement is 
+scored highest, followed by explicit, followed by no syntax enforcement at 
+all. Implicit syntax reduces the amount of load placed on the user by reducing 
+the number of available actions to a small set of legal actions. Explicit 
+enforcement informs the user of their mistake after the fact and requires him/
+her to go back and make changes. The lack of any syntax enforcement is 
+somewhat dangerous and does not assist the user in any way.
 
 
 Language Syntax:
 
 + Complexity
-This feature is POSITIVE. Complexity is bad, managing it is good.  Tools
-for complexity management help reduce user mental load.
+This variable is scored positively if present.  \textt{Modularization} and a \textt{hierarchical design} are both effective means of managing complexity, with neither being objectively better than the other. However, a lack of complexity management can lead to a confusing or overwhelming desing, particularly in interfaces which incorporate larger systems.
 
 + Connection
-This feature is NEUTRAL and has no real effect toward the goal. It simply
-provides a classification scheme for the language types.
+This variable is neutral and has no real effect toward the goal. The \textbf{connection style} is more dependent on the visual language being used and is not a good representation of the \ac{ide}'s quality.
 
 + LanguageRichness
-Like ToolRichness, having a higher amount of variables acting toward
-LanguageRichness is a good thing. A higher amount of visual
-discriminability results in an easier time for the user to differentiate
-elements on the screen.
+This variable scores positively, increasing with the number of present
+component variables. As with tool richness, a higher level of visual discriminability simplifies the task of differentiating elements on the screen for the user.
