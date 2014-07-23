@@ -9,16 +9,19 @@ workspace area to remove attention from complex models rather than complex
 screenshot.
 
 We ended up with 12 unique workers completing the tasks, identified
-anonymously in~\ref{table:mturk_workers}.  See
-\begin{verbatim}    cat Batch_1613411_batch_results.csv | sort | \
-        head -n 375 | awk -F "," '{print $1}' |  \
-        uniq -c\end{verbatim}
-for details.
+anonymously in Table~\ref{table:mturk_workers}.
+%See
+%\begin{verbatim}    cat Batch_1613411_batch_results.csv | sort | \
+%        head -n 375 | awk -F "," '{print $1}' |  \
+%        uniq -c\end{verbatim}
+%for details.
+On average, each worker spent about one minute studying an
+image of the \ac{ide} and received \$0.02 for each task completed for an
+effective hourly rate of \$1.00.
 
 \noindent
 \begin{table}[!htb]\centering
 \ra{1.3}
-\label{table:mturk_workers}
 \begin{tabular}{@{}cc@{}}\toprule
   \textbf{Worker Identifier} & \textbf{\ac{hit} Count} \\
   \midrule
@@ -37,17 +40,17 @@ for details.
   \bottomrule
 \end{tabular}
 \caption{Amazon \acs{mt} workers}
+\label{table:mturk_workers}
 \end{table}
 
 We transform the resulting data into a set of five vectors, represented
-similarly to the abbreviated table in~\ref{table:mturk_data} where numeric
+similarly to the abbreviated Table~\ref{table:mturk_data} where numeric
 values are ordinal data representing the variable \textbf{Visual Clutter}
 on a scale from one to five, from low to high amounts of clutter.
 
 \noindent
 \begin{table}[!htb]\centering
 \ra{1.3}
-\label{table:mturk_data}
 \begin{tabular}{@{}lccccc@{}}\toprule
   \textbf{\acs{ide}} & \textbf{raterA} & \textbf{raterB} &
   \textbf{raterC} & \textbf{raterD} & \textbf{raterE} \\
@@ -61,4 +64,17 @@ on a scale from one to five, from low to high amounts of clutter.
   \bottomrule
 \end{tabular}
 \caption{Amazon \acs{mt} data preview}
+\label{table:mturk_data}
 \end{table}
+
+Because multiple reviewers were presented with each subject, we performed
+an \ac{irr} measure to ensure agreement across reviewers. Using the R
+statistical library \texttt{irr} we perform a two-way, agreement,
+average-measure \ac{icc}. The result, \ac{icc} = 0.648, is within the
+``good'' range of significance.~\cite{cicchetti1994,hallgren2012} This
+\ac{icc} value indicates that the reviewers were, in general, in agreement
+about their ranking of interface clutter. Note that there were more than
+five participating reviewers total, despite five sets of reviews (\ie{} the
+experimental design is not ``fully crossed''~\cite{hallgren2012}). We argue
+that this is not significant, however, because the five sets of reviewers
+are disjoint sets, acting as entirely independent actors.
