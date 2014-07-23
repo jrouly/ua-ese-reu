@@ -1,0 +1,64 @@
+\section{Methods}
+\label{sec:methods}
+
+\subsection{\acl{mt}}
+We took three unique screenshots of each \ac{ide} and darkened the
+workspace area to remove attention from complex models rather than complex
+\ac{ide} chrome. We then distributed these screenshots on Amazon.com
+\ac{mt} \acp{hit}, requiring five unique workers for each
+screenshot.
+
+We ended up with 12 unique workers completing the tasks, identified
+anonymously in~\ref{table:mturk_workers}.  See
+\begin{verbatim}    cat Batch_1613411_batch_results.csv | sort | \
+        head -n 375 | awk -F "," '{print $1}' |  \
+        uniq -c\end{verbatim}
+for details.
+
+\noindent
+\begin{table}[!htb]\centering
+\ra{1.3}
+\label{table:mturk_workers}
+\begin{tabular}{@{}cc@{}}\toprule
+  \textbf{Worker Identifier} & \textbf{\ac{hit} Count} \\
+  \midrule
+  Worker A & 21 \\
+  Worker B & 50 \\
+  Worker C & 59 \\
+  Worker D & 10 \\
+  Worker E & 5 \\
+  Worker F & 75 \\
+  Worker G & 4 \\
+  Worker H & 19 \\
+  Worker I & 56 \\
+  Worker J & 14 \\
+  Worker K & 61 \\
+  Worker L & 1 \\
+  \bottomrule
+\end{tabular}
+\caption{Amazon \acs{mt} workers}
+\end{table}
+
+We transform the resulting data into a set of five vectors, represented
+similarly to the abbreviated table in~\ref{table:mturk_data} where numeric
+values are ordinal data representing the variable \textbf{Visual Clutter}
+on a scale from one to five, from low to high amounts of clutter.
+
+\noindent
+\begin{table}[!htb]\centering
+\ra{1.3}
+\label{table:mturk_data}
+\begin{tabular}{@{}lccccc@{}}\toprule
+  \textbf{\acs{ide}} & \textbf{raterA} & \textbf{raterB} &
+  \textbf{raterC} & \textbf{raterD} & \textbf{raterE} \\
+  \midrule
+  alice1 & 3 & 2 & 5 & 4 & 4 \\
+  alice2 & 4 & 2 & 4 & 4 & 5 \\
+  alice3 & 2 & 5 & 4 & 1 & 2 \\
+  appinventor1 & 2 & 5 & 4 & 5 & 4 \\
+  appinventor2 & 1 & 3 & 3 & 4 & 3 \\
+  appinventor3 & 4 & 3 & 3 & 3 & 2 \\
+  \bottomrule
+\end{tabular}
+\caption{Amazon \acs{mt} data preview}
+\end{table}
