@@ -23,12 +23,8 @@ Chrome:
 
 + Features
 This variable scores positively with a larger total count of present
-subvariables. With more popular features present, an \ac{ide} 
-accessibility through conformity with common user expectations.
-
-% This is relatively NEUTRAL, in that necessary features are often determined
-% by the visual language. In general when dealing with visual languages
-% though, Save, Delete, Copy, Cut, Paste, and Undo are somewhat important.
+subvariables. With more popular features present, an \ac{ide} accessibility
+through conformity with common user expectations.
 
 + Context
 This variable scores positively if present. Context-sensitive tools are
@@ -41,54 +37,60 @@ component variables. A higher level of visual discriminability simplifies
 the task of differentiating elements on the screen for the user.
 
 + Perspectives
-This variable scores positively with a direct correlation to the number of 
-\textbf{perspectives} supported. Different \textbf{perspectives} are able to 
-modularize complex systems and reflect data in various visual manners, 
-simplifying use of the \ac{ide} and adhereing to the preferences of a wide 
+This variable scores positively with a direct correlation to the number of
+\textbf{perspectives} supported. Different \textbf{perspectives} are able
+to modularize complex systems and reflect data in various visual manners,
+simplifying use of the \ac{ide} and adhering to the preferences of a wide
 range of users.
 
 + Properties
-This variable is neutral as long as it is present, whereas a lack of a 
-properties dialog would be scored negatively. Properties dialogs offer the 
-user a means to alter in-depth information about an element or a group of 
+This variable is neutral as long as it is present, whereas a lack of a
+properties dialog would be scored negatively. Properties dialogs offer the
+user a means to alter in-depth information about an element or a group of
 elements and the absence of one eliminates this level of customizability.
 
 + Searchable
-This variable is scored positively if present. The ability to search for a 
-tool by name, especially one whose location is unknown by the user, 
-drastically reduces the time and mouse clicks required to manually search 
+This variable is scored positively if present. The ability to search for a
+tool by name, especially one whose location is unknown by the user,
+drastically reduces the time and mouse clicks required to manually search
 through menus to find the desired tool.
 
 + ToolStyle
-This variable is neutral. The usefulness of each \textbf{toolbar style} is 
-dependent on the function of the \ac{ide} and the purpose of each individual 
-toolbar.
+This variable is neutral. The usefulness of each \textbf{Toolbar Style} is
+dependent on the function of the \ac{ide} and the purpose of each
+individual toolbar.
 
 + Clutter
-This variable is scored negatively with an increasing amount of \textbf{visual
-clutter}. A large amount of clutter results in an interface that is difficult 
-to navigate, places unnecessary strain on the user's mind, and decreases the 
-overall intuitiveness of the \ac{ide}. 
+This variable is scored negatively with an increasing amount of
+\textbf{visual clutter}. A large amount of clutter results in an interface
+that is difficult to navigate, places unnecessary strain on the user's
+mind, and decreases the overall intuitiveness of the \ac{ide}.
 
 
 Human Interface:
 
 + EEfficiency
-This variable is scored positively based on its value. The more \textbf{Essential Efficiency} an interface possesses, the less mental work the user needs to perform.
+This variable is scored positively based on its value. The more
+\textbf{Essential Efficiency} an interface possesses, the less mental work
+the user needs to perform.
 
 + IEfficiency
-This variable is scored positively based on its value. The more \textbf{Interface Efficiency} an interface possesses, the less physical work the user needs to perform.
+This variable is scored positively based on its value. The more
+\textbf{Interface Efficiency} an interface possesses, the less physical
+work the user needs to perform.
 
 + Keyboard
-Each value for this variable is scored differently. \texttt{Simple} is 
-neutral, \texttt{optional} is positive, and \texttt{required} is negative. An 
-optional keyboard use gives the user more ability to interact with the IDE, 
-allowing the user to determine thier optimal mouse-and-keyboard combination. 
-Required keyboard use, on the other hand, locks the user into a possibly 
-uncomfortable or unintuitive method of using the \ac{ide}.
+Each value for this variable is scored differently. \texttt{Simple} is
+neutral, \texttt{optional} is positive, and \texttt{required} is negative.
+Optional keyboard increases user ability to interact with the \ac{ide},
+allowing the user to determine their optimal mouse-and-keyboard
+combination. Required keyboard use, on the other hand, locks the user into
+a possibly uncomfortable or unintuitive method of interaction.
 
 + Mode
-This variable is neutral. Though \texttt{Point n Click (1:n)} is slightly more productive than the other two possible values, the difference between all three is miniscule enough to be deemed insignificant.
+This variable is neutral. Although \texttt{Point n Click (1:n)} is slightly
+more productive than the other two possible values, the difference is
+minuscule enough to be deemed insignificant.
 
 + Devices
 This variable is neutral. Though being able to interface with multiple
@@ -99,34 +101,44 @@ even be feasible.
 Integration:
 
 + Relations
-This variable is scored positively if present. While not having this feature 
-is not necessarily a bad thing, its presence can reduce mental load on the 
-user by quickly indicating what actions are allowed to them.
+This variable is scored positively if present. While not having this
+feature is not necessarily a bad thing, its presence can reduce mental load
+on the user by quickly indicating what actions are allowed to them.
 
 + Output
-This variable is neutral and is more indicative of an \ac{ide}'s purpose than 
-its quality.  No combinations of the inherant variables (direct, indirect, 
-dynamic, and trigger) can be labeled as better than others, and is therefore 
-not adherant to the scoring metric.
+This variable is neutral and is more indicative of an \ac{ide}'s purpose
+than its quality. No combinations of values (\texttt{direct},
+\texttt{indirect}, \texttt{dynamic}, and \texttt{trigger}) results in a
+greatly improved or reduced quality of user experience.
 
 + Syntax
-This variable is scored positively on a scale. Implicit syntax enforcement is 
-scored highest, followed by explicit, followed by no syntax enforcement at 
-all. Implicit syntax reduces the amount of load placed on the user by reducing 
-the number of available actions to a small set of legal actions. Explicit 
-enforcement informs the user of their mistake after the fact and requires him/
-her to go back and make changes. The lack of any syntax enforcement is 
-somewhat dangerous and does not assist the user in any way.
+This variable can be scored positively or negatively, depending on the
+values it takes. \texttt{Implicit} is scored highest, followed by
+\texttt{explicit}, followed by \texttt{none}. Implicit syntax enforcement
+reduces the amount of load placed on the user by reducing the number of
+available actions to a small set of legal actions. Explicit enforcement
+informs the user of their mistakes after the fact and requires user action
+to correct them. The lack of any syntax enforcement is dangerous and does
+not provide the user any assistance.
 
 
 Language Syntax:
 
 + Complexity
-This variable is scored positively if present.  \textt{Modularization} and a \textt{hierarchical design} are both effective means of managing complexity, with neither being objectively better than the other. However, a lack of complexity management can lead to a confusing or overwhelming desing, particularly in interfaces which incorporate larger systems.
+This variable is scored positively if present and negatively otherwise.
+\textt{Modularization} and a \textt{hierarchical design} are both effective
+means of managing complexity, with neither objectively better than the
+other. However, a lack of complexity management can lead to a confusing or
+overwhelming design, particularly in interfaces which incorporate larger
+systems.
 
 + Connection
-This variable is neutral and has no real effect toward the goal. The \textbf{connection style} is more dependent on the visual language being used and is not a good representation of the \ac{ide}'s quality.
+This variable is neutral. The \textbf{connection style} is more dependent
+on the visual language being used and is not a good representation of the
+\ac{ide}'s quality or features.
 
 + LanguageRichness
 This variable scores positively, increasing with the number of present
-component variables. As with tool richness, a higher level of visual discriminability simplifies the task of differentiating elements on the screen for the user.
+component variables. As with tool richness, a higher level of visual
+discriminability simplifies the task of differentiating elements on the
+screen for the user.
