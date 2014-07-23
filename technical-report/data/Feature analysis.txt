@@ -23,7 +23,7 @@ Chrome:
 
 + Features
 This variable scores positively with a larger total count of present
-subvariables. With more popular features present, an \ac{ide} gains
+subvariables. With more popular features present, an \ac{ide} 
 accessibility through conformity with common user expectations.
 
 % This is relatively NEUTRAL, in that necessary features are often determined
@@ -31,12 +31,14 @@ accessibility through conformity with common user expectations.
 % though, Save, Delete, Copy, Cut, Paste, and Undo are somewhat important.
 
 + Context
-This feature is POSITIVE. They would be expected by non-programmers and
-further focus the intuitiveness of the IDE.
+This variable scores positively if present. Context-sensitive tools are
+ubiquitous in graphical user interfaces and provide a simple yet
+conventional way to increase usability.
 
 + ToolRichness
-This feature is POSITIVE. The more methods the IDE uses to differentiate
-the tools, the easier it is for the user to discern the different tools.
+This variable scores positively, increasing with the number of present
+component variables. A higher level of visual discriminability simplifies
+the task of differentiating elements on the screen for the user.
 
 + Perspectives
 This feature is POSITIVE. A larger amount of Perspectives is better than a
