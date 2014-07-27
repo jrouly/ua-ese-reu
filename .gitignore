@@ -60,6 +60,7 @@
 *.make
 *.d
 *.temp
+_out_
 
 # makeidx
 *.idx
