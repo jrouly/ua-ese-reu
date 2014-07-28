@@ -5,10 +5,10 @@
 Hopefully Syriani can help with this.
 \end{verbatim}
 
-\subsection{Previous Work}
-\label{subsec:previous_work}
+\subsection{Related Work}
+\label{subsec:related_work}
 
-A \textit{visual language} \ac{ide} is a software tool that supports
+A visual language \ac{ide} is a software tool that supports
 development within a specific visual language or set of visual languages.
 Often these \acp{ide} provide the operator with information about the
 syntax of the supported language(s) or otherwise provide features that
@@ -19,9 +19,13 @@ language. Consequently, it is important to utilize as many techniques as
 possible to ensure both overall interface usability and suitability to the
 target language.
 
-\subsubsection{Language Classification}
+\subsubsection{Language Analysis}
 A good starting point in the analysis of visual language \ac{ide}
 suitability is an understanding of the visual languages themselves. The
 interface supporting a language must ensure that the design choices made
 within the language are mirrored and supported within the \ac{ide}.
-\cite{hils1992}
+\cite{hils1992} For example, languages with a high level of liveness
+\cite{hils1992} would not be well suited to \acp{ide} developed with an
+indirect trigger output generation style as any benefits from liveness are
+lost. Additionally, domain-specific features of domain-customized languages
+may introduce \ac{ide} requirements to maintain full support.
