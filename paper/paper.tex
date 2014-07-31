@@ -1,4 +1,4 @@
-\documentclass[10pt,preprint]{styles/sigplanconf}
+\documentclass[10pt,preprint]{sigplanconf}
 
 %\usepackage[T1]{fontenc}
 \usepackage[bookmarks,bookmarksopen,bookmarksdepth=2]{hyperref} %sections as bookmarks in adobe pdf
@@ -40,7 +40,7 @@
 %\usepackage{verbatim}
 
 % Advanced Math
-%\usepackage{amsmath}
+\usepackage{amsmath}
 %\usepackage{amssymb}     % double line font letters (for number sets N,Z,D,Q,R)
 
 % Images and Floats
@@ -80,6 +80,7 @@
 \newcommand{\Fig}[1]{Fig.~\ref{#1}}         % choose Fig. or Figure, depending on the style
 \newcommand{\Table}[1]{Table~\ref{#1}}      % Table reference
 \newcommand{\Sect}[1]{Section~\ref{#1}}     % section name always with a capital S
+\newcommand{\Eq}[1]{Equation~\ref{#1}}      % equation reference
 \newcommand{\Model}[1]{\textsf{\small{#1}}} % name of any modeling artifact (e.g., formalism, model element, rule, ...)
 \newcommand{\Code}[1]{\texttt{\small{#1}}}  % inline code
 \providecommand{\e}[1]{\ensuremath{\times 10^{#1}}} % scientific notation: x.10^y
