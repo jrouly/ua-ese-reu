@@ -1,7 +1,7 @@
-UA-ESE-REU Paper: Modeling IDE Generators
+Usability and Suitability Survey of Features in Visual IDEs for Non-Programmers
 =========================================
 
-Title:
+Title: Usability and Suitability Survey of Features in Visual IDEs for Non-Programmers
 
 Authors: Jean Michel Rouly, Jonathan Orbeck
 
