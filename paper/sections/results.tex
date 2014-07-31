@@ -1,7 +1,1056 @@
 \section{Results}
 \label{sec:results}
 
-\begin{verbatim}
-+ Values for each IDE
-+ Somehow summarize the table data
-\end{verbatim}
+%\begin{landscape}
+\begin{table*}
+	\centering
+		{\scriptsize
+		\begin{tabular}{l|cccccccc}
+		  \hline\hline
+		  &&&&&&&&		\\[-1.5ex]
+      \textbf{IDE}
+      & \textbf{\scshape Features}
+      & \textbf{\scshape Context}
+      & \textbf{\scshape ToolRichness}
+      & \textbf{\scshape Perspectives}
+      & \textbf{\scshape Properties}
+      & \textbf{\scshape Searchable}
+      & \textbf{\scshape ToolStyle}
+      & \textbf{\scshape Clutter}			\\[1ex]
+		  \hline
+		  &&&&&&&&		\\[-1.5ex]
+      \textbf{Alice3} & 8	& Yes	& 6	& 2	& Omnipresent	& No	& Tabs	& 3.40			\\[1ex]
+      \textbf{AToMPM}    & 4	& No	& 5	& 1	& Manual	& No	& Modular	& 2.60			\\[1ex]
+      \textbf{AudioMulch}    & 7	& Yes	& 6	& 2	& Manual	& No	& Tree, Windows	& 3.13			\\[1ex]
+      \textbf{Blender}    & 7	& Yes	& 7	& Multiple	& Omnipresent	& No	& Multiple	& 4.00			\\[1ex]
+      \textbf{Cameleon}    & 3	& Yes	& 5	& 1	& Manual	& Yes	& Tree	& 2.07			\\[1ex]
+      \textbf{EMF}    & 9	& Yes	& 5	& Multiple	& Manual	& Yes	& Tree, Icons	& 4.07			\\[1ex]
+      \textbf{GNU Radio Companion}    & 6	& No	& 4	& 1	& Manual	& Yes	& Icons	& 2.80			\\[1ex]
+      \textbf{Grasshopper 3D}    & 7	& Yes	& 4	& 1	& None	& Yes	& Ribbons	& 2.80			\\[1ex]
+      \textbf{Max}    & 7	& No	& 4	& 2	& Manual	& Yes	& Tree, Windows	& 2.73			\\[1ex]
+      \textbf{MetaEdit+}    & 7	& Yes	& 4	& 3	& Manual	& No	& Icons, Windows	& 1.93			\\[1ex]
+      \textbf{MIT AppInventor2}    & 3	& Yes	& 4	& 2	& Omnipresent	& No	& Drawers	& 3.27			\\[1ex]
+      \textbf{MST}    & 6	& No	& 3	& 1	& Manual	& No	& Icons	& 2.40			\\[1ex]
+      \textbf{Piet Creator}    & 4	& No	& 7	& 1	& None	& No	& Icons	& 2.13			\\[1ex]
+      \textbf{Scratch}    & 3	& No	& 6	& 2	& None	& No	& Drawers	& 3.53			\\[1ex]
+      \textbf{SimuLink}    & 7	& No	& 3	& 1	& Manual	& Yes	& Icons, Tree	& 3.80			\\[1ex]
+      \textbf{Stencyl}    & 6	& Yes	& 8	& Multiple	& Manual	& Yes	& Tabs, Icons	& 2.73			\\[1ex]
+      \textbf{Tersus}    & 8	& No	& 3	& 1	& Omnipresent	& No	& Drawers	& 3.20			\\[1ex]
+      \textbf{TouchDevelop}    & 6	& Yes	& 6	& 1	& None	& No	& Icons	& 3.60			\\[1ex]
+      \textbf{UMLet}    & 6	& No	& 3	& 1	& Omnipresent	& No	& Palette	& 3.00			\\[1ex]
+      \textbf{VioletUML}    & 6	& No	& 4	& 1	& Manual	& No	& Drawers	& 2.47			\\[1ex]
+      \textbf{VisSim}    & 8	& No	& 4	& 1	& Manual	& Yes	& Tree, Menu	& 3.33			\\[1ex]
+      \textbf{Visual Paradigm}    & 7	& Yes	& 5	& 1	& Omnipresent	& No	& Icons, Menu	& 3.67			\\[1ex]
+      \textbf{Visual Use Case}    & 3	& No	& 4	& 7	& Manual	& No	& Icons, Tree	& 2.67			\\[1ex]
+      \textbf{WebRatio}    & 8	& No	& 4	& 3	& Omnipresent	& No	& Icons, Menu	& 3.93			\\[1ex]
+      \textbf{YAWL}    & 5	& No	& 5	& 2	& Omnipresent	& No	& Icons	& 2.27			\\[1ex]
+			%\hline
+		\end{tabular}}
+	\caption{Measure of the chrome of \acp{ide}.}
+	\label{tab:chrome}
+\end{table*}
+%
+\begin{table*}
+	\centering
+		{\scriptsize
+		\begin{tabular}{l|cc|ccccc}
+		  \hline\hline
+		  &&&&&&&		\\[-1.5ex]
+      \multirow{2}{*}{\textbf{IDE}}
+      & \multicolumn{2}{c|}{\textbf{\scshape Audience}}
+      & \multicolumn{5}{c}{\textbf{Human Interface}}  \\[1ex]
+      & \textbf{\scshape Domain}
+      & \textbf{\scshape Skill}
+      & \textbf{\scshape EEfficiency}
+      & \textbf{\scshape IEfficiency}
+      & \textbf{\scshape Keyboard}
+      & \textbf{\scshape Mode}
+      & \textbf{\scshape Devices}			\\[1ex]
+		  \hline
+		  &&&&&&&		\\[-1.5ex]
+      \textbf{Alice3}    & Animation	& Novice	& 0.46	& 0.08	& Optional	& Drag n Drop (1:1)	& None			\\[1ex]
+      \textbf{AToMPM}    & Modeling	& Intermediate	& 0.23	& 0.15	& Optional	& Point n Click (1:n)	& None			\\[1ex]
+      \textbf{AudioMulch}    & Music	& Expert	& 0.31	& 0.31	& Simple	& Drag n Drop (1:1)	& Keyboards			\\[1ex]
+      \textbf{Blender}    & 3D Modeling	& Expert	& 0	& -0.2	& Required	& Point n Click (1:1)	& None			\\[1ex]
+      \textbf{Cameleon}    & Prototyping	& Intermediate	& 0.23	& 0.31	& Required	& Drag n Drop (1:1)	& None			\\[1ex]
+      \textbf{EMF}    & Software	& Expert	& 0.23	& 0.62	& Optional	& Point n Click (1:1)	& None			\\[1ex]
+      \textbf{GNU Radio Companion}    & Software	& Intermediate	& 0.38	& 0.62	& Optional	& Drag n Drop (1:1)	& None			\\[1ex]
+      \textbf{Grasshopper 3D}    & 3D Modeling	& Intermediate	& 0.31	& 0.31	& Optional	& Point n Click (1:1)	& None			\\[1ex]
+      \textbf{Max}    & Music	& Expert	& 0.15	& 0.15	& Simple	& Drag n Drop (1:1)	& Microphones			\\[1ex]
+      \textbf{MetaEdit+}    & Modeling	& Intermediate	& 0.31	& -0.08	& Simple	& Point n Click (1:1)	& None			\\[1ex]
+      \textbf{MIT AppInventor2}    & Software	& Novice	& 0.46	& 0.54	& Simple	& Drag n Drop (1:1)	& Mobile			\\[1ex]
+      \textbf{MST}    & Simulation	& Intermediate	& 0.38	& 0.38	& Simple	& Point n Click (1:1)	& None			\\[1ex]
+      \textbf{Piet Creator}    & Software	& General	& 0.17	& -0.33	& None	& Point n Click (1:n)	& None			\\[1ex]
+      \textbf{Scratch}    & Software	& Novice	& 0.46	& 0.54	& Simple	& Drag n Drop (1:1)	& None			\\[1ex]
+      \textbf{SimuLink}    & Simulation	& Expert	& 0.31	& 0.15	& Simple	& Drag n Drop (1:1)	& None			\\[1ex]
+      \textbf{Stencyl}    & Software	& Novice	& 0.46	& 0.54	& Simple	& Drag n Drop (1:1)	& Mobile			\\[1ex]
+      \textbf{Tersus}    & Software	& Intermediate	& 0.31	& 0.15	& Simple	& Point n Click (1:1)	& None			\\[1ex]
+      \textbf{TouchDevelop}    & Software	& Novice	& 0.44	& 0.33	& None	& Point n Click (1:1)	& Mobile			\\[1ex]
+      \textbf{UMLet}    & Modeling	& General	& 0.31	& -0.15	& Simple	& Drag n Drop (1:1)	& None			\\[1ex]
+      \textbf{VioletUML}    & Modeling	& Intermediate	& 0.15	& 0.15	& Simple	& Point n Click (1:n)	& None			\\[1ex]
+      \textbf{VisSim}    & Simulation	& Expert	& 0.31	& 0.31	& Simple	& Drag n Drop (1:1)	& None			\\[1ex]
+      \textbf{Visual Paradigm}    & Modeling	& Intermediate	& 0.23	& 0.23	& Simple	& Drag n Drop (1:1)	& None			\\[1ex]
+      \textbf{Visual Use Case}    & Modeling	& Intermediate	& 0.54	& 0.38	& Simple	& Point n Click (1:1)	& None			\\[1ex]
+      \textbf{WebRatio}    & Software	& Intermediate	& 0.23	& 0.23	& Simple	& Point n Click (1:1)	& None			\\[1ex]
+      \textbf{YAWL}    & Workflow	& Expert	& 0.31	& 0.31	& Simple	& Point n Click (1:n)	& None			\\[1ex]
+			%\hline
+		\end{tabular}}
+	\caption{Measure of the human interface of \acp{ide} and their intended audience.}
+	\label{tab:interface}
+\end{table*}
+%
+\begin{table*}
+	\centering
+		{\scriptsize
+		\begin{tabular}{l|ccc|ccc}
+		  \hline\hline
+		  &&&&&&		\\[-1.5ex]
+      \multirow{2}{*}{\textbf{IDE}}
+      & \multicolumn{3}{c|}{\textbf{Integration}}
+      & \multicolumn{3}{c}{\textbf{Language Syntax}}  \\[1ex]
+      & \textbf{\scshape Relations}
+      & \textbf{\scshape Output}
+      & \textbf{\scshape Syntax}
+      & \textbf{\scshape Complexity}
+      & \textbf{\scshape Connection}
+      & \textbf{\scshape Language Richness}			\\[1ex]
+		  \hline
+		  &&&&&&		\\[-1.5ex]
+      \textbf{Alice3}    & No	& Direct Triggered	& Implicit	& Modularization	& Overlapping Regions	& 8			\\[1ex]
+      \textbf{AToMPM}    & No	& Indirect Triggered	& Explicit	& None	& Linked Regions	& 6			\\[1ex]
+      \textbf{AudioMulch}    & Yes	& Indirect Live	& Implicit	& None	& Linked Points	& 3			\\[1ex]
+      \textbf{Blender}    & No	& Direct Live	& Implicit	& Modularization	& Geometric	& 9			\\[1ex]
+      \textbf{Cameleon}    & Yes	& Direct Live	& Explicit	& Hierarchy	& Linked Points	& 5			\\[1ex]
+      \textbf{EMF}    & No	& Indirect Triggered	& Explicit	& Modularization	& Linked Points, Linked Regions	& 5			\\[1ex]
+      \textbf{GNU Radio Companion}    & No	& Indirect Triggered	& Explicit	& None	& Linked Points	& 2			\\[1ex]
+      \textbf{Grasshopper 3D}    & No	& Indirect Live	& Explicit	& None	& Linked Points	& 6			\\[1ex]
+      \textbf{Max}    & No	& Indirect Live	& None	& Modularization	& Linked Points	& 5			\\[1ex]
+      \textbf{MetaEdit+}    & No	& Direct Live	& Implicit	& Modularization	& Linked Regions	& 5			\\[1ex]
+      \textbf{MIT AppInventor2}    & No	& Direct Triggered	& Implicit	& Modularization	& Overlapping Regions	& 9			\\[1ex]
+      \textbf{MST}    & No	& Direct Live	& None	& None	& Overlapping Points	& 4			\\[1ex]
+      \textbf{Piet Creator}    & No	& Indirect Triggered	& None	& None	& Geometric	& 4			\\[1ex]
+      \textbf{Scratch}    & No	& Direct Triggered	& Implicit	& Modularization	& Overlapping Regions	& 10			\\[1ex]
+      \textbf{SimuLink}    & No	& Indirect Live	& None	& None	& Linked Regions	& 4			\\[1ex]
+      \textbf{Stencyl}    & No	& Direct Triggered	& Implicit	& Modularization	& Overlapping Regions	& 10			\\[1ex]
+      \textbf{Tersus}    & No	& Direct Triggered	& None	& Hierarchy	& Linked Points, Linked Regions, Geometric	& 3			\\[1ex]
+      \textbf{TouchDevelop}    & No	& Indirect Triggered	& Explicit	& Modularization	& Geometric	& 4			\\[1ex]
+      \textbf{UMLet}    & No	& Direct Live	& None	& None	& Overlapping Points	& 4			\\[1ex]
+      \textbf{VioletUML}    & No	& Direct Live	& Explicit	& None	& Linked Regions	& 4			\\[1ex]
+      \textbf{VisSim}    & No	& Direct Live	& None	& Hierarchy	& Linked Points	& 4			\\[1ex]
+      \textbf{Visual Paradigm}    & No	& Direct Live	& Implicit	& None	& Linked Regions	& 2			\\[1ex]
+      \textbf{Visual Use Case}    & No	& Direct Live	& None	& Modularization	& Linked Regions	& 3			\\[1ex]
+      \textbf{WebRatio}    & No	& Indirect Triggered	& None	& Hierarchy	& Linked Regions, Geometric	& 4			\\[1ex]
+      \textbf{YAWL}    & No	& Direct Triggered	& None	& None	& Linked Regions	& 4			\\[1ex]
+			%\hline
+		\end{tabular}}
+	\caption{Measure of the integration and language syntax of \acp{ide}.}
+	\label{tab:integration-langsyn}
+\end{table*}
+%
+\paragraph{Alice3} Designed primarily as an educational programming
+environment, Alice3 alienates skilled users by expecting a lower level of
+skill in its domain. It makes up for this loss in accessibility, however,
+with its wide, almost universal, support of common \ac{ide} features as
+well as context-sensitive tooling. Alice3 provides a medium level of visual
+richness in its interface chrome, but boasts one of the highest essential
+efficiency values. This efficiency value is achieved through the ``MIT
+Scratch'' style of visual syntax. However, despite greatly reducing
+operator mental load, Alice3's clunky design only manages a near-neutral
+interface efficiency. The introduction of optional keybindings is a
+redeeming factor for Alice3 and, like most educational programming
+\acp{ide}, Alice3 includes simple modular complexity management and a
+visually appealing level of language visual richness.
+
+\paragraph{AToMPM} AToMPM is unique among the \acp{ide} in this study in
+that is built as a modeling framework specifically to develop \acp{ide}.
+While AToMPM does not support a large number of popular \ac{ide} features
+or visual richness variables, its modular toolbar system helps to reduce
+visual clutter by loading only the features the user deems necessary.
+AToMPM allows for a small number of optional keybindings which can help
+increase utility, but essential efficiency and interface efficiency are
+only slightly above a one to one ratio with the essential use cases.
+Explicit syntax enforcement is provided which protects the user from
+potential illegal operations, but no complexity management system is in
+place to handle user mental load. Because AToMPM is used to develop
+\acp{ide} it can be argued that resulting generated AToMPM tools may score
+differently, but overall AToMPM achieves roughly average performance
+compared to the other \acp{ide} in the study.
+
+\paragraph{AudioMulch} Although AudioMulch offers a wide array of tools and
+an in-depth interface ideal for professionals in the music industry, the
+overall complexity of the design greatly reduces the accessibility for
+anyone else. It supports a large amount of popular \ac{ide} features,
+however, and offers equally high essential and interface efficiency
+ratings. This is visually assisted by a relation-highlighting feature which
+also provides AudioMulch with an implicit syntax enforcement, both of which
+greatly aid the user in model creation. Unfortunately, there is no effort
+made to manage the high amount of complexity within the \ac{ide} and
+virtually all of the canvas elements look exactly the same, ultimately
+awarding AudioMulch with a low language visual richness score.
+
+\paragraph{Blender} Designed for a skilled target audience of experts in
+the domain, it is no surprise that Blender supports most common \ac{ide}
+features or provides context-sensitive tooling. Its high level of chrome
+visual richness and the large number of perspectives available relative to
+the average found in this study also contribute to a high quality
+interface. However, its featurefulness leads directly to the second highest
+observed value for visual clutter. Blender possess no particular efficiency
+techniques, remaining around a perfect one-to-one relationship with the
+measured essential use cases. Its heavy use of the keyboard reduces
+accessibility to a wider audience, although the target skill level is
+already a limiting factor. Finally, Blender provides modularization
+complexity management through saving and duplication tools,along with one
+of the most visually rich languages observed.
+
+\paragraph{Cameleon} Intended for rapid, flexible visual prototyping of
+functional algorithms, Cameleon is relatively feature impoverished --- it
+only supports three of the most popular \ac{ide} features. It does however
+boast a large number of available tools which are conveniently searchable.
+Cameleon's interface chrome employs five visual richness variables,
+slightly above the average count. Its sleek, simple interface is rated as
+low clutter, and provides a positive level of essential and interface
+efficiency. Interaction requires use of the keyboard for non-essential
+actions, specifically advanced navigation and zooming. Cameleon supports
+the user by interactively highlighting allowed syntactic relations and
+explicitly enforcing syntax requirements. More support is provided by its
+hierarchical complexity management system. Overall, Cameleon is an
+efficient, simple tool with a large library of functionality and a focus on
+supporting syntax requirements.
+
+\paragraph{\acl{emf}} The \ac{emf} is one of the most sophisticated
+\acp{ide} in this study and demands an expert level of skill from target
+users. It is also the only \ac{ide} studied which supports all of the
+measured popular features, as any expert in the domain would likely come to
+expect. The \ac{emf} interface chrome supports five visual richness
+variables as well as a large number of predefined interface perspectives.
+The high level of supported perspectives, while perhaps intimidating,
+increases the overall power and utility of the interface. Additionally, the
+\ac{emf} tool space is searchable, which counterbalances the highest
+observed level of visual clutter. Despite being extremely cluttered,
+\ac{emf} has average levels of essential efficiency and the highest
+measured level of interface efficiency. The supported visual languages do
+not make use of more than five visual variables but do allow for complexity
+management. Overall, \ac{emf} is well suited for an expert user with high
+efficiency and several convenience features, but is too cluttered and not
+visually rich enough to support a wider audience of varied skill levels.
+
+\paragraph{\acl{grc}} \acl{grc} is a simple platform designed to aid the
+development of signal processing software without the need to understand or
+write code. It does, however, require a moderate level of skill in the
+domain. \ac{grc} supports slightly more than the average number of popular
+\ac{ide} features as well as the ability to search through available tools.
+\ac{grc} is not extensively visually pleasing, however, as the interface
+chrome only utilizes four visual variables while the supported language
+only employs two. Despite this, the interface is highly efficient, with the
+highest observed interface efficiency and a correspondingly high level of
+essential efficiency. It also supports some optional keyboard use and
+explicit syntax checking. \ac{grc} is designed as an easy to use interface
+for non-coders, and manages to maintain simplicity while still offering a
+large amount of technical power.
+
+\paragraph{Grasshopper 3D} Though Grasshopper is able to provide the user
+with a relatively simple and easy to use interface, beginners would likely
+shy away from the complexity of its core functionality. Even so, it offers
+a high amount of popular \ac{ide} features and context sensitive tools, as
+well as the ability to search through its vast library of tools quickly and
+easily by name. Grasshopper also possesses very good efficiency techniques,
+maintaining both values at a more-than-decent level. In addition, the
+optional use of a keyboard is supported, offering functionality on another
+level to increase accessibility. Complexity management is not supported at
+all, however, and visual richness in both the language and tools are
+mediocre at best.
+
+\paragraph{Max} Max's overly simple appearance can be misleading --- it is
+very much designed for skilled users in the music development domain. It
+supports a great deal of popular features and an average number of visual
+richness variables in both its chrome and supported language, making it
+accessible and relatively visually pleasing. Its use of a searchable
+toolspace is unique among the studied \acp{ide} --- in order to create
+almost any advanced element in the workspace, the user must search by name
+or description for the element. Only a small subset of Max's functionality
+can be reached otherwise. This simultaneously radically reduces visual
+clutter by hiding most elements from the user while also drastically
+increasing mental overhead for users. Max offers a below average level of
+interface and essential efficiency, as well as a convenient modular
+complexity management system. Once mastered, Max can be a powerful and
+efficient tool for developing music and audio processing tools, but the
+amount to which the library of functionality is removed from the user can
+be intimidating and, ultimately, greatly decreases accessibility.
+
+\paragraph{MetaEdit+} Aimed towards an intermediate level of users, the
+many different tasks and steps that go into the design of a simple model in
+MetaEdit+ can easily be daunting for newer users.  These tasks are
+fortunately divided through modularization, allowing them to be much more
+manageable withing the \ac{ide}. Furthermore, many of the popular \ac{ide}
+features as well as context sensitive tools are present in the interface,
+increasing the accessability even more. MetaEdit+ also holds the lowest
+clutter value and integrates an inplicit syntax enforcement, providing the
+user with a clear and easy to use workspace. A favorable essential
+efficiency value is also present, whereas the interface efficiency suffers
+from MetaEdit+'s necessity to complete a dialog for each created element.
+
+\paragraph{MIT AppInventor} Much like Alice3 and the other educational
+interfaces, MIT's AppInventor is designed for an unskilled, novice
+audience, reducing the breadth of target audience. By only supporting three
+of the top ten popular features, AppInventor additionally alienates its
+audience through nonconformity with expected standards. While colorful,
+AppInventor's interface only supports four visual variables to distinguish
+elements in the chrome, relying heavily on icons and text. AppInventor
+combines the ``MIT Scratch'' style of visual syntax along with a Drag n
+Drop element creation workspace, resulting in high levels of effective and
+interface efficiency. Another artifact of the ``MIT Scratch'' style of
+visual syntax is its implicit syntax enforcement, assisting the user by
+preventing illegal structures. Finally, the high level of language visual
+richness and modular complexity management scheme result in an overall
+visually pleasant experience.
+
+\paragraph{MST Workshop} Though MST Workshop offers a very simple and easy
+to use interface, it does not offer much explanation as to the use of its
+many different simulation categories. As such, they are virtually unusable
+by anyone without prior knowledge of that subject, drastically limiting its
+accessibility. In the same vein, it does not incorporate enough visual
+richness variables to easily discern or interpret the tools and very few
+popular \ac{ide} features are supported. Though the efficiency values are
+better than decent and the clutter was rated to be relatively low, no
+actions were made to reduce the complexity of the system or even enforce
+the language's syntax. All of this merged together with a less-than-stellar
+language visual richness level shows that MST Workshop definitely has room
+for improvement.
+
+\paragraph{Piet Creator} As the primary \ac{ide} used in the creation of
+Piet programs, Piet Creator does a very good job of providing a very simple
+interface for novices without limiting the usability for more expert users.
+On top of that, the toolbars utilize seven of the eight tool visual
+richness variables and it possesses an extremely low clutter rating,
+maximizing accessibility for all users.  However, Piet Creator does not
+offer any sort of properties dialog, eliminating the ability to manage data
+on a deeper level. The user is also limited to using only the mouse for
+every task, which creates a poor combination with the fact that Piet
+Creator holds the lowest interface efficiency value. The Piet language
+syntax is not enforced in the slightest, forcing the user to manually debug
+his/her whole program to located any errors in the code. In general, the
+simplicity of Piet Creator's design allows for a relaxed and visually
+appealing environment, but it can evidently be overly threadbare to a
+degrading extent.
+
+\paragraph{Scratch} One of the earliest educational interfaces present in
+this study, Scratch has influenced a great deal of later \acp{ide},
+including Stencyl, AppInventor, and Alice3 to name a few. Scratch is
+specifically targeted toward a novice audience with a low skill level, and
+only supports three of the top ten popular features. The interface employs
+an average level of visual richness variables, and does not even define an
+object properties window. The sparse, cluttered interface redeems itself
+through high values of essential and interface efficiency. Implicit syntax
+enforcement provides a safe environment for learning users, and the highest
+observed level of language visual richness provides an engaging, visually
+rich display. The focus on efficiency and visual richness works well in an
+\ac{ide} designed for education by accelerating reinforcement and engaging
+student attention.
+
+\paragraph{Simulink} Though Simulink features a plethora of components that
+can allow it to perform virtually any electrical simulation, the vast scope
+of its functions and the amount of on-screen tasks greatly reduces its
+accessibility. Each individual function that Simulink provides creates its
+own dialog window on screen, severely increasing visual clutter and
+complexity with prolonged use and no techniques for complexity management.
+A searchable toolspace is present to take off some mental load in dealing
+with Simulink's huge tool libraries, however very few visual richness
+variables are integrated to increase discernibility between the tools. The
+canvas elements also provide some relatively good efficiency values, though
+the \ac{ide} provides no features to enforce the syntax of the simulation
+language. The lack of visual richness overall detracts from the usability
+and enjoyment of this tool, despite it being very powerful.
+
+\paragraph{Stencyl} Stencyl provides a very easy to use interface for game
+software creation for an early level audience, but in the process
+sacrifices any higher level functionality. This \ac{ide} also integrates
+the ``MIT Scratch'' style of coding, which carries along with it very high
+efficiency values and implicit syntax enforcement. Every tool visual
+richness variable is utilized within the toolbars, which are also
+searchable, allowing for a very user-friendly and productive interface.
+Each language visual richness variable is supported within the canvas as
+well, thereby giving Stencyl perfect visual richness ratings. A very large
+number of perspectives are present due to Stencyl's powerful modularization
+techniques, greatly reducing the amount of mental strain on the user to
+handle the many steps that go into creating a game and showing Stencyl to
+be an altogether organized and well-designed \ac{ide}.
+
+\paragraph{Tersus} Tersus is able offer an interface for web application
+design with a very large number of popular \ac{ide} features, largely
+thanks to the integration of Eclipse's user interface. Unfortunately, very
+few visual richness variables are utilized for either the tools or the
+language and there is no syntax enforcement to aid the user at all through
+the design process. The efficiency of the \ac{ide} is decent, however, and
+Tersus hits a high point with its use of a hierarchical design to program
+behaviors and functions of the various components in the model. Though this
+is a very nice feature, it doesn't distract at all from the overall
+blandness of the language.
+
+\paragraph{TouchDevelop} Designed as an educational program as part of
+Microsoft's "Hour of Code" campaign, TouchDevelop offers a simple user
+interface with a very limited functionality. Though the model itself is
+textually code based, the code is written by pressing buttons representing
+different commands, objects, attributes, etc., increasing both essential
+and interface efficiency by a good margin. The large, on-screen "keyboard"
+gives the interface a slightly cluttered feel, however, and the text based
+model places limits on the amount of language visual richness variables
+that can be integrated in the design.
+
+\paragraph{UMLet} UMLet provides a general purpose, easy to use software
+interface with no particular expectations about user skill level. It offers
+many of the most popular \ac{ide} features a user might expect, but does
+not offer a visually rich chrome or language. Conceptually efficient but
+clunky in implementation, UMLet measured high in essential efficiency but
+low in interface efficiency. To the detriment of the inexperienced user,
+UMLet offers no syntax enforcement. It also offers no complexity management
+devices to ease mental load. Barebones to the extreme, UMLet provides users
+with a visually simple interface and no additional usability features like
+context-sensitive tooling or searchable tools. Its power, however, lies in
+its simplicity and ease of use at any entry skill level.
+
+\paragraph{Violet} Similar to UMLet, Violet provides an easy to use
+interface with no specific entry skill level assumptions. It offers the
+same common \ac{ide} features as UMLet, with a slightly richer chrome.
+Violet's interface is slightly less cluttered than UMLet's but also offers
+a lower essential efficiency. Violet is higher in interface efficiency over
+UMLet, though. Neither interface offers syntax enforcement or complexity
+management and, since both support ac{uml} as the target visual language,
+both share a low level of language visual richness. The two interfaces are
+relatively featureless and differ primarily in the mode of user
+interaction.
+
+\paragraph{VisSim} VisSim is a highly sophisticated visual simulation tool,
+designed for experts in the field. By supporting most popular \ac{ide}
+features, VisSim meets most developer expectations. The interface and
+language are adequately visually rich, supporting the average count of four
+visual variables. The large library of functionality is conveniently
+searchable, and overall the interface is highly efficient. VisSim's simple
+to use hierarchical complexity management system reduces overall mental
+load, but a lack of syntax enforcement may leave users in a dangerous
+position.
+
+\paragraph{Visual Paradigm} Visual Paradigm offers a ac{uml} based
+interface designed to support every defined ac{uml} diagram. As such,
+however, much of the functionality may be daunting to a novice to ac{uml}
+architecture. Many popular \ac{ide} features are present, though, as well
+as context sensitive tools for a slightly more accessible use. Visual
+Paradigm's design allows for implicit syntax enforcement, a very useful
+feature when dealing with ac{uml}, with a decent amount of interface
+efficiency and an okay essential efficiency value. An unfavorable amount of
+clutter is present in the \ac{ide} however, and no effort is taken to
+manage complexity throughout the interface. Combined with an extremely low
+amount of language visual richness, due to ac{uml} standards, the downsides
+of Visual Paradigm outweigh the good.
+
+\paragraph{Visual Use Case} Unlike Visual Paradigm which supports the
+creation of all \ac{uml} diagrams, Visual Use Case gives an in depth
+approach to the requirements workflow with a focus on use case creation.
+Many different perspectives are provided as modularization tools to allow
+the micromanagement of the different use cases. Some perspectives utilize
+pieces of information from other perspectives for autocompletion, awarding
+Visual Use Case with a very high interface efficiency as well as the
+highest essential efficiency value. The extent at which the \ac{ide} goes
+into detail does not make it ideal for beginners, however, and very few
+popular \ac{ide} features are integrated in the design. It's all around
+visual richness stacks up rather poorly as well, and the syntax within the
+various perspectives is not enforced much. Overall, if Visual Use Case's
+users can get it past its lack of accessibility, it turns out to be a very
+powerful and in-depth tool for managing use cases.
+
+\paragraph{WebRatio} Similar to Tersus, WebRatio provides a web application
+creation interface with many popular \ac{ide} features. The overall visual
+richness of WebRatio is improved over that of Tersus, however the essential
+efficiency is slightly worse.  WebRatio possesses a much larger amount of
+clutter as well, but it also incorporates a couple more perspectives for
+model management. Additionally similar to Tersus is the use of a
+hierarchical design to manage complexity within the system, although the
+syntax of the modeling language is not enforced either. Though WebRatio and
+Tersus tend to be similar in many ways, each have their own pros and cons
+which leaves it up for the user to determine his/her own preference of the
+two.
+
+\paragraph{YAWL} YAWL is a workflow system that supports a simple,
+ac{uml}-like modeling language. Despite its simplicity, YAWL is targeted
+toward skilled members of its domain. YAWL is lacking in its support of
+popular \ac{ide} features and any form of active syntax checking. Complex
+diagrams are also difficult to manipulate given the lack of complexity
+management paradigms.  YAWL also only supports a slightly lower than
+average number of visual richness variables in both the chrome and
+language. The language itself especially suffers from lack of visual
+richness with highly visually similar, square elements. However, YAWL's
+interface has a very low clutter value and high degrees of efficiency.
+Ultimately, the negatives outweigh the positives and, though minimal and
+efficient, YAWL is overall a visually boring, feature impoverished
+\ac{ide}.
+
+%\begin{landscape}
+%\begin{table*}
+	%\centering
+		%{\scriptsize
+		%\begin{tabular}{l|cc|cccccccc|ccccc|ccc|ccc}
+		  %\hline\hline
+		  %&&&&&&&&&&&&&&&&&&&&&		\\[-1.5ex]
+      %\textbf{IDE}			& \textbf{\scshape Audience}
+                        %&
+                        %& \textbf{Chrome}
+                        %&&&&&&&
+                        %& \textbf{Human Interface}
+                        %&&&&
+                        %& \textbf{Integration}
+                        %&&
+                        %& \textbf{Language Syntax}
+                        %&&  \\[1ex]
+                        %& \textbf{\scshape Domain}
+                        %& \textbf{\scshape Skill}
+                        %& \textbf{\scshape Features}
+                        %& \textbf{\scshape Context}
+                        %& \textbf{\scshape ToolRichness}
+                        %& \textbf{\scshape Perspectives}
+                        %& \textbf{\scshape Properties}
+                        %& \textbf{\scshape Searchable}
+                        %& \textbf{\scshape ToolStyle}
+                        %& \textbf{\scshape Clutter}
+                        %& \textbf{\scshape EEfficiency}
+                        %& \textbf{\scshape IEfficiency}
+                        %& \textbf{\scshape Keyboard}
+                        %& \textbf{\scshape Mode}
+                        %& \textbf{\scshape Devices}
+                        %& \textbf{\scshape Relations}
+                        %& \textbf{\scshape Output}
+                        %& \textbf{\scshape Syntax}
+                        %& \textbf{\scshape Complexity}
+                        %& \textbf{\scshape Connection}
+                        %& \textbf{\scshape LanguageRichness}			\\[1ex]
+		  %\hline
+		  %&&&&&&&&&&&&&&&&&&&&&		\\[-1.5ex]
+      %\textbf{Alice3}   & Animation
+                        %& Novice
+                        %& 8
+                        %& Yes
+                        %& 6
+                        %& 2
+                        %& Omnipresent
+                        %& No
+                        %& Tabs
+                        %& 3.40
+                        %& 0.46
+                        %& 0.08
+                        %& Optional
+                        %& Drag n Drop (1:1)
+                        %& None
+                        %& No
+                        %& Direct Triggered
+                        %& Implicit
+                        %& Modularization
+                        %& Overlapping Regions
+                        %& 8			\\[1ex]
+      %\textbf{AToMPM}	& Modeling
+	%& Intermediate
+	%& 4
+	%& No
+	%& 5
+	%& 1
+	%& Manual
+	%& No
+	%& Modular
+	%& 2.60
+	%& 0.23
+	%& 0.15
+	%& Optional
+	%& Point n Click (1:n)
+	%& None
+	%& No
+	%& Indirect Triggered
+	%& Explicit
+	%& None
+	%& Linked Regions
+	%& 6			\\[1ex]
+      %\textbf{AudioMulch}	& Music
+	%& Expert
+	%& 7
+	%& Yes
+	%& 6
+	%& 2
+	%& Manual
+	%& No
+	%& Tree, Windows
+	%& 3.13
+	%& 0.31
+	%& 0.31
+	%& Simple
+	%& Drag n Drop (1:1)
+	%& Keyboards
+	%& Yes
+	%& Indirect Live
+	%& Implicit
+	%& None
+	%& Linked Points
+	%& 3			\\[1ex]
+      %\textbf{Blender}	& 3D Modeling
+	%& Expert
+	%& 7
+	%& Yes
+	%& 7
+	%& Multiple
+	%& Omnipresent
+	%& No
+	%& Multiple
+	%& 4.00
+	%& 0
+	%& -0.2
+	%& Required
+	%& Point n Click (1:1)
+	%& None
+	%& No
+	%& Direct Live
+	%& Implicit
+	%& Modularization
+	%& Geometric
+	%& 9			\\[1ex]
+      %\textbf{Cameleon}	& Prototyping
+	%& Intermediate
+	%& 3
+	%& Yes
+	%& 5
+	%& 1
+	%& Manual
+	%& Yes
+	%& Tree
+	%& 2.07
+	%& 0.23
+	%& 0.31
+	%& Required
+	%& Drag n Drop (1:1)
+	%& None
+	%& Yes
+	%& Direct Live
+	%& Explicit
+	%& Hierarchy
+	%& Linked Points
+	%& 5			\\[1ex]
+      %\textbf{EMF}	& Software
+	%& Expert
+	%& 9
+	%& Yes
+	%& 5
+	%& Multiple
+	%& Manual
+	%& Yes
+	%& Tree, Icons
+	%& 4.07
+	%& 0.23
+	%& 0.62
+	%& Optional
+	%& Point n Click (1:1)
+	%& None
+	%& No
+	%& Indirect Triggered
+	%& Explicit
+	%& Modularization
+	%& Linked Points, Linked Regions
+	%& 5			\\[1ex]
+      %\textbf{GNU Radio Companion}	& Software
+	%& Intermediate
+	%& 6
+	%& No
+	%& 4
+	%& 1
+	%& Manual
+	%& Yes
+	%& Icons
+	%& 2.80
+	%& 0.38
+	%& 0.62
+	%& Optional
+	%& Drag n Drop (1:1)
+	%& None
+	%& No
+	%& Indirect Triggered
+	%& Explicit
+	%& None
+	%& Linked Points
+	%& 2			\\[1ex]
+      %\textbf{Grasshopper 3D}	& 3D Modeling
+	%& Intermediate
+	%& 7
+	%& Yes
+	%& 4
+	%& 1
+	%& None
+	%& Yes
+	%& Ribbons
+	%& 2.80
+	%& 0.31
+	%& 0.31
+	%& Optional
+	%& Point n Click (1:1)
+	%& None
+	%& No
+	%& Indirect Live
+	%& Explicit
+	%& None
+	%& Linked Points
+	%& 6			\\[1ex]
+      %\textbf{Max}	& Music
+	%& Expert
+	%& 7
+	%& No
+	%& 4
+	%& 2
+	%& Manual
+	%& Yes
+	%& Tree, Windows
+	%& 2.73
+	%& 0.15
+	%& 0.15
+	%& Simple
+	%& Drag n Drop (1:1)
+	%& Microphones
+	%& No
+	%& Indirect Live
+	%& None
+	%& Modularization
+	%& Linked Points
+	%& 5			\\[1ex]
+      %\textbf{MetaEdit+}	& Modeling
+	%& Intermediate
+	%& 7
+	%& Yes
+	%& 4
+	%& 3
+	%& Manual
+	%& No
+	%& Icons, Windows
+	%& 1.93
+	%& 0.31
+	%& -0.08
+	%& Simple
+	%& Point n Click (1:1)
+	%& None
+	%& No
+	%& Direct Live
+	%& Implicit
+	%& Modularization
+	%& Linked Regions
+	%& 5			\\[1ex]
+      %\textbf{MIT AppInventor2}	& Software
+	%& Novice
+	%& 3
+	%& Yes
+	%& 4
+	%& 2
+	%& Omnipresent
+	%& No
+	%& Drawers
+	%& 3.27
+	%& 0.46
+	%& 0.54
+	%& Simple
+	%& Drag n Drop (1:1)
+	%& Mobile
+	%& No
+	%& Direct Triggered
+	%& Implicit
+	%& Modularization
+	%& Overlapping Regions
+	%& 9			\\[1ex]
+      %\textbf{MST}	& Simulation
+	%& Intermediate
+	%& 6
+	%& No
+	%& 3
+	%& 1
+	%& Manual
+	%& No
+	%& Icons
+	%& 2.40
+	%& 0.38
+	%& 0.38
+	%& Simple
+	%& Point n Click (1:1)
+	%& None
+	%& No
+	%& Direct Live
+	%& None
+	%& None
+	%& Overlapping Points
+	%& 4			\\[1ex]
+      %\textbf{Piet Creator}	& Software
+	%& General
+	%& 4
+	%& No
+	%& 7
+	%& 1
+	%& None
+	%& No
+	%& Icons
+	%& 2.13
+	%& 0.17
+	%& -0.33
+	%& None
+	%& Point n Click (1:n)
+	%& None
+	%& No
+	%& Indirect Triggered
+	%& None
+	%& None
+	%& Geometric
+	%& 4			\\[1ex]
+      %\textbf{Scratch}	& Software
+	%& Novice
+	%& 3
+	%& No
+	%& 6
+	%& 2
+	%& None
+	%& No
+	%& Drawers
+	%& 3.53
+	%& 0.46
+	%& 0.54
+	%& Simple
+	%& Drag n Drop (1:1)
+	%& None
+	%& No
+	%& Direct Triggered
+	%& Implicit
+	%& Modularization
+	%& Overlapping Regions
+	%& 10			\\[1ex]
+      %\textbf{SimuLink}	& Simulation
+	%& Expert
+	%& 7
+	%& No
+	%& 3
+	%& 1
+	%& Manual
+	%& Yes
+	%& Icons, Tree
+	%& 3.80
+	%& 0.31
+	%& 0.15
+	%& SImple
+	%& Drag n Drop (1:1)
+	%& None
+	%& No
+	%& Indirect Live
+	%& None
+	%& None
+	%& Linked Regions
+	%& 4			\\[1ex]
+      %\textbf{Stencyl}	& Software
+	%& Novice
+	%& 6
+	%& Yes
+	%& 8
+	%& Multiple
+	%& Manual
+	%& Yes
+	%& Tabs, Icons
+	%& 2.73
+	%& 0.46
+	%& 0.54
+	%& Simple
+	%& Drag n Drop (1:1)
+	%& Mobile
+	%& No
+	%& Direct Triggered
+	%& Implicit
+	%& Modularization
+	%& Overlapping Regions
+	%& 10			\\[1ex]
+      %\textbf{Tersus}	& Software
+	%& Intermediate
+	%& 8
+	%& No
+	%& 3
+	%& 1
+	%& Omnipresent
+	%& No
+	%& Drawers
+	%& 3.20
+	%& 0.31
+	%& 0.15
+	%& Simple
+	%& Point n Click (1:1)
+	%& None
+	%& No
+	%& Direct Triggered
+	%& None
+	%& Hierarchy
+	%& Linked Points, Linked Regions, Geometric
+	%& 3			\\[1ex]
+      %\textbf{TouchDevelop}	& Software
+	%& Novice
+	%& 6
+	%& Yes
+	%& 6
+	%& 1
+	%& None
+	%& No
+	%& Icons
+	%& 3.60
+	%& 0.44
+	%& 0.33
+	%& None
+	%& Point n Click (1:1)
+	%& Mobile
+	%& No
+	%& Indirect Triggered
+	%& Explicit
+	%& Modularization
+	%& Geometric
+	%& 4			\\[1ex]
+      %\textbf{UMLet}	& Modeling
+	%& General
+	%& 6
+	%& No
+	%& 3
+	%& 1
+	%& Omnipresent
+	%& No
+	%& Palette
+	%& 3.00
+	%& 0.31
+	%& -0.15
+	%& Simple
+	%& Drag n Drop (1:1)
+	%& None
+	%& No
+	%& Direct Live
+	%& None
+	%& None
+	%& Overlapping Points
+	%& 4			\\[1ex]
+      %\textbf{VioletUML}	& Modeling
+	%& Intermediate
+	%& 6
+	%& No
+	%& 4
+	%& 1
+	%& Manual
+	%& No
+	%& Drawers
+	%& 2.47
+	%& 0.15
+	%& 0.15
+	%& Simple
+	%& Point n Click (1:n)
+	%& None
+	%& No
+	%& Direct Live
+	%& Explicit
+	%& None
+	%& Linked Regions
+	%& 4			\\[1ex]
+      %\textbf{VisSim}	& Simulation
+	%& Expert
+	%& 8
+	%& No
+	%& 4
+	%& 1
+	%& Manual
+	%& Yes
+	%& Tree, Menu
+	%& 3.33
+	%& 0.31
+	%& 0.31
+	%& Simple
+	%& Drag n Drop (1:1)
+	%& None
+	%& No
+	%& Direct Live
+	%& None
+	%& Hierarchy
+	%& Linked Points
+	%& 4			\\[1ex]
+      %\textbf{Visual Paradigm}	& Modeling
+	%& Intermediate
+	%& 7
+	%& Yes
+	%& 5
+	%& 1
+	%& Omnipresent
+	%& No
+	%& Icons, Menu
+	%& 3.67
+	%& 0.23
+	%& 0.23
+	%& Simple
+	%& Drag n Drop (1:1)
+	%& None
+	%& No
+	%& Direct Live
+	%& Implicit
+	%& None
+	%& Linked Regions
+	%& 2			\\[1ex]
+      %\textbf{Visual Use Case}	& Modeling
+	%& Intermediate
+	%& 3
+	%& No
+	%& 4
+	%& 7
+	%& Manual
+	%& No
+	%& Icons, Tree
+	%& 2.67
+	%& 0.54
+	%& 0.38
+	%& Simple
+	%& Point n Click (1:1)
+	%& None
+	%& No
+	%& Direct Live
+	%& None
+	%& Modularization
+	%& Linked Regions
+	%& 3			\\[1ex]
+      %\textbf{WebRatio}	& Software
+	%& Intermediate
+	%& 8
+	%& No
+	%& 4
+	%& 3
+	%& Omnipresent
+	%& No
+	%& Icons, Menu
+	%& 3.93
+	%& 0.23
+	%& 0.23
+	%& Simple
+	%& Point n Click (1:1)
+	%& None
+	%& No
+	%& Indirect Triggered
+	%& None
+	%& Hierarchy
+	%& Linked Regions, Geometric
+	%& 4			\\[1ex]
+      %\textbf{YAWL}	& Workflow
+	%& Expert
+	%& 5
+	%& No
+	%& 5
+	%& 2
+	%& Omnipresent
+	%& No
+	%& Icons
+	%& 2.27
+	%& 0.31
+	%& 0.31
+	%& Simple
+	%& Point n Click (1:n)
+	%& None
+	%& No
+	%& Direct Triggered
+	%& None
+	%& None
+	%& Linked Regions
+	%& 4			\\[1ex]
+			%\hline
+		%\end{tabular}}
+	%\caption{Feature matrix for all \acp{ide}.}
+	%\label{tab:tools}
+%\end{table*}
+%\end{landscape}
