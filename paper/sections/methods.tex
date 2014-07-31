@@ -183,7 +183,75 @@ nominal variable and can take the values \texttt{Low}, \texttt{Medium}, or
 \texttt{High}. \Sect{subsec:ideevaluation} includes details on the proper
 evaluation of this qualitative feature.
 
+
 \subsubsection{Human Interface Features} \label{subsubsec:humaninterface}
+
+The human interface features of an IDE include aspects of the software
+interface that affect how the human user interacts with the IDE, either
+mechanically (\eg through physical devices and media) or mentally (\eg the
+mental load required of the user to operate the IDE).
+
+
+\paragraph{Essential Efficiency} The essential efficiency of an IDE
+measures the level to which the system automates tasks for the user. It is
+calculated as the ratio of the number of steps in a concrete use case to
+the number of steps in the representative use case (see
+\Eq{eq:eefficiency}). This metric, unlike those for automation put forth in
+\cite{wei1998}, does not require user experience reports and can be
+measured through simple use case analysis.
+%
+\begin{align}\label{eq:eefficiency}
+  1 - \frac{\text{Number of steps in concrete use case}}
+            {\text{Number of steps in essential use case}}
+\end{align}
+
+
+\paragraph{Interface Efficiency} The interface efficiency of an IDE is a
+concept related to the productivity of an interface. It measures the number
+of physical actions (including keystrokes, mouse clicks, and fine mouse
+movements) required of the operator to complete a task compared against
+the number of abstract steps in the representative essential use case.
+
+This metric is different from the Essential Efficiency proposed in
+\cite{constantine1996} because it studies physical user actions instead of
+concrete task steps. Also note that this variable can take negative values,
+indicating that the number of physical actions required to complete an
+essential use case exceeds the number of abstract steps in the use case.
+%
+\begin{align}\label{eq:iefficiency}
+  1 - \frac{\text{Number of physical actions to complete use case}}
+            {\text{Number of steps in essential use case}}
+\end{align}
+
+
+\paragraph{Keyboard Use} Keyboard Use refers to the extent to which an IDE
+utilizes the use of a keyboard. This can range from a complete absence of
+any keyboard actions to providing certain actions which only a keyboard can
+perform. This nominal variable can take one of four values. A value of
+\texttt{None} indicates that no keyboard use is supported. \texttt{Simple}
+indicates that the keyboard is used only for typing annotations,
+properties, or comments. \texttt{Optional} indicates that the option to use
+the keyboard to execute some actions is present, but these actions can also
+be completed using a mouse. \texttt{Required} indicates that there are
+actions which can only be completed through the use of the keyboard, no
+mouse equivalent is available.
+
+
+\paragraph{Mode of Element Creation} This describes the process through
+which the user creates elements in the IDE. The \emph{Drag n Drop} process
+refers to a single mouse press event followed by a dragging motion of the
+mouse and completed when the mouse button is released. The \emph{Point n
+Click} process utilizes a single mouse click to indicate a selection and
+followed with subsequent mouse clicks elsewhere to define placement.
+
+This nominal variable can take one of four possible values created by
+combining \texttt{Drag n Drop} or \texttt{Point n Click} with the
+multiplicity of the action: either \texttt{(1:1)} or \texttt{(1:n)}. The
+former multiplicity indicates that a single element is created for each
+action, while the latter indicates that multiple can be created after for
+action.
+
+
 \subsubsection{Integration Features} \label{subsubsec:integration}
 \subsubsection{Language Syntax Features} \label{subsubsec:languagesyntax}
 
