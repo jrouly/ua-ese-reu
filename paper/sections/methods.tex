@@ -252,8 +252,119 @@ action, while the latter indicates that multiple can be created after for
 action.
 
 
+\paragraph{Tertiary Interface Devices} This nominal variable describes any
+third party human interface devices which can be used to interact with the
+IDE. This could include audio devices such as MIDI keyboards or
+microphones, mobile integration, etc. Variable values are the type of
+tertiary devices allowed for the IDE.
+
+
 \subsubsection{Integration Features} \label{subsubsec:integration}
+
+Integration is the manner with which the IDE integrates with the visual
+language it supports. This includes any visual representation of language
+syntax or semantics, as well as any tools to assist the user with
+understanding the supported language.
+
+
+\paragraph{Allowed Relations Indicated} This refers to an IDE's ability to
+emphasize possible syntactically correct connection points. This is often
+demonstrated with either the highlighting of allowed relations or the
+dimming of impossible relations. Boolean values indicate whether the IDE
+supports this feature or not.
+
+
+\paragraph{Output Generation Style} This nominal variable describes the
+mode with which the IDE renders and displays output to the user. It is a
+dual axis nominal variable, measuring whether output is direct or indirect
+as well as live or caused by a trigger. \texttt{Direct/indirect} describes
+whether the user directly modifies output or acts via a layer of
+abstraction (\eg via a model). \texttt{Live/trigger} describes whether
+output is generated and displayed live or after some event triggered by the
+user.
+
+
+\paragraph{Syntax Enforcement} The level of syntax enforcement of an IDE
+describes the mode with which the IDE enforces its supported language's
+syntax requirements, if at all. The nominal value \texttt{Explicit}
+indicates that the IDE explicitly enforces syntax requirements by
+indicating to the user the presence of any syntax errors. \texttt{Implicit}
+enforcement indicates that the IDE does not allow syntactically illegal
+operations to occur in the first place by means of some structural
+mechanism. The value \texttt{None} indicates that the IDE does not support
+syntax enforcement and the user is required to review their models' syntax
+manually.
+
+
 \subsubsection{Language Syntax Features} \label{subsubsec:languagesyntax}
+
+Language syntax variables describe properties of the supported visual
+language syntax. While not strictly components of the IDE, they are
+intimately tied to the overall style of the IDE and thus included in this
+study.
+
+
+\paragraph{Complexity Management} Any characteristics or features of the
+visual language that serve to reduce the complexity of that language.
+Reducing complexity refers specifically to decreasing the level of
+\emph{diagrammatic complexity} while maintaining information transfer to
+the user. \cite{moody2009} This nominal variable can take one of three
+possible values. \texttt{Modularization} indicates that large systems
+within the language are divided into smaller subsystems to reduce
+complexity. \cite{moody2009} \texttt{Hierarchy} indicates that systems
+within the language can be represented at different levels of detail.
+\cite{moody2009} \texttt{None} indicates that the visual language does not
+support complexity management functionality.
+
+
+\paragraph{Connection Style} A language's connection style refers to the
+manner with which connections between elements are displayed. This dual
+axis nominal variable measures connections as \texttt{overlapping}
+\emph{vs.} \texttt{linked} as well as connection sources as \texttt{point}
+\emph{vs.} \texttt{region} based.  \cite{costagliola2002} The former axis
+describes the visual representation of the connections, while the latter
+describes how links are connected. If the supported language does not fall
+on either of these axes, it is not connection based \cite{costagliola2002}
+and this feature takes the value \texttt{Geometric}.
+
+
+\paragraph{Degree of Language Visual Richness} The degree of a language's
+visual richness describes the extent to which it utilizes visual
+variables to increase the visual discriminability of elements. This
+is a compound variable composed of ten sub-variables. Each sub-variable
+is a boolean measure determining whether or not the described visual
+variable is utilized in the interface to distinguish available tools.
+
+\subparagraph{Icons} Images contained within elements are used to represent
+different elements. \cite{costagliola2002,moody2009}
+
+\subparagraph{Shape} Distinct shapes indicate different elements.
+\cite{moody2009}
+
+\subparagraph{Size} Different element sizes indicate distinct elements.
+\cite{moody2009}
+
+\subparagraph{Color} Color is used to indicate distinct elements.
+\cite{moody2009}
+
+\subparagraph{Text} Text (or typographic variation) is used to identify or
+distinguish elements. \cite{moody2009}
+
+\subparagraph{Texture} Shading or shadows are used to modify elements or to
+distinguish between distinct elements. \cite{moody2009}
+
+\subparagraph{Brightness} The brightness of a color (\ie its perceived
+luminosity) is used to indicate a difference between elements.
+\cite{moody2009}
+
+\subparagraph{Orientation} Rotation of an element indicates differences
+between elements. \cite{moody2009}
+
+\subparagraph{Horizontal Position} The horizontal location of an element
+indicates differences between elements. \cite{moody2009}
+
+\subparagraph{Vertical Position} The vertical location of an element
+indicates differences between elements. \cite{moody2009}
 
 
 \subsection{IDE Evaluation} \label{subsec:ideevaluation}
