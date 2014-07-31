@@ -1,84 +1,177 @@
-\documentclass[letterpaper,10pt]{article}
+\documentclass[10pt,preprint]{sigplanconf}
 
-%{{{ Package includes
+%\usepackage[T1]{fontenc}
+\usepackage[bookmarks,bookmarksopen,bookmarksdepth=2]{hyperref} %sections as bookmarks in adobe pdf
+%\usepackage{times}
 
-% Table packages
-\usepackage{multirow} % for multirow tables
-\usepackage{tabularx} % tables with column stretching
-\usepackage{longtable}% long tables
-\usepackage{booktabs} % for fancier tables
+\newcommand{\todo}[1]{\textbf{\textcolor{red}{TODO: #1}}}
+% Macros for proof-reading & corrections
+\usepackage[normalem]{ulem} % for \sout
+\usepackage{xcolor}
+\newcommand{\ra}{$\rightarrow$}
+\newcommand{\ugh}[1]{\textcolor{red}{\uwave{#1}}} % please rephrase
+\newcommand{\ins}[1]{\textcolor{blue}{\uline{#1}}} % please insert
+\newcommand{\del}[1]{\textcolor{red}{\sout{#1}}} % please delete
+\newcommand{\chg}[2]{\textcolor{red}{\sout{#1}}{\ra}\textcolor{blue}{\uline{#2}}} % please change
 
-% Text formatting packages
-\usepackage{enumitem} % for custom, richer list environments
-\usepackage{fullpage} % use 1in margins
-\usepackage{amsmath}  % better mathematical formatting
-\usepackage{multicol} % multicolumn support
+% Put edit comments in a really ugly standout display
+\usepackage{ifthen}
+\usepackage{amssymb}
+\newboolean{showcomments}
+\setboolean{showcomments}{true} % toggle to show or hide comments
+\ifthenelse{\boolean{showcomments}}
+  {\newcommand{\nb}[2]{
+    \fcolorbox{gray}{yellow}{\bfseries\sffamily\scriptsize#1}
+    {$\blacktriangleright$#2$\blacktriangleleft$}
+   }
+   \newcommand{\version}{\emph{\scriptsize$-$working$-$}}
+  }
+  {\newcommand{\nb}[2]{}
+   \newcommand{\version}{}
+  }
+
+\newcommand\es[1]{\nb{ES}{\textcolor{red}{\textsl{#1}}}}
+\newcommand\jmr[1]{\nb{JMR}{\textcolor{red}{\textsl{#1}}}}
+\newcommand\jo[1]{\nb{JO}{\textcolor{red}{\textsl{#1}}}}
+
+% For URLs in the references
+\usepackage{url}
+\usepackage{hyperref}
+%\usepackage{verbatim}
+
+% Advanced Math
+%\usepackage{amsmath}
+%\usepackage{amssymb}     % double line font letters (for number sets N,Z,D,Q,R)
+
+% Images and Floats
+%\usepackage{epsfig}
+%\usepackage{epstopdf}
+
+%\usepackage{subfigure}
+\usepackage{lscape}     % landscape
+%\usepackage{array}     % align vertically in tables
+\usepackage{multirow}
+%\usepackage{rotating}
+
+% Theorems, Definitions, ... (always after 'amsmath')
+%\usepackage{amsthm}
+%\theoremstyle{definition}
+%\newtheorem{prop}{Property}%[section]
+%\newtheorem{defn}{Definition}%[section]
+
+% Algorithm environment
+%\usepackage{algorithm}
+%\usepackage{algorithmic}
+
+% Commutative diagrams
+%\usepackage{diagrams}
 
 % Misc packages
+%\usepackage{enumitem}
 \usepackage{acronym}  % for defining acronyms
-\usepackage[numbers]{natbib} % for useful bibliography tools
-\usepackage{hyperref} % for hyperlinking
-\usepackage{authblk}  % for author affiliations
 
-%}}}
 
-%{{{ Custom environments / commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Fix table spacing to look nicer
-\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+% Standard shortcuts
+\newcommand{\eg}{\emph{e.g.,~}}             % exempli gratia (for the sake of example)
+\newcommand{\ie}{\emph{i.e.,~}}             % id est (that is)
+\newcommand{\etal}{~\emph{et al.}}          % et alia (and others)
+\newcommand{\Fig}[1]{Fig.~\ref{#1}}         % choose Fig. or Figure, depending on the style
+\newcommand{\Table}[1]{Table~\ref{#1}}      % Table reference
+\newcommand{\Sect}[1]{Section~\ref{#1}}     % section name always with a capital S
+\newcommand{\Model}[1]{\textsf{\small{#1}}} % name of any modeling artifact (e.g., formalism, model element, rule, ...)
+\newcommand{\Code}[1]{\texttt{\small{#1}}}  % inline code
+\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}} % scientific notation: x.10^y
 
-% Shorten the multirow command
-\newcommand{\mr}[2]{\multirow{#1}{*}{#2}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Italicize Latin abbreviations
-\newcommand{\etc}{\textit{etc.}}
-\newcommand{\Etc}{\textit{Etc.}}
-\newcommand{\eg}{\textit{e.g.}}
-\newcommand{\Eg}{\textit{E.g.}}
-\newcommand{\ie}{\textit{i.e.}}
-\newcommand{\Ie}{\textit{I.e.}}
-
-%}}}
-
-%{{{ Acronym Definitions
-
+% Shortcuts
+\newcommand{\atompm}{AToMPM}
 \acrodef{ide}[IDE]{Integrated Development Environment}
 \acrodef{emf}[EMF]{Eclipse Modeling Framework}
 \acrodef{grc}[GRC]{GNU Radio Companion}
+\acrodef{hit}[HIT]{Human Intelligence Task}
+\acrodef{mt}[MTurk]{Mechanical Turk}
+\acrodef{irr}[IRR]{Inter-Rater Reliability}
+\acrodef{icc}[ICC]{Intra-Class Correlation}
+\acrodef{uml}[UML]{Unified Modeling Language}
 
-%}}}
-
-%{{{ Title and frontmatter
-
-\title{\textbf{A Survey of Features in Visual IDEs for Non-Programmers from
-a Usability and Suitability Point of View}}
-\author[1]{Jean Michel Rouly}
-\author[2]{Jonathan D. Orbeck}
-\author[2]{Huseyin Ergin}
-\author[2,3]{Eugene Syriani}
-\affil[1]{Department of Computer Science, George Mason University}
-\affil[2]{Department of Computer Science, University of Alabama}
-\affil[3]{Department of Computer Science and Operations Research,
-Universit\'{e} de Montr\'{e}al}
-\date{\today}
-
-%}}}
 
 \begin{document}
 
+\special{papersize=8.5in,11in}
+\setlength{\pdfpageheight}{\paperheight}
+\setlength{\pdfpagewidth}{\paperwidth}
+
+\conferenceinfo{PLATEAU '14}{October 21, 2014, Portland, OR, U.S.A.} 
+\copyrightyear{2014} 
+\copyrightdata{978-1-nnnn-nnnn-n/yy/mm} 
+\doi{nnnnnnn.nnnnnnn}
+
+% Uncomment one of the following two, if you are not going for the 
+% traditional copyright transfer agreement.
+
+%\exclusivelicense                % ACM gets exclusive license to publish, 
+                                  % you retain copyright
+
+%\permissiontopublish             % ACM gets nonexclusive license to publish
+                                  % (paid open-access papers, 
+                                  % short abstracts)
+
+%\titlebanner{banner above paper title}        % These are ignored unless
+%\preprintfooter{short description of paper}   % 'preprint' option specified.
+
+\title{Usability and Suitability Survey of Features in Visual IDEs for Non-Programmers}
+%\subtitle{Subtitle Text, if any}
+
+\authorinfo{Jean Michel Rouly}
+           {George Mason University}
+           {jrouly@masonlive.gmu.edu}
+\authorinfo{Jonathan D. Orbeck}
+           {University of Alabama}
+           {jdorbeck@crimson.ua.edu}
+\authorinfo{Eugene Syriani}
+           {University of Montreal}
+           {syriani@iro.umontreal.ca}
+
 \maketitle
 
+\begin{abstract}
+This is the text of the abstract.
+\end{abstract}
 
-\input{sections/abstract}
+%\category{CR-number}{subcategory}{third-level}
+
+% general terms are not compulsory anymore, 
+% you may leave them out
+%\terms
+%term1, term2
+
+\keywords
+Integrated Development Environments, Visual Languages, Domain-Specific
+Languages, Usability Study
+
 \input{sections/introduction}
+
+\input{sections/relatedwork}
+
 \input{sections/methods}
+
 \input{sections/results}
+
 \input{sections/discussion}
+
 \input{sections/conclusion}
 
+%\appendix
+%\section{Appendix Title}
 
-\clearpage
-\bibliography{bibliography/bibliography,bibliography/ides}
-\bibliographystyle{plainnat}
+\acks
+
+This research was sponsored by the National Science Foundation grant no. 1156563 at the University of Alabama REU site.
+
+\bibliographystyle{abbrvnat}
+\bibliography{bibliography/biblio,bibliography/biblio-reu,bibliography/ides}
 
 \end{document}
