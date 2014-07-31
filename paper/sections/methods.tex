@@ -370,4 +370,53 @@ indicates differences between elements.~\cite{moody2009}
 \subsection{\acs{ide} Evaluation} \label{subsec:ideevaluation}
 
 With \ac{ide} feature definitions established, each \ac{ide} was evaluated
-for its performance. 
+for its performance according to each feature. The vast majority of
+features resulted in simple classification or binary evaluation tasks
+depending on the characteristics of the \acp{ide}. However, three features
+required more intensive evaluation. The processes used for these features
+are described in \Sect{subsubsec:mturk} and \Sect{subsubsec:efficiency}.
+
+\subsubsection{\acl{mt} User Study} \label{subsubsec:mturk} To evaluate the
+visual clutter of an \ac{ide} requires qualitative user feedback.
+Amazon.com's \ac{mt} was used as a crowd-sourcing platform to perform the
+user study and gauge opinions of visual clutter. We generated three unique
+screenshots of each \ac{ide} and darkened the workspace area to remove
+attention from diagrammatic complexity. These images were distributed
+as \ac{mt} \acp{hit} requiring five unique raters per \ac{hit}. On average,
+each worker spent about one minute studying and rating an image on a scale
+of one (low clutter) to five (high clutter). Each \ac{hit} rewarded its
+worker with \$0.02. \ac{ide} rating values were retrieved and averaged
+between each reviewer for one screenshot and then each screenshot for one
+\ac{ide}. Upon completion, the \acp{hit} were rated, in total, by 12
+anonymous workers.
+
+Because multiple reviewers rated each image, we performed an \ac{irr}
+measure to ensure agreement across reviewers. Using the R statistical
+library \texttt{irr} we perform a two-way, agreement, average-measure
+\ac{icc}. The result, \ac{icc} = 0.648, is within the ``good'' range of
+significance.~\cite{cicchetti1994,hallgren2012} This \ac{icc} value
+indicates that the reviewers were, in general, in agreement about their
+ranking of interface clutter. Note that there were more than five
+participating reviewers total, despite five sets of reviews (\ie the
+experimental design is not ``fully crossed''~\cite{hallgren2012}). We argue
+that this is not significant, however, because the five sets of reviewers
+are disjoint sets, acting as entirely independent actors.
+
+\subsubsection{Efficiency Study} \label{subsubsec:efficiency} The
+evaluation of both interface and essential efficiency involved the creation
+of an abstract use case for each \ac{ide} and subsequent evaluation of the
+corresponding concrete use case. Three abstract use cases were developed
+for each \ac{ide} in order of increasing task complexity. The first two use
+cases were common between all \acp{ide} while the third use case differed
+slightly. Each abstract use case was then manually performed within the
+\acp{ide} to generate corresponding concrete use cases. Every physical
+action required for completion was tracked (specifically keystrokes, mouse
+clicks, and fine mouse movements).
+
+After all concrete use cases were completed, it was determined that the
+third (most complex) use case was the most representative use case for each
+\ac{ide}. The number of steps in the concrete use cases (\ie the number of
+distinct tasks the \ac{ide} required the user to keep in mind and perform)
+became the numerator for the essential efficiency ratio. The number of
+physical actions performed became the numerator for the interface
+efficiency ratio.
