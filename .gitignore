@@ -89,6 +89,10 @@ _out_
 *.sympy
 sympy-plots-for-*.tex/
 
+# texnicenter
+*.tcp
+*.tps
+
 # todonotes
 *.tdo
 
