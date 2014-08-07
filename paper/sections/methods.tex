@@ -26,7 +26,7 @@ the \ac{ide} is intended.
 The domain of an \ac{ide} refers to the domain or field of
 knowledge under which the interface falls.
 %That is, the field or fields for which the interface is primarily used, if any.
-This is a nominal variable where example values might include \texttt{General}, \texttt{Modeling}, \texttt{Software}.
+This is a nominal variable where example values might include \texttt{General}, \texttt{Modeling}, \texttt{Software}, etc.
 The latter \texttt{General} indicates that the \ac{ide} is of general purpose and can be applied within any number of different fields to the same extent.
 
 
@@ -45,7 +45,7 @@ user interface component not contained within the workspace area.
 
 \paragraph{General Operations}
 Many \acp{ide} provide support for a specific subset of common operations.
-\citeauthor{murphy2006}~\cite{murphy2006} defines a list of the top 10 \ac{ide} features most frequently utilized by developers.
+\citeauthor{murphy2006}~\cite{murphy2006} define a list of the top 10 \ac{ide} features most frequently utilized by developers.
 We reproduced it here as a set of Boolean sub-variables that indicates whether the \ac{ide} in question supports the use of that particular operation.
 We report the sum of the \texttt{true} values.
 The operations are: \emph{delete} a syntactic element in the workspace,
@@ -63,6 +63,7 @@ and
 \paragraph{Context Sensitive Tools}
 Any interface component which changes visibly or is generated anew depending on the context of selected elements within the workspace is context sensitive.
 This Boolean variable indicates whether context sensitive tools are supported.
+\es{example.}
 
 
 \paragraph{Degree of Interface Visual Richness}
@@ -84,10 +85,12 @@ and
 \paragraph{Multiplicity of Perspectives}
 A perspective is defined as a visual configuration of tools in the \ac{gui} for the purpose of accomplishing a distinct task as part of a distinct process.
 This metric measures the number of available predefined interface perspectives available to the user, with values greater than zero.
+\es{example.}
 
 
 \paragraph{Object Properties Window}
 This is an interface component that displays the properties of an element in the workspace, typically to view and modify properties of model elements.
+\es{example.}
 This is a nominal variable whose values are:
 \texttt{None} if no object properties window is available,
 \texttt{Omnipresent} if such window is always present, allowing contents to update contextually,
@@ -96,6 +99,7 @@ and \texttt{Manual} if such window requires user interaction to bring forward.
 
 \paragraph{Searchable Toolspace}
 This is a Boolean variable that indicates whether the total set of available tools, components, or actions offered by the \ac{ide} can be searched through by name or keyword.
+\es{example.}
 
 
 \paragraph{Toolbar Styles}
@@ -107,6 +111,7 @@ This nominal variable can take combinations of multiple values, such as:
 \paragraph{Visual Clutter}
 The clutter of an interface is the number and organization of tools available on the screen versus the amount of workspace provided by the \ac{ide}\es{cite?}.
 If the \ac{ide} offers no method for tool organization or if there is an immense amount of tools visible at once, then the \ac{ide} is likely to be visually cluttered.
+\es{example.}
 Visual clutter is a nominal variable and takes the values \texttt{Low}, \texttt{Medium}, or \texttt{High}.
 \Sect{subsec:ideevaluation} includes details on the proper evaluation of this qualitative feature.
 
@@ -146,6 +151,7 @@ Also note that this variable can take negative values, indicating that the numbe
 \paragraph{Keyboard Use}
 This refers to the extent to which an \ac{ide} utilizes the use of a keyboard.
 This can range from a complete absence of any keyboard actions to providing certain actions which only a keyboard can perform.
+\es{example.}
 This nominal variable can take the values:
 \texttt{None} when no keyboard use is supported,
 \texttt{Simple} when the keyboard is used only for typing annotations, properties, or comments,
@@ -153,26 +159,27 @@ This nominal variable can take the values:
 and \texttt{Required} when there are actions that can only be completed through the use of the keyboard, no mouse equivalent is available.
 
 
-\paragraph{Mode of Element Creation} This describes the process through
-which the user creates elements in the \ac{ide}. The \emph{Drag n Drop} process
-refers to a single mouse press event followed by a dragging motion of the
-mouse and completed when the mouse button is released. The \emph{Point n
-Click} process utilizes a single mouse click to indicate a selection and
-followed with subsequent mouse clicks elsewhere to define placement.
-
+\paragraph{Mode of Element Creation}
+This describes the process through which the user creates elements in the \ac{ide}.
+The \emph{Drag n Drop} process refers to a single mouse press event followed by a dragging motion of the mouse and completed when the mouse button is released.
+\es{example.}
+The \emph{Point n Click} process utilizes a single mouse click to indicate a selection and followed with subsequent mouse clicks elsewhere to define placement.
+\es{example.}
 This nominal variable can take one of four possible values created by
 combining \texttt{Drag n Drop} or \texttt{Point n Click} with the
 multiplicity of the action: either \texttt{(1:1)} or \texttt{(1:n)}. The
 former multiplicity indicates that a single element is created for each
-action, while the latter indicates that multiple can be created after for
+action, while the latter indicates that multiple can be created after the
 action.
 
 
-\paragraph{Tertiary Interface Devices} This nominal variable describes any
+\paragraph{Tertiary Interface Devices}
+This nominal variable describes any
 third party human interface devices which can be used to interact with the
 \ac{ide}. This could include audio devices such as MIDI keyboards or
 microphones, mobile integration, etc. Variable values are the type of
 tertiary devices allowed for the \ac{ide}.
+\es{example.}
 
 
 \subsubsection{Integration Features} \label{subsubsec:integration}
@@ -183,26 +190,34 @@ syntax or semantics, as well as any tools to assist the user with
 understanding the supported language.
 
 
-\paragraph{Allowed Relations Indicated} This refers to an \ac{ide}'s ability to
+\paragraph{Allowed Relations Indicated}
+This refers to an \ac{ide}'s ability to
 emphasize possible syntactically correct connection points. This is often
 demonstrated with either the highlighting of allowed relations or the
-dimming of impossible relations. Boolean values indicate whether the \ac{ide}
+dimming of impossible relations.
+\es{example.}
+Boolean values indicate whether the \ac{ide}
 supports this feature or not.
 
 
-\paragraph{Output Generation Style} This nominal variable describes the
+\paragraph{Output Generation Style}
+This nominal variable describes the
 mode with which the \ac{ide} renders and displays output to the user. It is a
 dual axis nominal variable, measuring whether output is direct or indirect
 as well as live or caused by a trigger. \texttt{Direct/indirect} describes
 whether the user directly modifies output or acts via a layer of
-abstraction (\eg via a model). \texttt{Live/trigger} describes whether
-output is generated and displayed live or after some event triggered by the
-user.
+abstraction (\eg via a model).
+\es{example.}
+\texttt{Live/trigger} describes whether output is generated and displayed live or after some event triggered by the user.
+\es{example.}
 
 
-\paragraph{Syntax Enforcement} The level of syntax enforcement of an \ac{ide}
+\paragraph{Syntax Enforcement}
+The level of syntax enforcement of an \ac{ide}
 describes the mode with which the \ac{ide} enforces its supported language's
-syntax requirements, if at all. The nominal value \texttt{Explicit}
+syntax requirements, if at all.
+\es{example.}
+The nominal value \texttt{Explicit}
 indicates that the \ac{ide} explicitly enforces syntax requirements by
 indicating to the user the presence of any syntax errors. \texttt{Implicit}
 enforcement indicates that the \ac{ide} does not allow syntactically illegal
@@ -220,122 +235,77 @@ intimately tied to the overall style of the \ac{ide} and thus included in this
 study.
 
 
-\paragraph{Complexity Management} Any characteristics or features of the
+\paragraph{Complexity Management}
+Any characteristics or features of the
 visual language that serve to reduce the complexity of that language.
 Reducing complexity refers specifically to decreasing the level of
 \emph{diagrammatic complexity} while maintaining information transfer to
-the user.~\cite{moody2009} This nominal variable can take one of three
+the user~\cite{moody2009}.
+\es{example.}
+This nominal variable can take one of three
 possible values. \texttt{Modularization} indicates that large systems
 within the language are divided into smaller subsystems to reduce
-complexity.~\cite{moody2009} \texttt{Hierarchy} indicates that systems
-within the language can be represented at different levels of detail.
-\cite{moody2009} \texttt{None} indicates that the visual language does not
+complexity~\cite{moody2009}. \texttt{Hierarchy} indicates that systems
+within the language can be represented at different levels of detail~\cite{moody2009}.
+\texttt{None} indicates that the visual language does not
 support complexity management functionality.
 
 
-\paragraph{Connection Style} A language's connection style refers to the
+\paragraph{Connection Style}
+A language's connection style refers to the
 manner with which connections between elements are displayed. This dual
 axis nominal variable measures connections as \texttt{overlapping}
 \emph{vs.} \texttt{linked} as well as connection sources as \texttt{point}
-\emph{vs.} \texttt{region} based.~\cite{costagliola2002} The former axis
+\emph{vs.} \texttt{region} based~\cite{costagliola2002}. The former axis
 describes the visual representation of the connections, while the latter
-describes how links are connected. If the supported language does not fall
+describes how links are connected.
+\es{example.}
+If the supported language does not fall
 on either of these axes, it is not connection based~\cite{costagliola2002}
 and this feature takes the value \texttt{Geometric}.
 
 
-\paragraph{Degree of Language Visual Richness} The degree of a language's
-visual richness describes the extent to which it utilizes visual
-variables to increase the visual discriminability of elements. This
-is a compound variable composed of ten sub-variables. Each sub-variable
-is a boolean measure determining whether or not the described visual
-variable is utilized in the interface to distinguish available tools.
-
-\subparagraph{Icons} Images contained within elements are used to represent
-different elements.~\cite{costagliola2002,moody2009}
-
-\subparagraph{Shape} Distinct shapes indicate different elements.
-\cite{moody2009}
-
-\subparagraph{Size} Different element sizes indicate distinct elements.
-\cite{moody2009}
-
-\subparagraph{Color} Color is used to indicate distinct elements.
-\cite{moody2009}
-
-\subparagraph{Text} Text (or typographic variation) is used to identify or
-distinguish elements.~\cite{moody2009}
-
-\subparagraph{Texture} Shading or shadows are used to modify elements or to
-distinguish between distinct elements.~\cite{moody2009}
-
-\subparagraph{Brightness} The brightness of a color (\ie its perceived
-luminosity) is used to indicate a difference between elements.
-\cite{moody2009}
-
-\subparagraph{Orientation} Rotation of an element indicates differences
-between elements.~\cite{moody2009}
-
-\subparagraph{Horizontal Position} The horizontal location of an element
-indicates differences between elements.~\cite{moody2009}
-
-\subparagraph{Vertical Position} The vertical location of an element
-indicates differences between elements.~\cite{moody2009}
+\paragraph{Degree of Language Visual Richness}
+This describes the extent to which a language utilizes visual variables to increase the visual discrimination of its elements.
+This is a compound variable composed of ten sub-variables, each being a Boolean measure similarly to the \ac{ide}'s homologue.
+The same sub-variables are icons, shapes, size, color, text, texture, and brightness.
+Additionally, \emph{orientation}, \emph{horizontal} and \emph{vertical positioning}~\cite{moody2009} are added to further distinguish between elements.
 
 
 \subsection{\acs{ide} Evaluation} \label{subsec:ideevaluation}
 
-With \ac{ide} feature definitions established, each \ac{ide} was evaluated
-for its performance according to each feature. The vast majority of
-features resulted in simple classification or binary evaluation tasks
-depending on the characteristics of the \acp{ide}. However, three features
-required more intensive evaluation. The processes used for these features
-are described in \Sect{subsubsec:mturk} and \Sect{subsubsec:efficiency}.
+With \ac{ide} feature definitions established, we evaluate each \ac{ide} by measure the different metrics according to each feature.
+Most features only require simple classification or binary evaluation tasks.
+However, three features require more intensive evaluation.
 
-\subsubsection{\acl{mt} User Study} \label{subsubsec:mturk} To evaluate the
-visual clutter of an \ac{ide} requires qualitative user feedback.
-Amazon.com's \ac{mt} was used as a crowd-sourcing platform to perform the
-user study and gauge opinions of visual clutter. We generated three unique
-screenshots of each \ac{ide} and darkened the workspace area to remove
-attention from diagrammatic complexity. These images were distributed
-as \ac{mt} \acp{hit} requiring five unique raters per \ac{hit}. On average,
-each worker spent about one minute studying and rating an image on a scale
-of one (low clutter) to five (high clutter). Each \ac{hit} rewarded its
-worker with \$0.02. \ac{ide} rating values were retrieved and averaged
-between each reviewer for one screenshot and then each screenshot for one
-\ac{ide}. Upon completion, the \acp{hit} were rated, in total, by 12
-anonymous workers.
 
-Because multiple reviewers rated each image, we performed an \ac{irr}
-measure to ensure agreement across reviewers. Using the R statistical
-library \texttt{irr} we perform a two-way, agreement, average-measure
-\ac{icc}. The result, \ac{icc} = 0.648, is within the ``good'' range of
-significance.~\cite{cicchetti1994,hallgren2012} This \ac{icc} value
-indicates that the reviewers were, in general, in agreement about their
-ranking of interface clutter. Note that there were more than five
-participating reviewers total, despite five sets of reviews (\ie the
-experimental design is not ``fully crossed''~\cite{hallgren2012}). We argue
-that this is not significant, however, because the five sets of reviewers
-are disjoint sets, acting as entirely independent actors.
+\subsubsection{Evaluation of Visual Clutter} \label{subsubsec:mturk}
 
-\subsubsection{Efficiency Study} \label{subsubsec:efficiency}
-\es{Explain what use cases were used}
-The
-evaluation of both interface and essential efficiency involved the creation
-of an abstract use case for each \ac{ide} and subsequent evaluation of the
-corresponding concrete use case. Three abstract use cases were developed
-for each \ac{ide} in order of increasing task complexity. The first two use
-cases were common between all \acp{ide} while the third use case differed
-slightly. Each abstract use case was then manually performed within the
-\acp{ide} to generate corresponding concrete use cases. Every physical
-action required for completion was tracked (specifically keystrokes, mouse
-clicks, and fine mouse movements).
+Evaluating the visual clutter of an \ac{ide} requires qualitative user feedback.
+We used Amazon.com's \ac{mt} as a crowd-sourcing platform to perform the user study and gauge opinions of visual clutter.
+We generated three unique screenshots of each \ac{ide} and darkened the workspace area to remove attention from diagrammatic complexity.
+\es{add snapshot if space permits.}
+These images were distributed as \ac{mt} \acp{hit}, requiring five unique evaluators per \ac{hit}.
+On average, each evaluator spent about one minute studying and rating an image on a scale of 1 (low clutter) to 5 (high clutter).
+Each \ac{hit} rewarded its evaluator with \$0.02.
+\ac{ide} rating values were retrieved and averaged between each reviewer for one screenshot and then each screenshot for one \ac{ide}.
+Upon completion, the \acp{hit} were rated by 12 anonymous workers in total.
 
-After all concrete use cases were completed, it was determined that the
-third (most complex) use case was the most representative use case for each
-\ac{ide} because concrete use case steps did not vary greatly for the least
-complex use cases. The number of steps in the concrete use cases (\ie the
-number of distinct tasks the \ac{ide} required the user to keep in mind and
-perform) became the numerator for the essential efficiency ratio. The
-number of physical actions performed became the numerator for the interface
-efficiency ratio.
+Because multiple reviewers rated each image, we performed an \ac{irr} measure to ensure agreement across reviewers.
+Using the R statistical library \texttt{irr} we perform a two-way agreement average-measure \ac{icc}.
+The result, \ac{icc} = 0.648, is within the ``good'' range of significance~\cite{cicchetti1994,hallgren2012}.
+This \ac{icc} value indicates that the reviewers were, in general, in agreement about their ranking of interface clutter.
+Note that there were more than five reviewers participating total, despite five sets of reviews (\ie the experimental design is not ``fully crossed''~\cite{hallgren2012}).
+We argue that this is not significant, however, because the five sets of reviewers are disjoint sets, acting as entirely independent actors.
+
+\subsubsection{Evaluation of Efficiency} \label{subsubsec:efficiency}
+
+The evaluation of both interface and essential efficiency involved the creation of use cases for each \ac{ide} and subsequent evaluation of the corresponding concrete use cases.
+We developed two essential use cases common to all \acp{ide} and a third one that differed slightly for each.
+The three essential use cases were ordered of increasing task complexity.
+\es{Give more detail on the content of the use cases.}
+Each essential use case was then manually performed within the \acp{ide} to generate corresponding concrete use cases.
+Every physical action required for completion was tracked: keystrokes, mouse clicks, and fine mouse movements.
+
+After all concrete use cases were completed, we noticed that the results from the first two (less complex) use cases did not vary significantly enough across \acp{ide}.
+We therefore report only the results from the more complex use case for each \ac{ide}.
