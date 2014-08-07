@@ -1,240 +1,156 @@
 \section{Methods} \label{sec:methods}
 
-The work began with the selection of a variety of visual language \acp{ide} from
-differing domains of use. This was followed by the creation and definition
-of a set of novel visual \ac{ide} interface features. Finally, each of the
-selected \acp{ide} were evaluated based on the set of interface features.
-\Sect{subsec:ideselection} describes the process and criteria for \ac{ide}
-selection as well as the specific target \acp{ide} selected for study.
-\Sect{subsec:featuredefinition} details the set of novel interface features
-devised to study the selected visual \acp{ide}, and \Sect{subsec:ideevaluation}
-describes the process of evaluation taken for each \ac{ide}.
+In the following, we describe the process and criteria for selecting a set of \acp{ide} for the study, the definition of a set of novel visual \ac{ide} interface features, and the process of evaluation taken for each \ac{ide}.
 
 
 \subsection{\acs{ide} Selection} \label{subsec:ideselection}
 
-\ac{ide} selection was a non-scientific process with three primary criteria
-driving selection. First, \acp{ide} were selected on the basis of their support
-for a visual language as the primary language of development. All \acp{ide}
-studied therefore are primarily visual language \acp{ide}. Subsidiary criteria
-for selection included popularity of the \ac{ide} within its domain as well as
-representation from a variety of development domains. One goal of this
-study was the evaluation of visual \acp{ide} from a number of different domains,
-so \acp{ide} from eight independent domains were selected. The specific domains
-under consideration included 3D modeling, animation, modeling, music,
-prototyping, simulation, software, and workflow.
+We decided to select \acp{ide} based on their support for a visual language as the primary language of development.
+A subsidiary criteria for selection included popularity of the \ac{ide} within its domain as well as representation from a variety of development domains.
+Thus this survey considers \acp{ide} from eight different domains: 3D modeling, animation, modeling, music, prototyping, simulation, software\es{more precisely (education, mobile dev, etc.)}, and workflow\es{in the sense of business workflows?}.
 
 
 \subsection{Feature Definition} \label{subsec:featuredefinition}
 
-Through observation and use of the \acp{ide}, we began noting the differences
-and similarities present that defined either interface purpose or
-functionality. We determined whether these interface features could be
-applied to all \acp{ide} and subsequently formalized the definitions of all
-universally applicable features. Some variables were strongly influenced by
-existing literature. All variables were categorized under five headings:
-Audience, Chrome, Human Interface, Integration, and Language Syntax.
-\Sect{subsubsec:audience} --- \Sect{subsubsec:languagesyntax} detail these
-categories and constituent features.
+The following enumerates a unique set of features based on existing literature, and the emergence of similarities and differences between the \acp{ide} considered.
+Features are categorized under the following five headings.
 
 
 \subsubsection{Audience Features} \label{subsubsec:audience}
 
 The audience of an \ac{ide} refers generally to the target populations for which
-the \ac{ide} is developed or intended. Features under the audience category
-attempt to describe those meta-features of \acp{ide}.
+the \ac{ide} is intended.
 
 
-\paragraph{Domain} The domain of an \ac{ide} refers to the domain or field of
-knowledge under which the interface falls. That is, the field or fields for
-which the interface is primarily used, if any. This is a nominal variable.
-Example values might include \texttt{General}, \texttt{Modeling},
-\texttt{Software}. A value of \texttt{General} indicates that the \ac{ide} is
-general purpose and can be applied to or used within any number of
-different fields to the same extent.
+\paragraph{Domain}
+The domain of an \ac{ide} refers to the domain or field of
+knowledge under which the interface falls.
+%That is, the field or fields for which the interface is primarily used, if any.
+This is a nominal variable where example values might include \texttt{General}, \texttt{Modeling}, \texttt{Software}.
+The latter \texttt{General} indicates that the \ac{ide} is of general purpose and can be applied within any number of different fields to the same extent.
 
 
-\paragraph{Skill Level} The skill level of an \ac{ide} describes what level of
-skill in the \ac{ide}'s domain is expected of users. This is a nominal variable.
-Possible values are \texttt{Novice}, \texttt{Intermediate},
-\texttt{Expert}, and \texttt{General} with a value of \texttt{General}
-indicating that the \ac{ide} offers a powerful set of advanced features while
-maintaining components that emphasize accessibility and ease of use.
+\paragraph{Skill Level}
+The skill level of an \ac{ide} describes what level of domain expertise is expected of users for using it.
+This is a nominal variable where possible values are \texttt{Novice}, \texttt{Intermediate}, \texttt{Expert}, and \texttt{General}.
+The latter indicates that the \ac{ide} offers a powerful set of advanced features while maintaining components that emphasize accessibility and ease of use.
 
 
 \subsubsection{Chrome Features} \label{subsubsec:chrome}
 
-The chrome of an \ac{ide} is the total set of all user interface components
+The chrome of an \ac{ide} is the total set of all \acf{gui} components
 external to the workspace. This includes every tool, menu, button, or other
 user interface component not contained within the workspace area.
 
 
-\paragraph{Popular Features} Many \acp{ide} provide support for a specific
-subset of common operations. \citeauthor{murphy2006} defines a list of the
-top ten \ac{ide} features most frequently utilized by developers which is
-reproduced here as a set of boolean sub-variables. Each sub-variable
-indicates whether the \ac{ide} in question supports the use of that particular
-features. This is a compound variable.
-
-\subparagraph{Delete} Delete a syntactic element in the workspace.
-
-\subparagraph{Save} Save and export a model to storage media.
-
-\subparagraph{Paste} Duplicate an existing syntactic element in the
-work{-}space from the paste buffer.
-
-\subparagraph{Content Assist} Provide suggestions or completion for
-elements.
-
-\subparagraph{Copy} Place an existing syntactic element from the
-work{-}space into paste buffer.
-
-\subparagraph{Undo} Undo the user's most recent action.
-
-\subparagraph{Cut} Remove a syntactic element from the workspace and place
-it in the paste buffer.
-
-\subparagraph{Refresh} Load contents of workspace and interface dashboard
-elements from storage media and update display if necessary.
-
-\subparagraph{Show View} Open and display a new tool in the interface.
-
-\subparagraph{Next Word} Move active selection to the next element
-according to some natural ordering.
+\paragraph{General Operations}
+Many \acp{ide} provide support for a specific subset of common operations.
+\citeauthor{murphy2006}~\cite{murphy2006} defines a list of the top 10 \ac{ide} features most frequently utilized by developers.
+We reproduced it here as a set of Boolean sub-variables that indicates whether the \ac{ide} in question supports the use of that particular operation.
+We report the sum of the \texttt{true} values.
+The operations are: \emph{delete} a syntactic element in the workspace,
+\emph{save} to export a model to storage media,
+\emph{cut}/\emph{copy}/\emph{paste} an existing syntactic element in the workspace,
+\emph{content assist} that provides suggestions or completion for elements,
+ to place an existing syntactic element from the workspace into paste buffer,
+\emph{undo} the user's most recent action,
+\emph{refresh} to load contents of workspace and interface dashboard elements from storage media and update display if necessary.
+\emph{show view} opens and displays a new tool in the interface,
+and
+\emph{next word} Move active selection to the next element according to some natural ordering, for example as a result of searching.
 
 
-\paragraph{Context Sensitive Tools} Any interface component which changes
-visibly or is generated anew depending on the context of selected elements
-within the workspace is context sensitive. This is boolean variable
-indicates whether context sensitive tools are supported.
+\paragraph{Context Sensitive Tools}
+Any interface component which changes visibly or is generated anew depending on the context of selected elements within the workspace is context sensitive.
+This Boolean variable indicates whether context sensitive tools are supported.
 
 
-\paragraph{Degree of Interface Visual Richness} The degree of an \ac{ide}'s
-interface visual richness describes the extent to which it utilizes visual
-variables to increase the visual discriminability of available tools. This
-is a compound variable composed of eight sub-variables. Each sub-variable
-is a boolean measure determining whether or not the described visual
-variable is utilized in the interface to distinguish available tools.
-
-\subparagraph{Icons} Images contained in a border of a standard size and
-shape representing distinct actions or tools.
-\cite{costagliola2002,moody2009}
-
-\subparagraph{Shape} Distinct shapes indicate different tools.
-\cite{moody2009}
-
-\subparagraph{Size} Different tool sizes indicate distinct tools.
-\cite{moody2009}
-
-\subparagraph{Color} Color is used to indicate distinct tools.
-\cite{moody2009}
-
-\subparagraph{Text} Text (or typographic variation) is used to identify or
-distinguish tools.~\cite{moody2009}
-
-\subparagraph{Organizational Coherence} Components with related purpose are
-visually grouped in the interface.~\cite{constantine1996}
-
-\subparagraph{Texture} Shading or shadows are used to modify tools or to
-distinguish between distinct tools.~\cite{moody2009}
-
-\subparagraph{Brightness} The brightness of a color (\ie its perceived
-luminosity) is used to indicate a difference between tools.
-\cite{moody2009}
+\paragraph{Degree of Interface Visual Richness}
+This describes the extent to which an \ac{ide} utilizes visual variables to increase the visual discrimination of tools it offers.
+This compound variable is composed of eight sub-variables, each being a Boolean measure determining whether or not the described visual variable is utilized in the interface to distinguish between available tools in the \ac{ide}.
+We report the sum of the \texttt{true} values.
+The variables include:
+\emph{icons}~\cite{costagliola2002,moody2009} as images contained in a border of a standard size and shape,
+\emph{shapes}~\cite{moody2009},
+tool \emph{size}~\cite{moody2009},
+\emph{color}~\cite{moody2009},
+\emph{text} or typographic variation~\cite{moody2009},
+\emph{texture}~\cite{moody2009} as shading or shadows,
+\emph{brightness} of a color (\ie its perceived luminosity)~\cite{moody2009},
+and
+\emph{organizational coherence}~\cite{constantine1996} to determine if components with related purpose are visually grouped together in the interface.
 
 
-\paragraph{Multiplicity of Perspectives} This ratio variable encapsulates
-the number of available predefined interface perspectives available to the
-user. A perspective is defined as a visual configuration of the available
-tools in the interface chrome and elements in the workspace for the
-purposes of accomplishing a distinct task by mean of a distinct process.
-Values can range anywhere greater than zero.
+\paragraph{Multiplicity of Perspectives}
+A perspective is defined as a visual configuration of tools in the \ac{gui} for the purpose of accomplishing a distinct task as part of a distinct process.
+This metric measures the number of available predefined interface perspectives available to the user, with values greater than zero.
 
 
-\paragraph{Object Properties Window} The object properties window is any
-interface component that displays the properties of an element in the
-workspace. This component generally also allows modification of element
-properties. This is a nominal variable. If no object properties window is
-available, this variable takes the value \texttt{None}. Otherwise,
-available values are \texttt{Omnipresent} and \texttt{Manual}. The former
-refers to a window which is always present, allowing contents to update
-contextually. The latter refers to a window which requires user interaction
-to bring forward.
+\paragraph{Object Properties Window}
+This is an interface component that displays the properties of an element in the workspace, typically to view and modify properties of model elements.
+This is a nominal variable whose values are:
+\texttt{None} if no object properties window is available,
+\texttt{Omnipresent} if such window is always present, allowing contents to update contextually,
+and \texttt{Manual} if such window requires user interaction to bring forward.
 
 
-\paragraph{Searchable Toolspace} This is a boolean variable which indicates
-whether the total set of available tools, components, or actions offered by
-the \ac{ide} can be searched through by name or keyword.
+\paragraph{Searchable Toolspace}
+This is a Boolean variable that indicates whether the total set of available tools, components, or actions offered by the \ac{ide} can be searched through by name or keyword.
 
 
-\paragraph{Toolbar Styles} The toolbar styles of an \ac{ide} refer to the set of
-user interface component idioms employed by the \ac{ide}.~\cite{galitz2007} This
-nominal variable can take combinations of multiple values. Example values
-might include \texttt{Icons}, \texttt{Menus}, \texttt{Ribbons},
-\texttt{Trees}.
+\paragraph{Toolbar Styles}
+These refer to the set of \ac{gui} component idioms employed by the \ac{ide}~\cite{galitz2007}.
+This nominal variable can take combinations of multiple values, such as:
+\texttt{Icons}, \texttt{Menus}, \texttt{Ribbons}, \texttt{Trees}.
 
 
-\paragraph{Visual Clutter} The clutter of an interface is defined as the
-number and organization of tools available on the screen versus the amount
-of workspace provided by the \ac{ide}. If the \ac{ide} offers no method for tool
-organization or if there is an immense amount of tools visible at once,
-then the \ac{ide} is likely to be visually cluttered. Visual clutter is a
-nominal variable and can take the values \texttt{Low}, \texttt{Medium}, or
-\texttt{High}. \Sect{subsec:ideevaluation} includes details on the proper
-evaluation of this qualitative feature.
+\paragraph{Visual Clutter}
+The clutter of an interface is the number and organization of tools available on the screen versus the amount of workspace provided by the \ac{ide}\es{cite?}.
+If the \ac{ide} offers no method for tool organization or if there is an immense amount of tools visible at once, then the \ac{ide} is likely to be visually cluttered.
+Visual clutter is a nominal variable and takes the values \texttt{Low}, \texttt{Medium}, or \texttt{High}.
+\Sect{subsec:ideevaluation} includes details on the proper evaluation of this qualitative feature.
 
 
 \subsubsection{Human Interface Features} \label{subsubsec:humaninterface}
 
 The human interface features of an \ac{ide} include aspects of the software
-interface that affect how the human user interacts with the \ac{ide}, either
+interface that affect how the user interacts with the \ac{ide}, either
 mechanically (\eg through physical devices and media) or mentally (\eg the
 mental load required of the user to operate the \ac{ide}).
 
 
-\paragraph{Essential Efficiency} The essential efficiency of an \ac{ide}
-measures the level to which the system automates tasks for the user. It is
-calculated as the ratio of the number of steps in a concrete use case to
-the number of steps in the representative use case (see
-\Eq{eq:eefficiency}). This metric, unlike those for automation put forth in
-\cite{wei1998}, does not require user experience reports and can be
-measured through simple use case analysis.
+\paragraph{Essential Efficiency}
+The essential efficiency of an \ac{ide} measures the level to which the system automates tasks for the user.
+It is calculated as the ratio of the number of steps in a concrete use case $C$ to the number of steps in the essential use case $E$ as depicted in \Eq{eq:eefficiency}.
+A concrete use case describes the steps in the specific \ac{ide} to perform the same tasks as in an essential use case.
+This metric, unlike those for automation put forth in~\cite{wei1998}, does not require user experience reports and can be measured through simple use case analysis.
+\Sect{subsec:ideevaluation} gives more details on the essential use cases considered.
 %
 \begin{align}\label{eq:eefficiency}
-  1 - \frac{\text{Number of steps in concrete use case}}
-            {\text{Number of steps in essential use case}}
+  1 - \frac{C}{E}
 \end{align}
 
 
-\paragraph{Interface Efficiency} The interface efficiency of an \ac{ide} is a
-concept related to the productivity of an interface. It measures the number
-of physical actions (including keystrokes, mouse clicks, and fine mouse
-movements) required of the operator to complete a task compared against
-the number of abstract steps in the representative essential use case.
-
-This metric is different from the Essential Efficiency proposed in
-\cite{constantine1996} because it studies physical user actions instead of
-concrete task steps. Also note that this variable can take negative values,
-indicating that the number of physical actions required to complete an
-essential use case exceeds the number of abstract steps in the use case.
+\paragraph{Interface Efficiency}
+The interface efficiency of an \ac{ide} is a concept related to the productivity of an interface.
+It measures the number of physical actions (including keystrokes, mouse clicks, and fine mouse movements) $A$ required of the user to complete a task compared against the number of abstract steps in the essential use case, as depicted in \Eq{eq:iefficiency}.
 %
 \begin{align}\label{eq:iefficiency}
-  1 - \frac{\text{Number of physical actions to complete use case}}
-            {\text{Number of steps in essential use case}}
+  1 - \frac{A}{E}
 \end{align}
+%
+This metric is different from the Essential Efficiency proposed in~\cite{constantine1996} because it studies physical user actions instead of concrete task steps.
+Also note that this variable can take negative values, indicating that the number of physical actions required to complete an essential use case exceeds the number of abstract steps in the use case.
 
 
-\paragraph{Keyboard Use} Keyboard Use refers to the extent to which an \ac{ide}
-utilizes the use of a keyboard. This can range from a complete absence of
-any keyboard actions to providing certain actions which only a keyboard can
-perform. This nominal variable can take one of four values. A value of
-\texttt{None} indicates that no keyboard use is supported. \texttt{Simple}
-indicates that the keyboard is used only for typing annotations,
-properties, or comments. \texttt{Optional} indicates that the option to use
-the keyboard to execute some actions is present, but these actions can also
-be completed using a mouse. \texttt{Required} indicates that there are
-actions which can only be completed through the use of the keyboard, no
-mouse equivalent is available.
+\paragraph{Keyboard Use}
+This refers to the extent to which an \ac{ide} utilizes the use of a keyboard.
+This can range from a complete absence of any keyboard actions to providing certain actions which only a keyboard can perform.
+This nominal variable can take the values:
+\texttt{None} when no keyboard use is supported,
+\texttt{Simple} when the keyboard is used only for typing annotations, properties, or comments,
+\texttt{Optional} when the option to use the keyboard to execute some actions is present, but these actions can also be completed using a mouse,
+and \texttt{Required} when there are actions that can only be completed through the use of the keyboard, no mouse equivalent is available.
 
 
 \paragraph{Mode of Element Creation} This describes the process through
@@ -402,7 +318,9 @@ experimental design is not ``fully crossed''~\cite{hallgren2012}). We argue
 that this is not significant, however, because the five sets of reviewers
 are disjoint sets, acting as entirely independent actors.
 
-\subsubsection{Efficiency Study} \label{subsubsec:efficiency} The
+\subsubsection{Efficiency Study} \label{subsubsec:efficiency}
+\es{Explain what use cases were used}
+The
 evaluation of both interface and essential efficiency involved the creation
 of an abstract use case for each \ac{ide} and subsequent evaluation of the
 corresponding concrete use case. Three abstract use cases were developed
