@@ -132,8 +132,13 @@ zero.
 
 
 \paragraph{Object Properties Window}
-This is an interface component that displays the properties of an element in the workspace, typically to view and modify properties of model elements.
-\es{example.}
+This is an interface component that displays the properties of an element
+in the workspace, typically to view and modify properties of model
+elements.  For example, the \ac{ide} \ac{grc} allows elements to take
+user-defined values for various properties (\eg frequency, amplitude).
+These properties can be manipulated when the user explicitly requests the
+properties dialog window for that element.
+\es{example.}\jmr{addressed}
 This is a nominal variable whose values are:
 \texttt{None} if no object properties window is available,
 \texttt{Omnipresent} if such window is always present, allowing contents to update contextually,
@@ -141,8 +146,11 @@ and \texttt{Manual} if such window requires user interaction to bring forward.
 
 
 \paragraph{Searchable Toolspace}
-This is a Boolean variable that indicates whether the total set of available tools, components, or actions offered by the \ac{ide} can be searched through by name or keyword.
-\es{example.}
+This is a Boolean variable that indicates whether the total set of
+available tools, components, or actions offered by the \ac{ide} can be
+searched through by name or keyword, \eg \cameleon~which provides the user
+a search box to navigate its library of predefined available elements.
+\es{example.}\jmr{addressed}
 
 
 \paragraph{Toolbar Styles}
@@ -193,8 +201,11 @@ Also note that this variable can take negative values, indicating that the numbe
 
 \paragraph{Keyboard Use}
 This refers to the extent to which an \ac{ide} utilizes the use of a keyboard.
-This can range from a complete absence of any keyboard actions to providing certain actions which only a keyboard can perform.
-\es{example.}
+This can range from a complete absence of any keyboard actions to providing
+certain actions which only a keyboard can perform. Keybindings (optional or
+required) are a common way to provide keyboard interactivity.
+\es{example.}\jmr{addressed}
+
 This nominal variable can take the values:
 \texttt{None} when no keyboard use is supported,
 \texttt{Simple} when the keyboard is used only for typing annotations, properties, or comments,
@@ -221,8 +232,10 @@ This nominal variable describes any
 third party human interface devices which can be used to interact with the
 \ac{ide}. This could include audio devices such as MIDI keyboards or
 microphones, mobile integration, etc. Variable values are the type of
-tertiary devices allowed for the \ac{ide}.
-\es{example.}
+tertiary devices allowed for the \ac{ide}. AudioMulch and Max, for example,
+allow for the integration of microphones as data input devices. AppInventor
+supports exporting to mobile devices.
+\es{example.}\jmr{addressed}
 
 
 \subsubsection{Integration Features} \label{subsubsec:integration}
@@ -237,10 +250,10 @@ understanding the supported language.
 This refers to an \ac{ide}'s ability to
 emphasize possible syntactically correct connection points. This is often
 demonstrated with either the highlighting of allowed relations or the
-dimming of impossible relations.
-\es{example.}
-Boolean values indicate whether the \ac{ide}
-supports this feature or not.
+dimming of impossible relations, \eg \cameleon~which color codes available
+connection endpoints when the operator begins creating a connection.
+\es{example.}\jmr{addressed}
+Boolean values indicate whether the \ac{ide} supports this feature or not.
 
 
 \paragraph{Output Generation Style}
@@ -249,16 +262,18 @@ mode with which the \ac{ide} renders and displays output to the user. It is a
 dual axis nominal variable, measuring whether output is direct or indirect
 as well as live or caused by a trigger. \texttt{Direct/indirect} describes
 whether the user directly modifies output or acts via a layer of
-abstraction (\eg via a model).
-\es{example.}
-\texttt{Live/trigger} describes whether output is generated and displayed live or after some event triggered by the user.
-\es{example.}
+abstraction (\eg via a model as in Grasshopper, or directly as in Blender).
+\es{example.}\jmr{addressed}
+\texttt{Live/trigger} describes whether output is generated and displayed
+live or after some event triggered by the user, \eg a compilation or build
+request.
+\es{example.}\jmr{addressed}
 
 
 \paragraph{Syntax Enforcement}
-The level of syntax enforcement of an \ac{ide}
-describes the mode with which the \ac{ide} enforces its supported language's
-syntax requirements, if at all.
+The level of syntax enforcement of an \ac{ide} describes the mode with
+which the \ac{ide} enforces its supported language's syntax requirements,
+if at all.
 \es{example.}
 The nominal value \texttt{Explicit}
 indicates that the \ac{ide} explicitly enforces syntax requirements by
@@ -283,29 +298,33 @@ Any characteristics or features of the
 visual language that serve to reduce the complexity of that language.
 Reducing complexity refers specifically to decreasing the level of
 \emph{diagrammatic complexity} while maintaining information transfer to
-the user~\cite{moody2009}.
-\es{example.}
-This nominal variable can take one of three
-possible values. \texttt{Modularization} indicates that large systems
-within the language are divided into smaller subsystems to reduce
-complexity~\cite{moody2009}. \texttt{Hierarchy} indicates that systems
-within the language can be represented at different levels of detail~\cite{moody2009}.
-\texttt{None} indicates that the visual language does not
-support complexity management functionality.
+the user~\cite{moody2009}. This can be implemented variously, \eg
+modularization of large projects into files or hierarchical abstraction
+into levels of detail.
+\es{example.}\jmr{addressed?}
+This nominal variable can take one of three possible values.
+\texttt{Modularization} indicates that large systems within the language
+are divided into smaller subsystems to reduce complexity~\cite{moody2009}.
+\texttt{Hierarchy} indicates that systems within the language can be
+represented at different levels of detail~\cite{moody2009}.  \texttt{None}
+indicates that the visual language does not support complexity management
+functionality.
 
 
 \paragraph{Connection Style}
-A language's connection style refers to the
-manner with which connections between elements are displayed. This dual
-axis nominal variable measures connections as \texttt{overlapping}
-\emph{vs.} \texttt{linked} as well as connection sources as \texttt{point}
-\emph{vs.} \texttt{region} based~\cite{costagliola2002}. The former axis
-describes the visual representation of the connections, while the latter
-describes how links are connected.
-\es{example.}
-If the supported language does not fall
-on either of these axes, it is not connection based~\cite{costagliola2002}
-and this feature takes the value \texttt{Geometric}.
+A language's connection style refers to the manner with which connections
+between elements are displayed. This dual axis nominal variable measures
+connections as \texttt{overlapping} \emph{vs.} \texttt{linked} as well as
+connection sources as \texttt{point} \emph{vs.} \texttt{region}
+based~\cite{costagliola2002}. The former axis describes the visual
+representation of the connections, while the latter describes how links are
+connected. MST Workshop, for example, allows the user to overlap points on
+elements in order to indicate connection, whereas Grasshopper requires
+specific linking between points on elements.
+\es{example.}\jmr{addressed}
+If the supported language does not fall on either of these axes, it is not
+connection based~\cite{costagliola2002} and this feature takes the value
+\texttt{Geometric}.
 
 
 \paragraph{Degree of Language Visual Richness}
@@ -326,8 +345,9 @@ However, three features require more intensive evaluation.
 
 Evaluating the visual clutter of an \ac{ide} requires qualitative user feedback.
 We used Amazon.com's \ac{mt} as a crowd-sourcing platform to perform the user study and gauge opinions of visual clutter.
-We generated three unique screenshots of each \ac{ide} and darkened the workspace area to remove attention from diagrammatic complexity.
-\es{add snapshot if space permits.}
+We generated three unique screenshots of each \ac{ide} and darkened the
+workspace area to remove attention from diagrammatic complexity. See
+\Fig{fig:clutterexample} as an example image provided on \ac{mt}.
 These images were distributed as \ac{mt} \acp{hit}, requiring five unique evaluators per \ac{hit}.
 On average, each evaluator spent about one minute studying and rating an image on a scale of 1 (low clutter) to 5 (high clutter).
 Each \ac{hit} rewarded its evaluator with \$0.02.
@@ -340,6 +360,15 @@ The result, \ac{icc} = 0.648, is within the ``good'' range of significance~\cite
 This \ac{icc} value indicates that the reviewers were, in general, in agreement about their ranking of interface clutter.
 Note that there were more than five reviewers participating total, despite five sets of reviews (\ie the experimental design is not ``fully crossed''~\cite{hallgren2012}).
 We argue that this is not significant, however, because the five sets of reviewers are disjoint sets, acting as entirely independent actors.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3in]{images/clutter_shot}
+\caption{Sample \ac{ide} screenshot provided on Mechanical Turk (Visual
+Paradigm)}
+\label{fig:clutterexample}
+\end{figure}
+
 
 \subsubsection{Evaluation of Efficiency} \label{subsubsec:efficiency}
 
