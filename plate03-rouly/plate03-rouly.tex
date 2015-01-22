@@ -1,0 +1,279 @@
+\documentclass[10pt]{sigplanconf}
+
+
+\usepackage[T1]{fontenc}
+\usepackage[bookmarks,bookmarksopen,bookmarksdepth=2]{hyperref} %sections as bookmarks in adobe pdf
+%\usepackage{times}
+
+\newcommand{\todo}[1]{\textbf{\textcolor{red}{TODO: #1}}}
+% Macros for proof-reading & corrections
+\usepackage[normalem]{ulem} % for \sout
+\usepackage{xcolor}
+\newcommand{\ra}{$\rightarrow$}
+\newcommand{\ugh}[1]{\textcolor{red}{\uwave{#1}}} % please rephrase
+\newcommand{\ins}[1]{\textcolor{blue}{\uline{#1}}} % please insert
+\newcommand{\del}[1]{\textcolor{red}{\sout{#1}}} % please delete
+\newcommand{\chg}[2]{\textcolor{red}{\sout{#1}}{\ra}\textcolor{blue}{\uline{#2}}} % please change
+
+% Put edit comments in a really ugly standout display
+\usepackage{ifthen}
+\usepackage{amssymb}
+\newboolean{showcomments}
+\setboolean{showcomments}{true} % toggle to show or hide comments
+\ifthenelse{\boolean{showcomments}}
+  {\newcommand{\nb}[2]{
+    \fcolorbox{gray}{yellow}{\bfseries\sffamily\scriptsize#1}
+    {$\blacktriangleright$#2$\blacktriangleleft$}
+   }
+   \newcommand{\version}{\emph{\scriptsize$-$working$-$}}
+  }
+  {\newcommand{\nb}[2]{}
+   \newcommand{\version}{}
+  }
+
+\newcommand\es[1]{\nb{ES}{\textcolor{red}{\textsl{#1}}}}
+\newcommand\jmr[1]{\nb{JMR}{\textcolor{red}{\textsl{#1}}}}
+\newcommand\jo[1]{\nb{JO}{\textcolor{red}{\textsl{#1}}}}
+
+% For URLs in the references
+\usepackage{url}
+\usepackage{hyperref}
+%\usepackage{verbatim}
+
+% Advanced Math
+\usepackage{amsmath}
+%\usepackage{amssymb}     % double line font letters (for number sets N,Z,D,Q,R)
+
+% Images and Floats
+%\usepackage{epsfig}
+%\usepackage{epstopdf}
+\usepackage{graphicx}
+
+%\usepackage{subfigure}
+\usepackage{lscape}     % landscape
+%\usepackage{array}     % align vertically in tables
+\usepackage{multirow}
+%\usepackage{rotating}
+
+% Theorems, Definitions, ... (always after 'amsmath')
+%\usepackage{amsthm}
+%\theoremstyle{definition}
+%\newtheorem{prop}{Property}%[section]
+%\newtheorem{defn}{Definition}%[section]
+
+% Algorithm environment
+%\usepackage{algorithm}
+%\usepackage{algorithmic}
+
+% Commutative diagrams
+%\usepackage{diagrams}
+
+% Misc packages
+%\usepackage{enumitem}
+\usepackage{acronym}  % for defining acronyms
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Standard shortcuts
+\newcommand{\eg}{\emph{e.g.,~}}             % exempli gratia (for the sake of example)
+\newcommand{\ie}{\emph{i.e.,~}}             % id est (that is)
+\newcommand{\etal}{~\emph{et al.}}          % et alia (and others)
+\newcommand{\Fig}[1]{Fig.~\ref{#1}}         % choose Fig. or Figure, depending on the style
+\newcommand{\Table}[1]{Table~\ref{#1}}      % Table reference
+\newcommand{\Sect}[1]{Section~\ref{#1}}     % section name always with a capital S
+\newcommand{\Eq}[1]{Equation~\ref{#1}}      % equation reference
+\newcommand{\Model}[1]{\textsf{\small{#1}}} % name of any modeling artifact (e.g., formalism, model element, rule, ...)
+\newcommand{\Code}[1]{\textsl{\small{#1}}}  % inline code
+\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}} % scientific notation: x.10^y
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Shortcuts
+\newcommand{\atompm}{AToMPM}
+\newcommand{\cameleon}{Cam\'{e}l\'{e}on}
+\acrodef{ide}[IDE]{Integrated Development Environment}
+\acrodef{gui}[GUI]{graphical user interface}
+\acrodef{emf}[EMF]{Eclipse Modeling Framework}
+\acrodef{grc}[GRC]{GNU Radio Companion}
+\acrodef{hit}[HIT]{Human Intelligence Task}
+\acrodef{mt}[MTurk]{Mechanical Turk}
+\acrodef{irr}[IRR]{Inter-Rater Reliability}
+\acrodef{icc}[ICC]{Intra-Class Correlation}
+\acrodef{uml}[UML]{Unified Modeling Language}
+
+
+\begin{document}
+
+\conferenceinfo{PLATEAU~'14}{October 21, 2014, Portland, OR, USA.}
+\copyrightyear{2014}
+\copyrightdata{978-1-4503-2277-5/14/10}
+\doi{2688204.2688207}
+
+\special{papersize=8.5in,11in}
+\setlength{\pdfpageheight}{\paperheight}
+\setlength{\pdfpagewidth}{\paperwidth}
+
+% Uncomment one of the following two, if you are not going for the 
+% traditional copyright transfer agreement.
+
+%\exclusivelicense                % ACM gets exclusive license to publish, 
+                                  % you retain copyright
+
+%\permissiontopublish             % ACM gets nonexclusive license to publish
+                                  % (paid open-access papers, 
+                                  % short abstracts)
+
+%\titlebanner{banner above paper title}        % These are ignored unless
+%\preprintfooter{short description of paper}   % 'preprint' option specified.
+
+\title{Usability and Suitability Survey of Features in Visual IDEs for Non-Programmers}
+%\subtitle{Subtitle Text, if any}
+
+\authorinfo{Jean Michel Rouly}
+           {George Mason University}
+           {jrouly@masonlive.gmu.edu}
+\authorinfo{Jonathan D. Orbeck}
+           {University of Alabama}
+           {jdorbeck@crimson.ua.edu}
+\authorinfo{Eugene Syriani}
+           {University of Montreal}
+           {syriani@iro.umontreal.ca}
+
+\maketitle
+
+\input{sections/abstract}
+
+\input{sections/introduction}
+
+%\input{sections/relatedwork}
+
+\input{sections/methods}
+
+\input{sections/results}
+
+\input{sections/discussion}
+
+\input{sections/conclusion}
+
+%\appendix
+%\section{Appendix Title}
+
+\acks
+
+This research was sponsored by the National Science Foundation grant no. 1156563 at the University of Alabama REU site.
+
+\bibliographystyle{abbrvnat}
+\begin{thebibliography}{15}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\textsl{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{C}icchetti(1994)]{cicchetti1994}
+D.~V. {C}icchetti.
+\newblock {G}uidelines, criteria, and rules of thumb for evaluating normed and
+  standardized assessment instruments in psychology.
+\newblock \emph{Psychological Assessment}, 6\penalty0 (4):\penalty0 284--290,
+  1994.
+
+\bibitem[{C}onstantine(1996)]{constantine1996}
+L.~{C}onstantine.
+\newblock ``{Usage-centered} software engineering: new models, methods, and
+  metrics ''.
+\newblock In \emph{{S}oftware {E}ngineering: {E}ducation and {P}ractice, 1996.
+  {P}roceedings. {I}nternational {C}onference}, pages 2--9, Jan 1996.
+\newblock \doi{10.1109/SEEP.1996.533974}.
+
+\bibitem[{C}ooper et~al.(2007){C}ooper, {R}eimann, and {C}ronin]{cooper2007}
+A.~{C}ooper, R.~{R}eimann, and D.~{C}ronin.
+\newblock \emph{{A}bout face 3: the essentials of interaction design}.
+\newblock John Wiley \& Sons, 2007.
+
+\bibitem[{C}ostagliola et~al.(2002){C}ostagliola, {D}elucia, {O}refice, and
+  {P}olese]{costagliola2002}
+G.~{C}ostagliola, A.~{D}elucia, S.~{O}refice, and G.~{P}olese.
+\newblock {A} {C}lassification {F}ramework to {S}upport the {D}esign of
+  {V}isual {L}anguages.
+\newblock \emph{Journal of Visual Languages \& Computing}, 13\penalty0
+  (6):\penalty0 573--600, 2002.
+\newblock \doi{http://dx.doi.org/10.1006/jvlc.2002.0234}.
+
+\bibitem[{F}ischer(1994)]{fischer1994}
+G.~{F}ischer.
+\newblock {D}omain-oriented design environments.
+\newblock \emph{Automated Software Engineering}, 1\penalty0 (2):\penalty0
+  177--203, 1994.
+\newblock \doi{10.1007/BF00872289}.
+
+\bibitem[{G}alitz(2007)]{galitz2007}
+W.~O. {G}alitz.
+\newblock \emph{{T}he essential guide to user interface design: an introduction
+  to {GUI} design principles and techniques}.
+\newblock John Wiley \& Sons, 2007.
+
+\bibitem[{G}reen and {P}etre(1996)]{Green1996}
+T.~{G}reen and M.~{P}etre.
+\newblock {U}sability {A}nalysis of {V}isual {P}rogramming {E}nvironments: {A}
+  {C}ognitive {D}imensionsҠ{F}ramework.
+\newblock \emph{Journal of Visual Languages \& Computing}, 7\penalty0
+  (2):\penalty0 131--174, jun 1996.
+
+\bibitem[{H}abermann and {N}otkin(1986)]{habermann1986}
+A.~{H}abermann and D.~{N}otkin.
+\newblock {G}andalf: {S}oftware development environments.
+\newblock \emph{Software Engineering, IEEE Transactions on}, SE-12\penalty0
+  (12):\penalty0 1117--1127, Dec 1986.
+\newblock \doi{10.1109/TSE.1986.6313007}.
+
+\bibitem[{H}allgren(2012)]{hallgren2012}
+K.~A. {H}allgren.
+\newblock {C}omputing inter-rater reliability for observational data: {A}n
+  overview and tutorial.
+\newblock \emph{Tutorials in quantitative methods for psychology}, 8\penalty0
+  (1):\penalty0 23, 2012.
+
+\bibitem[{H}ils(1992)]{hils1992}
+D.~D. {H}ils.
+\newblock {V}isual languages and computing survey: {D}ata flow visual
+  programming languages.
+\newblock \emph{Journal of Visual Languages \& Computing}, 3\penalty0
+  (1):\penalty0 69--101, 1992.
+
+\bibitem[{K}elly and {T}olvanen(2008)]{Kelly2008}
+S.~{K}elly and J.-P. {T}olvanen.
+\newblock \emph{{D}omain-{S}pecific {M}odeling: {E}nabling {F}ull {C}ode
+  {G}eneration}.
+\newblock John Wiley \& Sons, 2008.
+
+\bibitem[{M}oody(2009)]{moody2009}
+D.~{M}oody.
+\newblock {T}he {P}hysics of {N}otations: {T}oward a {S}cientific {B}asis for
+  {C}onstructing {V}isual {N}otations in {S}oftware {E}ngineering.
+\newblock \emph{IEEE Transactions on Software Engineering}, 35\penalty0
+  (6):\penalty0 756--779, Nov 2009.
+\newblock \doi{10.1109/TSE.2009.67}.
+\vfill\eject
+\bibitem[{M}urphy et~al.(2006){M}urphy, {K}ersten, and {F}indlater]{murphy2006}
+G.~{M}urphy, M.~{K}ersten, and L.~{F}indlater.
+\newblock {H}ow are {J}ava software developers using the {Eclipse IDE}?
+\newblock \emph{Software, IEEE}, 23\penalty0 (4):\penalty0 76--83, July 2006.
+\newblock \doi{10.1109/MS.2006.105}.
+
+\bibitem[{T}ufte(2001)]{Tufte2001}
+E.~R. {T}ufte.
+\newblock \emph{{T}he visual display of quantitative information}.
+\newblock Graphics press Cheshire, CT, 2 edition, may 2001.
+
+\bibitem[{W}ei et~al.(1998){W}ei, {M}acwan, and {W}ieringa]{wei1998}
+Z.-G. {W}ei, A.~P. {M}acwan, and P.~A. {W}ieringa.
+\newblock {A} {Q}uantitative {M}easure for {D}egree of {A}utomation and {I}ts
+  {R}elation to {S}ystem {P}erformance and {M}ental {L}oad.
+\newblock \emph{Human Factors: The Journal of the Human Factors and Ergonomics
+  Society}, 40\penalty0 (2):\penalty0 277--295, 1998.
+\newblock \doi{10.1518/001872098779480406}.
+
+\end{thebibliography}
+
+\end{document}
