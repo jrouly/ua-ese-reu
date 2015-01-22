@@ -5,7 +5,16 @@ In the following, we define the terminology used in the study, the process and c
 
 \subsection{Terminology} \label{subsec:terminology}
 
+\begin{figure*}
+  \centering
+  \includegraphics[width=\textwidth]{images/ide_feature_model}
+  \caption{Visual IDE feature diagram model}
+  \label{fig:featuremodel}
+\end{figure*}
+%
 \Fig{fig:featuremodel} is a feature model describing the features we considered for the visual \acp{ide}.
+They are defined in \Sect{subsec:featuredefinition}.
+
 The \emph{workspace} of an \ac{ide} is sometimes referred to as a
 \emph{canvas} and is an area within the \ac{ide} interface with which the
 operator directly interacts to create and store content. Generally, the
@@ -16,19 +25,6 @@ development within this language. \emph{Elements} within the language are
 syntactic units or lexemes represented visually within the \ac{ide}
 workspace. Similarly, \emph{relations} or \emph{connections} are syntactic
 relationships between elements represented visually within the workspace~\cite{costagliola2002}.
-%
-%\begin{figure}
-%  \centering
-%  \includegraphics[width=\linewidth]{images/ide_feature_model}
-%  \caption{IDE feature diagram model}
-%  \label{fig:featuremodel}
-%\end{figure}
-\begin{figure*}
-  \centering
-  \includegraphics[width=\textwidth]{images/ide_feature_model}
-  \caption{Visual IDE feature diagram model}
-  \label{fig:featuremodel}
-\end{figure*}
 
 
 \subsection{\acs{ide} Selection} \label{subsec:ideselection}
@@ -79,7 +75,7 @@ user interface component not contained within the workspace area.
 Many \acp{ide} provide support for a specific subset of common operations.
 \citeauthor{murphy2006}~\cite{murphy2006} define a list of the top 10 \ac{ide} features most frequently utilized by developers.
 We reproduced it here as a set of Boolean sub-variables that indicates whether the \ac{ide} in question supports the use of that particular operation.
-We report the sum of the \texttt{true} values.
+Due to space limitations, we report only the sum of the \texttt{true} values.
 The operations are: \emph{delete} a syntactic element in the workspace,
 \emph{save} to export a model to storage media,
 \emph{cut}/\emph{copy}/\emph{paste} an existing syntactic element in the workspace,
@@ -103,9 +99,9 @@ supported.
 
 
 \paragraph{Degree of Interface Visual Richness}
-This describes the extent to which an \ac{ide} utilizes visual variables to increase the visual discrimination of tools it offers.
+This describes the extent to which an \ac{ide} utilizes visual variables to increase the visual discrimination of tools it offers as advised by Tufte's guidance~\cite{Tufte2001} and Moody's specifications~\cite{moody2009}.
 This compound variable is composed of eight sub-variables, each being a Boolean measure determining whether or not the described visual variable is utilized in the interface to distinguish between available tools in the \ac{ide}.
-We report the sum of the \texttt{true} values.
+Due to space limitations, we report only the sum of the \texttt{true} values.
 The variables include:
 \emph{icons}~\cite{costagliola2002,moody2009} as images contained in a border of a standard size and shape,
 \emph{shapes}~\cite{moody2009},

@@ -3,6 +3,7 @@
 
 Tables~\ref{tab:chrome}--\ref{tab:integration-langsyn} outline the results of the evaluation of the 25 \acp{ide} we considered in this study.
 We give further explanations below for each in alphabetical order.
+What follows is based on the measured evaluation results accompanied with our own opinion of each tool.
 %
 %\begin{landscape}
 \begin{table*}
@@ -150,14 +151,17 @@ We give further explanations below for each in alphabetical order.
 	\label{tab:integration-langsyn}
 \end{table*}
 %
-\paragraph{Alice3} Designed primarily as an educational programming
-environment, Alice3 alienates skilled users by expecting a lower level of
+\paragraph{Alice3} One of the earliest educational interfaces present in
+this study, Alice has influenced a great deal of later \acp{ide},
+including Stencyl, AppInventor, and Scratch to name a few.
+Designed primarily as an educational programming
+environment, Alice only targets users with a low level of
 skill in its domain. It makes up for this loss in accessibility, however,
 with its wide, almost universal, support of common \ac{ide} features as
-well as context-sensitive tooling. Alice3 provides a medium level of visual
+well as context-sensitive tooling. Alice3, the current release, provides a medium level of visual
 richness in its interface chrome, but boasts one of the highest essential
-efficiency values. This efficiency value is achieved through the ``MIT
-Scratch'' style of visual syntax. However, despite greatly reducing
+efficiency values. This efficiency value is achieved through the style of visual syntax proper to Alice and its successors.
+However, despite greatly reducing
 operator mental load, its visually cluttered design only manages a
 near-neutral interface efficiency. The introduction of optional keybindings
 is a redeeming factor for Alice3 and, like most educational programming
@@ -242,8 +246,7 @@ development of signal processing software without the need to understand or
 write code. It does, however, require a moderate level of skill in the
 domain. \ac{grc} supports slightly more than the average number of popular
 \ac{ide} features as well as the ability to search through available tools.
-\ac{grc} is not extensively visually pleasing, however, as the interface
-chrome only utilizes four visual variables while the supported language
+The interface chrome of \ac{grc} only utilizes four visual variables while the supported language
 only employs two. Despite this, the interface is highly efficient, with the
 highest observed interface efficiency and a correspondingly high level of
 essential efficiency. It also supports optional keyboard use and
@@ -266,8 +269,7 @@ mediocre at best.
 \paragraph{Max} Its overly simple appearance can be misleading---it is
 very much designed for skilled users in the music development domain. Max
 supports several popular features and an average number of visual
-richness variables in both its chrome and supported language, making it
-accessible and relatively visually pleasing. Its use of a searchable
+richness variables in both its chrome and supported language. Its use of a searchable
 toolspace is unique among the studied \acp{ide}: in order to create
 almost any advanced element in the workspace, the user must search by name
 or description for the element. Only a small subset of its functionality
@@ -283,7 +285,7 @@ be intimidating and, ultimately, greatly decreases accessibility.
 \paragraph{MetaEdit+} As for AToMPM, MetaEdit+ is a tool for creating domain-specific modeling environments.
 Aimed towards an intermediate level of users, the
 many different tasks and steps that go into the design of a simple model in
-MetaEdit+ can easily be daunting for newer users.  These tasks are
+MetaEdit+ can easily be overwhelming for newer users.  These tasks are
 fortunately divided through modularization, allowing them to be much more
 manageable within the \ac{ide}. Furthermore, many of the popular \ac{ide}
 features as well as context sensitive tools are present in the interface,
@@ -293,16 +295,15 @@ user with a clear and easy-to-use workspace. A favorable essential
 efficiency value is also present, whereas the interface efficiency suffers
 from its necessity to complete a dialog for each created element.
 
-\paragraph{MIT AppInventor} Much like Alice3 and the other educational
+\paragraph{MIT AppInventor} Much like Alice and the other educational
 interfaces, MIT's AppInventor is designed for an unskilled, novice
-audience, reducing the breadth of target audience. By only supporting three
-of the top ten popular features, AppInventor additionally alienates its
-audience through nonconformity with expected standards. While colorful,
+audience, reducing the breadth of target audience. AppInventor does not conform to the expected standards by only supporting three
+of the top ten popular features. While colorful,
 AppInventor's interface only supports four visual variables to distinguish
 elements in the chrome, relying heavily on icons and text. It
-combines the ``MIT Scratch'' style of visual syntax along with a Drag n
+combines the Alice style of visual syntax along with a Drag n
 Drop element creation workspace, resulting in high levels of effective and
-interface efficiency. Another artifact of the ``MIT Scratch'' style of
+interface efficiency. Another artifact of the Alice style of
 visual syntax is its implicit syntax enforcement, assisting the user by
 preventing illegal structures. Finally, the high level of language visual
 richness and modular complexity management scheme result in an overall
@@ -310,7 +311,7 @@ visually pleasant experience.
 
 \paragraph{MST Workshop} Though MST Workshop offers a very simple and easy
 to use interface, it does not offer much explanation as to the use of its
-many different simulation categories. As such, they are virtually unusable
+many different simulation categories. As such, they are unusable
 by anyone without prior knowledge of that subject, drastically limiting its
 accessibility. In the same vein, it does not incorporate enough visual
 richness variables to easily discern or interpret the tools and very few
@@ -336,9 +337,7 @@ his whole program to locate any error in the code. In general, the
 simplicity of the design allows for a visually
 appealing environment, but creates a dearth of features.
 
-\paragraph{Scratch} One of the earliest educational interfaces present in
-this study, Scratch has influenced a great deal of later \acp{ide},
-including Stencyl, AppInventor, and Alice3 to name a few. Scratch is
+\paragraph{Scratch} Scratch is
 specifically targeted toward a novice audience with a low skill level, and
 only supports three of the top ten popular features. The interface employs
 an average level of visual richness variables, and does not even define an
@@ -367,7 +366,7 @@ and enjoyment of this tool, despite it being very powerful.
 \paragraph{Stencyl} It provides a very easy-to-use interface for game
 software creation for an early level audience, but in the process
 sacrifices any higher level functionality. This \ac{ide} also integrates
-the ``MIT Scratch'' style of coding, which carries along with it very high
+the Alice style of coding, which carries along with it very high
 efficiency values and implicit syntax enforcement. Every tool visual
 richness variable is utilized within the toolbars, which are also
 searchable, allowing for a very user-friendly and productive interface.
@@ -386,8 +385,7 @@ language and there is no syntax enforcement to aid the user at all through
 the design process. The efficiency of the \ac{ide} is at an acceptable level.
 Tersus hits a high point with its use of a hierarchical design to program
 behaviors and functions of the various components in the model. Though this
-is a very useful feature, it does not distract at all from the overall
-blandness of the language.
+is a very useful feature, it does not distract at all from the overly simplistic language.
 
 \paragraph{TouchDevelop} Designed as an educational program as part of
 Microsoft's ``Hour of Code" campaign, TouchDevelop offers a simple user
@@ -434,16 +432,15 @@ position, forcing them to rely on verification at run-time only.
 
 \paragraph{Visual Paradigm} It offers a \ac{uml}-based
 interface designed to support every defined \ac{uml} diagram. As such,
-however, much of the functionality may be daunting to a novice to \ac{uml}
+however, much of the functionality may be overwhelming to a novice to \ac{uml}
 architecture. Many popular \ac{ide} features are present, though, as well
 as context sensitive tools for a slightly more accessible use. The design of Visual
 Paradigm allows for implicit syntax enforcement, a very useful
 feature when dealing with \ac{uml}, with an acceptable interface
 efficiency and average essential efficiency value. An unfavorable amount of
 clutter is present in the \ac{ide} however, and no effort is taken to
-manage complexity throughout the interface. Combined with an extremely low
-amount of language visual richness, due to \ac{uml} standards, the downsides
-of Visual Paradigm outweigh the good.
+manage complexity throughout the interface. Visual Paradigm also suffers of an extremely low
+amount of language visual richness, due to \ac{uml} standards.
 
 \paragraph{Visual Use Case} Unlike Visual Paradigm which supports the
 creation of all \ac{uml} diagrams, Visual Use Case gives an in-depth
